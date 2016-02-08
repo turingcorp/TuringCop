@@ -30,35 +30,12 @@
 
 -(UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 
 -(BOOL)prefersStatusBarHidden
 {
     return NO;
-}
-
-#pragma mark notified
-
--(void)notifiedwritingbusy:(NSNotification*)notification
-{
-    [self writingbusy:YES];
-}
-
--(void)notifiedwritingfree:(NSNotification*)notification
-{
-    [self writingbusy:NO];
-}
-
-#pragma mark functionality
-
--(void)writingbusy:(BOOL)busy
-{
-    dispatch_async(dispatch_get_main_queue(),
-                   ^
-                   {
-                       [self.navigationBar setUserInteractionEnabled:!busy];
-                   });
 }
 
 @end
