@@ -15,6 +15,10 @@
     [collection setBackgroundColor:[UIColor clearColor]];
     [collection setAlwaysBounceVertical:YES];
     self.collection = collection;
+
+    vstatusbar *statusbar = [[vstatusbar alloc] init];
+    self.statusbar = statusbar;
+    
     [self addSubview:collection];
     
     return self;
