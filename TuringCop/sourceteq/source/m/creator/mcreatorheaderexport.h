@@ -1,13 +1,6 @@
-//
-//  mcreatorheaderexport.h
-//  TuringCop
-//
-//  Created by zero on 2/8/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "mcreatorheaderprotocol.h"
 
-#import <Foundation/Foundation.h>
-
-@interface mcreatorheaderexport : NSObject
+@interface mcreatorheaderexport:NSObject<mcreatorheaderprotocol>
 
 @end
