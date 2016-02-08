@@ -84,6 +84,8 @@
 		DA97E3F71C6920D90084FFDF /* vratemenucel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vratemenucel.h; sourceTree = "<group>"; };
 		DA97E3F81C6920D90084FFDF /* vratemenucel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vratemenucel.m; sourceTree = "<group>"; };
 		DA97E3F91C6920D90084FFDF /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
+		DA97E4131C6922C60084FFDF /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		DA97E4141C6922C60084FFDF /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		DA97E3B91C6920D90084FFDF /* sourceteq */ = {
 			isa = PBXGroup;
 			children = (
+				DA97E4121C6922C60084FFDF /* private */,
 				DA97E3BA1C6920D90084FFDF /* core */,
 				DA97E3BF1C6920D90084FFDF /* generic */,
 				DA97E3C81C6920D90084FFDF /* lib */,
@@ -352,6 +355,15 @@
 				DA97E3F81C6920D90084FFDF /* vratemenucel.m */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DA97E4121C6922C60084FFDF /* private */ = {
+			isa = PBXGroup;
+			children = (
+				DA97E4131C6922C60084FFDF /* private.h */,
+				DA97E4141C6922C60084FFDF /* privateconstants.h */,
+			);
+			path = private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
