@@ -7,6 +7,6 @@
 	<key>version</key>
 	<integer>10</integer>
 	<key>dbname</key>
-	<string>graphuss.db</string>
+	<string>turingcop.db</string>
 </dict>
 </plist>

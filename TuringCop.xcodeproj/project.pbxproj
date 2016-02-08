@@ -12,7 +12,6 @@
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
 		DA97E3FD1C6920D90084FFDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B61C6920D90084FFDF /* Localizable.strings */; };
 		DA97E3FE1C6920D90084FFDF /* appdel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97E3BC1C6920D90084FFDF /* appdel.m */; };
-		DA97E3FF1C6920D90084FFDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3BD1C6920D90084FFDF /* Info.plist */; };
 		DA97E4001C6920D90084FFDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97E3BE1C6920D90084FFDF /* main.m */; };
 		DA97E4011C6920D90084FFDF /* analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97E3C11C6920D90084FFDF /* analytics.m */; };
 		DA97E4021C6920D90084FFDF /* tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA97E3C51C6920D90084FFDF /* tools.m */; };
@@ -427,7 +426,6 @@
 				DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */,
 				DA97E3FD1C6920D90084FFDF /* Localizable.strings in Resources */,
 				DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */,
-				DA97E3FF1C6920D90084FFDF /* Info.plist in Resources */,
 				DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -548,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,8 +557,7 @@
 		DA020D7C1C691BA0000BF8A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TuringCop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,8 +571,7 @@
 		DA020D7D1C691BA0000BF8A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TuringCop/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
