@@ -8,3 +8,5 @@
 #import "vstatusbar.h"
 #import "vturing.h"
 #import "vturingbar.h"
+#import "vturingheader.h"
+#import "vturingcel.h"
