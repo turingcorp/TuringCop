@@ -1,6 +1,7 @@
 "app_title"="TuringCop";
 
 "status_taketest"="Start test";
+"status_creator"="Creator";
 
 "turing_stoptest"="Stop test";
 

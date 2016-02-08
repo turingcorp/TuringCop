@@ -6,6 +6,7 @@
 
 -(instancetype)init:(cpages*)pages;
 -(void)taketest;
+-(void)creator;
 
 @property(weak, nonatomic)cpages *pages;
 
