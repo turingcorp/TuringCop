@@ -1,6 +1,6 @@
 # Xcode
 #
-turingcop/sourceteq/private/**
+TuringCop/sourceteq/private/**
 #
 build/
 *.pbxuser
