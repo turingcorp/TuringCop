@@ -25,6 +25,7 @@
     [button setTranslatesAutoresizingMaskIntoConstraints:NO];
     [button setTitleColor:[UIColor colorWithWhite:0 alpha:1] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithWhite:0 alpha:0.1] forState:UIControlStateHighlighted];
+    [button addTarget:self action:@selector(actiontest:) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:border];
     [self addSubview:button];

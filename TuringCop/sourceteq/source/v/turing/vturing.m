@@ -6,7 +6,7 @@
 {
     self = [super init:controller];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor blueColor]];
+    [self setBackgroundColor:[UIColor blackColor]];
     
     return self;
 }
