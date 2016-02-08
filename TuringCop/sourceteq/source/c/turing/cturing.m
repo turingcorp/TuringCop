@@ -11,4 +11,9 @@
     return self;
 }
 
+-(void)loadView
+{
+    self.view = [[vturing alloc] init:self];
+}
+
 @end

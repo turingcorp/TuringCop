@@ -15,6 +15,7 @@
 		DA8448791C6937DF007B634F /* cstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448781C6937DF007B634F /* cstatus.m */; };
 		DA84487D1C6938F1007B634F /* vstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84487C1C6938F1007B634F /* vstatus.m */; };
 		DA8448801C693B3D007B634F /* vstatusbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84487F1C693B3D007B634F /* vstatusbar.m */; };
+		DA8448841C694717007B634F /* vturing.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448831C694717007B634F /* vturing.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -56,6 +57,8 @@
 		DA84487C1C6938F1007B634F /* vstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstatus.m; sourceTree = "<group>"; };
 		DA84487E1C693B3D007B634F /* vstatusbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstatusbar.h; sourceTree = "<group>"; };
 		DA84487F1C693B3D007B634F /* vstatusbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstatusbar.m; sourceTree = "<group>"; };
+		DA8448821C694717007B634F /* vturing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vturing.h; sourceTree = "<group>"; };
+		DA8448831C694717007B634F /* vturing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vturing.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -198,6 +201,15 @@
 				DA84487F1C693B3D007B634F /* vstatusbar.m */,
 			);
 			path = status;
+			sourceTree = "<group>";
+		};
+		DA8448811C69470D007B634F /* turing */ = {
+			isa = PBXGroup;
+			children = (
+				DA8448821C694717007B634F /* vturing.h */,
+				DA8448831C694717007B634F /* vturing.m */,
+			);
+			path = turing;
 			sourceTree = "<group>";
 		};
 		DA97E3AE1C6920D90084FFDF /* db */ = {
@@ -383,6 +395,7 @@
 		DA97E3E71C6920D90084FFDF /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA8448811C69470D007B634F /* turing */,
 				DA84487A1C6938E6007B634F /* status */,
 				DA97E3E81C6920D90084FFDF /* alert */,
 				DA97E3EB1C6920D90084FFDF /* general */,
@@ -574,6 +587,7 @@
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
+				DA8448841C694717007B634F /* vturing.m in Sources */,
 				DA8448751C693547007B634F /* cturing.m in Sources */,
 				DA97E3FE1C6920D90084FFDF /* appdel.m in Sources */,
 				DA97E4091C6920D90084FFDF /* mdbcreate.m in Sources */,
