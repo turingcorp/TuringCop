@@ -1,13 +1,5 @@
-//
-//  cturing.h
-//  TuringCop
-//
-//  Created by zero on 2/8/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
-
-@interface cturing : NSObject
+@interface cturing:UIViewController
 
 @end
