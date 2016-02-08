@@ -5,6 +5,7 @@
 @interface cturing:UIViewController
 
 -(instancetype)init:(cpages*)pages;
+-(void)stoptest;
 
 @property(weak, nonatomic)cpages *pages;
 

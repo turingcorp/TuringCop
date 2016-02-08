@@ -8,27 +8,16 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor blackColor]];
     
-    UIView *border = [[UIView alloc] init];
-    [border setBackgroundColor:[UIColor whiteColor]];
-    [border setUserInteractionEnabled:NO];
-    [border setTranslatesAutoresizingMaskIntoConstraints:NO];
+    vturingbar *bar = [[vturingbar alloc] init:controller];
+    self.bar = bar;
     
-    UIButton *button = [[UIButton alloc] init];
-    [button setClipsToBounds:YES];
-    [button setTitle:NSLocalizedString(@"turing_stoptest", nil) forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithWhite:1 alpha:0.1] forState:UIControlStateHighlighted];
-    [button setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [button.titleLabel setFont:[UIFont fontWithName:fontname size:16]];
+    [self addSubview:bar];
     
-    [self addSubview:border];
-    [self addSubview:button];
-    
-    NSDictionary *views = @{@"border":border};
+    NSDictionary *views = @{@"bar":bar};
     NSDictionary *metrics = @{};
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[border]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[border(1)]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bar]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar(65)]" options:0 metrics:metrics views:views]];
     
     return self;
 }

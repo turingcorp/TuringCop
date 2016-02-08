@@ -16,4 +16,11 @@
     self.view = [[vturing alloc] init:self];
 }
 
+#pragma mark public
+
+-(void)stoptest
+{
+    [self.pages setViewControllers:@[[[cstatus alloc] init:self.pages]] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+}
+
 @end

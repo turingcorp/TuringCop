@@ -20,7 +20,7 @@
 
 -(void)taketest
 {
-    [self.pages setViewControllers:@[[[cturing alloc] init]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    [self.pages setViewControllers:@[[[cturing alloc] init:self.pages]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
 
 @end
