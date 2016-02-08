@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.release.xcconfig"; sourceTree = "<group>"; };
+		6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuringCop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		DA97E3F91C6920D90084FFDF /* v.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v.h; sourceTree = "<group>"; };
 		DA97E4131C6922C60084FFDF /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
 		DA97E4141C6922C60084FFDF /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
+		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +98,37 @@
 			files = (
 				DA97E4051C6920D90084FFDF /* libtimerbg.a in Frameworks */,
 				DA97E4041C6920D90084FFDF /* libdb.a in Frameworks */,
+				5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BDDA2FF0ABC300B58692F02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41FA4A905595E060F0C77DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */,
+				6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA020D5B1C691B9F000BF8A4 = {
 			isa = PBXGroup;
 			children = (
 				DA020D661C691B9F000BF8A4 /* TuringCop */,
 				DA020D651C691B9F000BF8A4 /* Products */,
+				41FA4A905595E060F0C77DB2 /* Pods */,
+				1BDDA2FF0ABC300B58692F02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,9 +396,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA020D7B1C691BA0000BF8A4 /* Build configuration list for PBXNativeTarget "TuringCop" */;
 			buildPhases = (
+				57877F8A13D4C98257865E31 /* Check Pods Manifest.lock */,
 				DA020D601C691B9F000BF8A4 /* Sources */,
 				DA020D611C691B9F000BF8A4 /* Frameworks */,
 				DA020D621C691B9F000BF8A4 /* Resources */,
+				FB93700615BF84386FE3C5FE /* Embed Pods Frameworks */,
+				7C071DB69283F3A934FA243F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,6 +458,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57877F8A13D4C98257865E31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C071DB69283F3A934FA243F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB93700615BF84386FE3C5FE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA020D601C691B9F000BF8A4 /* Sources */ = {
@@ -556,6 +631,7 @@
 		};
 		DA020D7C1C691BA0000BF8A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -570,6 +646,7 @@
 		};
 		DA020D7D1C691BA0000BF8A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
