@@ -2,4 +2,6 @@
 
 @interface cstatus:UIViewController
 
+-(void)taketest;
+
 @end

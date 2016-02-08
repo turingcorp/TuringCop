@@ -7,4 +7,11 @@
     self.view = [[vstatus alloc] init:self];
 }
 
+#pragma mark public
+
+-(void)taketest
+{
+    
+}
+
 @end

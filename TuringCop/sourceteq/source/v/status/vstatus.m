@@ -18,7 +18,7 @@
     [collection setAlwaysBounceVertical:YES];
     self.collection = collection;
 
-    vstatusbar *statusbar = [[vstatusbar alloc] init];
+    vstatusbar *statusbar = [[vstatusbar alloc] init:controller];
     self.statusbar = statusbar;
     
     [self addSubview:collection];

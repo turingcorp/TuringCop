@@ -1,5 +1,8 @@
 #import "appdel.h"
+#import "viewbase.h"
 
-@interface vstatusbar:UIView
+@interface vstatusbar:viewbase
+
+@property(weak, nonatomic)cstatus *controller;
 
 @end
