@@ -5,3 +5,4 @@
 #import "vratemenu.h"
 #import "vratemenucel.h"
 #import "vstatus.h"
+#import "vstatusbar.h"

@@ -14,6 +14,7 @@
 		DA8448751C693547007B634F /* cturing.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448741C693547007B634F /* cturing.m */; };
 		DA8448791C6937DF007B634F /* cstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448781C6937DF007B634F /* cstatus.m */; };
 		DA84487D1C6938F1007B634F /* vstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84487C1C6938F1007B634F /* vstatus.m */; };
+		DA8448801C693B3D007B634F /* vstatusbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84487F1C693B3D007B634F /* vstatusbar.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -53,6 +54,8 @@
 		DA8448781C6937DF007B634F /* cstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cstatus.m; sourceTree = "<group>"; };
 		DA84487B1C6938F1007B634F /* vstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstatus.h; sourceTree = "<group>"; };
 		DA84487C1C6938F1007B634F /* vstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstatus.m; sourceTree = "<group>"; };
+		DA84487E1C693B3D007B634F /* vstatusbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstatusbar.h; sourceTree = "<group>"; };
+		DA84487F1C693B3D007B634F /* vstatusbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstatusbar.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 			children = (
 				DA84487B1C6938F1007B634F /* vstatus.h */,
 				DA84487C1C6938F1007B634F /* vstatus.m */,
+				DA84487E1C693B3D007B634F /* vstatusbar.h */,
+				DA84487F1C693B3D007B634F /* vstatusbar.m */,
 			);
 			path = status;
 			sourceTree = "<group>";
@@ -562,6 +567,7 @@
 				DA84486D1C6926E7007B634F /* crate.m in Sources */,
 				DA97E40B1C6920D90084FFDF /* valert.m in Sources */,
 				DA97E40D1C6920D90084FFDF /* viewbase.m in Sources */,
+				DA8448801C693B3D007B634F /* vstatusbar.m in Sources */,
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
