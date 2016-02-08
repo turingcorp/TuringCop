@@ -639,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -654,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
