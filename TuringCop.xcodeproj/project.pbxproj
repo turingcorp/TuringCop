@@ -22,6 +22,8 @@
 		DA8448901C6950DF007B634F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA84488E1C6950DF007B634F /* Localizable.strings */; };
 		DA8448941C69525A007B634F /* ccreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448931C69525A007B634F /* ccreator.m */; };
 		DA8448981C6952D0007B634F /* vcreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448971C6952D0007B634F /* vcreator.m */; };
+		DA84489B1C695398007B634F /* vcreatorheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84489A1C695398007B634F /* vcreatorheader.m */; };
+		DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84489D1C6953A3007B634F /* vcreatorcel.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -75,6 +77,10 @@
 		DA8448931C69525A007B634F /* ccreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccreator.m; sourceTree = "<group>"; };
 		DA8448961C6952D0007B634F /* vcreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreator.h; sourceTree = "<group>"; };
 		DA8448971C6952D0007B634F /* vcreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreator.m; sourceTree = "<group>"; };
+		DA8448991C695398007B634F /* vcreatorheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatorheader.h; sourceTree = "<group>"; };
+		DA84489A1C695398007B634F /* vcreatorheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatorheader.m; sourceTree = "<group>"; };
+		DA84489C1C6953A3007B634F /* vcreatorcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatorcel.h; sourceTree = "<group>"; };
+		DA84489D1C6953A3007B634F /* vcreatorcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatorcel.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -246,6 +252,10 @@
 			children = (
 				DA8448961C6952D0007B634F /* vcreator.h */,
 				DA8448971C6952D0007B634F /* vcreator.m */,
+				DA8448991C695398007B634F /* vcreatorheader.h */,
+				DA84489A1C695398007B634F /* vcreatorheader.m */,
+				DA84489C1C6953A3007B634F /* vcreatorcel.h */,
+				DA84489D1C6953A3007B634F /* vcreatorcel.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -625,9 +635,11 @@
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
+				DA84489B1C695398007B634F /* vcreatorheader.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
 				DA8448841C694717007B634F /* vturing.m in Sources */,
+				DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */,
 				DA8448751C693547007B634F /* cturing.m in Sources */,
 				DA97E3FE1C6920D90084FFDF /* appdel.m in Sources */,
 				DA97E4091C6920D90084FFDF /* mdbcreate.m in Sources */,
