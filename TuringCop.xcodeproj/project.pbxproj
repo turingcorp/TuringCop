@@ -21,6 +21,7 @@
 		DA84488D1C6949DC007B634F /* vturingcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84488C1C6949DC007B634F /* vturingcel.m */; };
 		DA8448901C6950DF007B634F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA84488E1C6950DF007B634F /* Localizable.strings */; };
 		DA8448941C69525A007B634F /* ccreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448931C69525A007B634F /* ccreator.m */; };
+		DA8448981C6952D0007B634F /* vcreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448971C6952D0007B634F /* vcreator.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -72,6 +73,8 @@
 		DA84488F1C6950DF007B634F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA8448921C69525A007B634F /* ccreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccreator.h; sourceTree = "<group>"; };
 		DA8448931C69525A007B634F /* ccreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccreator.m; sourceTree = "<group>"; };
+		DA8448961C6952D0007B634F /* vcreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreator.h; sourceTree = "<group>"; };
+		DA8448971C6952D0007B634F /* vcreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreator.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -234,6 +237,15 @@
 			children = (
 				DA8448921C69525A007B634F /* ccreator.h */,
 				DA8448931C69525A007B634F /* ccreator.m */,
+			);
+			path = creator;
+			sourceTree = "<group>";
+		};
+		DA8448951C6952C5007B634F /* creator */ = {
+			isa = PBXGroup;
+			children = (
+				DA8448961C6952D0007B634F /* vcreator.h */,
+				DA8448971C6952D0007B634F /* vcreator.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -422,6 +434,7 @@
 		DA97E3E71C6920D90084FFDF /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA8448951C6952C5007B634F /* creator */,
 				DA8448811C69470D007B634F /* turing */,
 				DA84487A1C6938E6007B634F /* status */,
 				DA97E3E81C6920D90084FFDF /* alert */,
@@ -623,6 +636,7 @@
 				DA8448871C6949BF007B634F /* vturingbar.m in Sources */,
 				DA97E4021C6920D90084FFDF /* tools.m in Sources */,
 				DA97E4101C6920D90084FFDF /* vratemenu.m in Sources */,
+				DA8448981C6952D0007B634F /* vcreator.m in Sources */,
 				DA84488D1C6949DC007B634F /* vturingcel.m in Sources */,
 				DA97E40E1C6920D90084FFDF /* vspinner.m in Sources */,
 				DA84488A1C6949D2007B634F /* vturingheader.m in Sources */,
