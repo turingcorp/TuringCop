@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */; };
+		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -37,6 +38,8 @@
 		6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.release.xcconfig"; sourceTree = "<group>"; };
 		6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuringCop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
+		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 		DA97E3D51C6920D90084FFDF /* main */ = {
 			isa = PBXGroup;
 			children = (
+				DA84486B1C6926E7007B634F /* crate.h */,
+				DA84486C1C6926E7007B634F /* crate.m */,
 				DA97E3D61C6920D90084FFDF /* cmain.h */,
 				DA97E3D71C6920D90084FFDF /* cmain.m */,
 			);
@@ -515,6 +520,7 @@
 				DA97E40F1C6920D90084FFDF /* vrate.m in Sources */,
 				DA97E4061C6920D90084FFDF /* cmain.m in Sources */,
 				DA97E40A1C6920D90084FFDF /* mdirs.m in Sources */,
+				DA84486D1C6926E7007B634F /* crate.m in Sources */,
 				DA97E40B1C6920D90084FFDF /* valert.m in Sources */,
 				DA97E40D1C6920D90084FFDF /* viewbase.m in Sources */,
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
