@@ -24,6 +24,11 @@
 		DA8448981C6952D0007B634F /* vcreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448971C6952D0007B634F /* vcreator.m */; };
 		DA84489B1C695398007B634F /* vcreatorheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84489A1C695398007B634F /* vcreatorheader.m */; };
 		DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84489D1C6953A3007B634F /* vcreatorcel.m */; };
+		DA8448A11C695C7B007B634F /* vcreatorheadercel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448A01C695C7B007B634F /* vcreatorheadercel.m */; };
+		DA8448A51C695CF0007B634F /* mcreatorheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448A41C695CF0007B634F /* mcreatorheader.m */; };
+		DA8448A91C695D0D007B634F /* mcreatorheaderadd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448A81C695D0D007B634F /* mcreatorheaderadd.m */; };
+		DA8448AC1C695D1A007B634F /* mcreatorheaderexport.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448AB1C695D1A007B634F /* mcreatorheaderexport.m */; };
+		DA8448AF1C695D34007B634F /* mcreatorheaderclose.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -81,6 +86,17 @@
 		DA84489A1C695398007B634F /* vcreatorheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatorheader.m; sourceTree = "<group>"; };
 		DA84489C1C6953A3007B634F /* vcreatorcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatorcel.h; sourceTree = "<group>"; };
 		DA84489D1C6953A3007B634F /* vcreatorcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatorcel.m; sourceTree = "<group>"; };
+		DA84489F1C695C7B007B634F /* vcreatorheadercel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatorheadercel.h; sourceTree = "<group>"; };
+		DA8448A01C695C7B007B634F /* vcreatorheadercel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatorheadercel.m; sourceTree = "<group>"; };
+		DA8448A31C695CF0007B634F /* mcreatorheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheader.h; sourceTree = "<group>"; };
+		DA8448A41C695CF0007B634F /* mcreatorheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheader.m; sourceTree = "<group>"; };
+		DA8448A61C695CFC007B634F /* mcreatorheaderprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheaderprotocol.h; sourceTree = "<group>"; };
+		DA8448A71C695D0D007B634F /* mcreatorheaderadd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheaderadd.h; sourceTree = "<group>"; };
+		DA8448A81C695D0D007B634F /* mcreatorheaderadd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheaderadd.m; sourceTree = "<group>"; };
+		DA8448AA1C695D1A007B634F /* mcreatorheaderexport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheaderexport.h; sourceTree = "<group>"; };
+		DA8448AB1C695D1A007B634F /* mcreatorheaderexport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheaderexport.m; sourceTree = "<group>"; };
+		DA8448AD1C695D34007B634F /* mcreatorheaderclose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheaderclose.h; sourceTree = "<group>"; };
+		DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheaderclose.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -254,8 +270,26 @@
 				DA8448971C6952D0007B634F /* vcreator.m */,
 				DA8448991C695398007B634F /* vcreatorheader.h */,
 				DA84489A1C695398007B634F /* vcreatorheader.m */,
+				DA84489F1C695C7B007B634F /* vcreatorheadercel.h */,
+				DA8448A01C695C7B007B634F /* vcreatorheadercel.m */,
 				DA84489C1C6953A3007B634F /* vcreatorcel.h */,
 				DA84489D1C6953A3007B634F /* vcreatorcel.m */,
+			);
+			path = creator;
+			sourceTree = "<group>";
+		};
+		DA8448A21C695CDF007B634F /* creator */ = {
+			isa = PBXGroup;
+			children = (
+				DA8448A31C695CF0007B634F /* mcreatorheader.h */,
+				DA8448A41C695CF0007B634F /* mcreatorheader.m */,
+				DA8448A61C695CFC007B634F /* mcreatorheaderprotocol.h */,
+				DA8448A71C695D0D007B634F /* mcreatorheaderadd.h */,
+				DA8448A81C695D0D007B634F /* mcreatorheaderadd.m */,
+				DA8448AA1C695D1A007B634F /* mcreatorheaderexport.h */,
+				DA8448AB1C695D1A007B634F /* mcreatorheaderexport.m */,
+				DA8448AD1C695D34007B634F /* mcreatorheaderclose.h */,
+				DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -405,6 +439,7 @@
 		DA97E3DB1C6920D90084FFDF /* m */ = {
 			isa = PBXGroup;
 			children = (
+				DA8448A21C695CDF007B634F /* creator */,
 				DA97E3DC1C6920D90084FFDF /* db */,
 				DA97E3E11C6920D90084FFDF /* dirs */,
 				DA97E3E41C6920D90084FFDF /* general */,
@@ -626,19 +661,24 @@
 				DA97E40F1C6920D90084FFDF /* vrate.m in Sources */,
 				DA97E4061C6920D90084FFDF /* cmain.m in Sources */,
 				DA97E40A1C6920D90084FFDF /* mdirs.m in Sources */,
+				DA8448AF1C695D34007B634F /* mcreatorheaderclose.m in Sources */,
 				DA84486D1C6926E7007B634F /* crate.m in Sources */,
 				DA97E40B1C6920D90084FFDF /* valert.m in Sources */,
 				DA97E40D1C6920D90084FFDF /* viewbase.m in Sources */,
 				DA8448801C693B3D007B634F /* vstatusbar.m in Sources */,
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
+				DA8448A91C695D0D007B634F /* mcreatorheaderadd.m in Sources */,
 				DA8448941C69525A007B634F /* ccreator.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
 				DA84489B1C695398007B634F /* vcreatorheader.m in Sources */,
+				DA8448A11C695C7B007B634F /* vcreatorheadercel.m in Sources */,
+				DA8448AC1C695D1A007B634F /* mcreatorheaderexport.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
 				DA8448841C694717007B634F /* vturing.m in Sources */,
+				DA8448A51C695CF0007B634F /* mcreatorheader.m in Sources */,
 				DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */,
 				DA8448751C693547007B634F /* cturing.m in Sources */,
 				DA97E3FE1C6920D90084FFDF /* appdel.m in Sources */,
