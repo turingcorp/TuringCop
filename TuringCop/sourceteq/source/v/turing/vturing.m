@@ -8,6 +8,8 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor blackColor]];
     
+    
+    
     return self;
 }
 

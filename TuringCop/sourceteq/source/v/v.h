@@ -7,3 +7,4 @@
 #import "vstatus.h"
 #import "vstatusbar.h"
 #import "vturing.h"
+#import "vturingbar.h"
