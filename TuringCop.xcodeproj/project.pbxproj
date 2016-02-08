@@ -56,8 +56,6 @@
 		DA97E3CC1C6920D90084FFDF /* timerbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timerbg.h; sourceTree = "<group>"; };
 		DA97E3CD1C6920D90084FFDF /* libdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdb.a; sourceTree = "<group>"; };
 		DA97E3CE1C6920D90084FFDF /* libtimerbg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtimerbg.a; sourceTree = "<group>"; };
-		DA97E3D01C6920D90084FFDF /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
-		DA97E3D11C6920D90084FFDF /* privateconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privateconstants.h; sourceTree = "<group>"; };
 		DA97E3D41C6920D90084FFDF /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
 		DA97E3D61C6920D90084FFDF /* cmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmain.h; sourceTree = "<group>"; };
 		DA97E3D71C6920D90084FFDF /* cmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmain.m; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				DA97E3C81C6920D90084FFDF /* lib */,
 				DA97E3CD1C6920D90084FFDF /* libdb.a */,
 				DA97E3CE1C6920D90084FFDF /* libtimerbg.a */,
-				DA97E3CF1C6920D90084FFDF /* private */,
 				DA97E3D21C6920D90084FFDF /* source */,
 			);
 			path = sourceteq;
@@ -232,15 +229,6 @@
 				DA97E3CC1C6920D90084FFDF /* timerbg.h */,
 			);
 			path = timerbg;
-			sourceTree = "<group>";
-		};
-		DA97E3CF1C6920D90084FFDF /* private */ = {
-			isa = PBXGroup;
-			children = (
-				DA97E3D01C6920D90084FFDF /* private.h */,
-				DA97E3D11C6920D90084FFDF /* privateconstants.h */,
-			);
-			path = private;
 			sourceTree = "<group>";
 		};
 		DA97E3D21C6920D90084FFDF /* source */ = {
