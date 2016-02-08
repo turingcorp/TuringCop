@@ -2,3 +2,8 @@
 #import "mdirs.h"
 #import "mdb.h"
 #import "mdbcreate.h"
+#import "mcreatorheader.h"
+#import "mcreatorheaderprotocol.h"
+#import "mcreatorheaderadd.h"
+#import "mcreatorheaderexport.h"
+#import "mcreatorheaderclose.h"
