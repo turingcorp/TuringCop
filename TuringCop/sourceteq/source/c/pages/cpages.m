@@ -8,6 +8,7 @@
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    [self setViewControllers:@[[[cstatus alloc] init]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     return self;
 }

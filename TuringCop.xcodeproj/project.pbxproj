@@ -13,6 +13,7 @@
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
 		DA8448751C693547007B634F /* cturing.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448741C693547007B634F /* cturing.m */; };
 		DA8448791C6937DF007B634F /* cstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448781C6937DF007B634F /* cstatus.m */; };
+		DA84487D1C6938F1007B634F /* vstatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84487C1C6938F1007B634F /* vstatus.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -50,6 +51,8 @@
 		DA8448741C693547007B634F /* cturing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cturing.m; sourceTree = "<group>"; };
 		DA8448771C6937DF007B634F /* cstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstatus.h; sourceTree = "<group>"; };
 		DA8448781C6937DF007B634F /* cstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cstatus.m; sourceTree = "<group>"; };
+		DA84487B1C6938F1007B634F /* vstatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstatus.h; sourceTree = "<group>"; };
+		DA84487C1C6938F1007B634F /* vstatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstatus.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -179,6 +182,15 @@
 			children = (
 				DA8448771C6937DF007B634F /* cstatus.h */,
 				DA8448781C6937DF007B634F /* cstatus.m */,
+			);
+			path = status;
+			sourceTree = "<group>";
+		};
+		DA84487A1C6938E6007B634F /* status */ = {
+			isa = PBXGroup;
+			children = (
+				DA84487B1C6938F1007B634F /* vstatus.h */,
+				DA84487C1C6938F1007B634F /* vstatus.m */,
 			);
 			path = status;
 			sourceTree = "<group>";
@@ -366,6 +378,7 @@
 		DA97E3E71C6920D90084FFDF /* v */ = {
 			isa = PBXGroup;
 			children = (
+				DA84487A1C6938E6007B634F /* status */,
 				DA97E3E81C6920D90084FFDF /* alert */,
 				DA97E3EB1C6920D90084FFDF /* general */,
 				DA97E3F21C6920D90084FFDF /* main */,
@@ -552,6 +565,7 @@
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
+				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
 				DA8448751C693547007B634F /* cturing.m in Sources */,
