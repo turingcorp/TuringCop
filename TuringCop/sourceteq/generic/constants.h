@@ -5,8 +5,8 @@
 
 // font
 
-#define fontname                @"HelveticaNeue-Light"
-#define fontboldname            @"HelveticaNeue-Medium"
+#define fontname                @"Menlo-Regular"
+#define fontboldname            @"Menlo-Bold"
 
 // ids
 
@@ -15,12 +15,6 @@
 #define headerid                @"header"
 
 // notifications
-
-#define notreloadpics           @"reloadpics"
-#define notrefrespic            @"refreshpic"
-#define notwritingbusy          @"writingbusy"
-#define notwritingfree          @"writingfree"
-#define notreloadisos           @"reloadisos"
 
 // extra
 

@@ -11,17 +11,9 @@
     return single;
 }
 
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
 -(instancetype)init
 {
     self = [super initWithRootViewController:[[cpages alloc] init]];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedwritingbusy:) name:notwritingbusy object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedwritingfree:) name:notwritingfree object:nil];
     
     return self;
 }
