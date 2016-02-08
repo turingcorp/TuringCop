@@ -22,6 +22,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSNumber *ttl = [defaults valueForKey:@"ttl"];
     
+    /*
     if(ttl)
     {
         NSUInteger ttlint = ttl.unsignedIntegerValue;
@@ -42,7 +43,7 @@
         {
             [defaults setValue:@(ttlint + 1) forKey:@"ttl"];
         }
-    }
+    }*/
 }
 
 @end
