@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
+		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
+		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -40,6 +42,8 @@
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
+		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA8448701C692CBB007B634F /* in */ = {isa = PBXFileReference; lastKnownFileType = folder; path = in; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				DA97E3B01C6920D90084FFDF /* imateq */,
 				DA97E3B31C6920D90084FFDF /* langteq */,
 				DA97E3B91C6920D90084FFDF /* sourceteq */,
+				DA84486E1C692C58007B634F /* Images.xcassets */,
 			);
 			path = TuringCop;
 			sourceTree = "<group>";
@@ -165,17 +170,10 @@
 		DA97E3B01C6920D90084FFDF /* imateq */ = {
 			isa = PBXGroup;
 			children = (
-				DA97E3B11C6920D90084FFDF /* in */,
+				DA8448701C692CBB007B634F /* in */,
 				DA97E3B21C6920D90084FFDF /* ui */,
 			);
 			path = imateq;
-			sourceTree = "<group>";
-		};
-		DA97E3B11C6920D90084FFDF /* in */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = in;
 			sourceTree = "<group>";
 		};
 		DA97E3B21C6920D90084FFDF /* ui */ = {
@@ -456,9 +454,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */,
+				DA84486F1C692C58007B634F /* Images.xcassets in Resources */,
 				DA97E3FD1C6920D90084FFDF /* Localizable.strings in Resources */,
 				DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */,
 				DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */,
+				DA8448711C692CBB007B634F /* in in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +639,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +658,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TuringCop/sourceteq/core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
