@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     [self.navigationBar setBackgroundColor:[UIColor blackColor]];
-    [self.navigationBar setBarTintColor:[UIColor colorWithWhite:0.3 alpha:1]];
+    [self.navigationBar setBarTintColor:[UIColor colorWithWhite:0.2 alpha:1]];
     [self.navigationBar setTintColor:colormain];
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:16], NSForegroundColorAttributeName:colormain}];
     [self.navigationBar setTranslucent:NO];
