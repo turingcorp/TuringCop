@@ -4,7 +4,7 @@
 
 -(void)loadView
 {
-    self.view = 
+    self.view = [[vstatus alloc] init:self];
 }
 
 @end
