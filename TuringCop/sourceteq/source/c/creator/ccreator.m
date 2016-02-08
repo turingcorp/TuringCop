@@ -11,4 +11,9 @@
     return self;
 }
 
+-(void)loadView
+{
+    self.view = [[vcreator alloc] init:self];
+}
+
 @end
