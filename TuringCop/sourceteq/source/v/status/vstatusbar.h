@@ -1,5 +1,5 @@
 #import "appdel.h"
 
-@interface vstatusbar : NSObject
+@interface vstatusbar:UIView
 
 @end
