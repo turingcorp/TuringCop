@@ -8,12 +8,6 @@ NSString *documents;
 {
     [[analytics singleton] start];
     [updater update];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
-                   ^
-                   {
-                       [[mcamsettings singleton] refresh];
-                   });
 }
 
 #pragma mark private
@@ -56,8 +50,6 @@ NSString *documents;
     [userdef setValue:[[NSUUID UUID] UUIDString] forKey:@"uuid"];
     [userdef setValue:dictionary forKey:@"settings"];
     [userdef synchronize];
-    
-    [[mpic singleton] firsttime];
 }
 
 @end
