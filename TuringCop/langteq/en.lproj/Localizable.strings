@@ -4,6 +4,8 @@
 
 "turing_stoptest"="Stop test";
 
+"creator_button_new"="New test";
+
 "rate_descr"="How would you rate this app?";
 "rate_donereview"="Rate sent. Would you write a review in the app store?";
 "rate_send"="Send";
