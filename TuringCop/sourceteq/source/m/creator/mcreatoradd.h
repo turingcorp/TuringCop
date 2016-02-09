@@ -10,6 +10,8 @@
 -(NSUInteger)count;
 -(mcreatoradditem*)item:(NSUInteger)index;
 -(void)add:(mcreatoradditem*)item;
+-(void)additem;
+-(void)remove:(NSUInteger)index;
 
 @property(strong, nonatomic)mcreatoraddtitle *title;
 @property(strong, nonatomic)id<mcreatoraddtypeprotocol> type;

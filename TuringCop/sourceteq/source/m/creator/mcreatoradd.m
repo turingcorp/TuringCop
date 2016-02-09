@@ -24,7 +24,7 @@
     
     for(NSUInteger i = 0; i < previous; i++)
     {
-        [self add:[type itemtype]];
+        [self additem];
     }
 }
 
@@ -45,6 +45,16 @@
 -(void)add:(mcreatoradditem*)item
 {
     [self.array addObject:item];
+}
+
+-(void)additem
+{
+    [self add:[self.type itemtype]];
+}
+
+-(void)remove:(NSUInteger)index
+{
+    [self.array removeObjectAtIndex:index];
 }
 
 @end
