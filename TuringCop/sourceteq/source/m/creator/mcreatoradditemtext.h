@@ -1,13 +1,6 @@
-//
-//  mcreatoradditemtext.h
-//  TuringCop
-//
-//  Created by zero on 2/9/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "mcreatoradditem.h"
 
-#import <Foundation/Foundation.h>
-
-@interface mcreatoradditemtext : NSObject
+@interface mcreatoradditemtext:mcreatoradditem
 
 @end
