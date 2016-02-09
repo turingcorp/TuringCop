@@ -4,5 +4,6 @@
 
 @property(weak, nonatomic)UITextField *field;
 @property(weak, nonatomic)UIStepper *stepper;
+@property(weak, nonatomic)UILabel *labelstepper;
 
 @end
