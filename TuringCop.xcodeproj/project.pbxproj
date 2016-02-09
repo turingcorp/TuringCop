@@ -20,6 +20,10 @@
 		DA0156951C6A2BA200FAC166 /* vcreatoraddcelimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156941C6A2BA200FAC166 /* vcreatoraddcelimage.m */; };
 		DA0156981C6A2BAD00FAC166 /* vcreatoraddcelnumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156971C6A2BAD00FAC166 /* vcreatoraddcelnumber.m */; };
 		DA01569B1C6A2E3500FAC166 /* vcreatoraddfooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01569A1C6A2E3500FAC166 /* vcreatoraddfooter.m */; };
+		DA01569F1C6A300D00FAC166 /* mcreatoraddtypetext.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01569E1C6A300D00FAC166 /* mcreatoraddtypetext.m */; };
+		DA0156A21C6A303A00FAC166 /* mcreatoraddtypecolor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156A11C6A303A00FAC166 /* mcreatoraddtypecolor.m */; };
+		DA0156A51C6A308D00FAC166 /* mcreatoraddtypeimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156A41C6A308D00FAC166 /* mcreatoraddtypeimage.m */; };
+		DA0156A81C6A309F00FAC166 /* mcreatoraddtypenumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156A71C6A309F00FAC166 /* mcreatoraddtypenumber.m */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
@@ -96,6 +100,15 @@
 		DA0156971C6A2BAD00FAC166 /* vcreatoraddcelnumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddcelnumber.m; sourceTree = "<group>"; };
 		DA0156991C6A2E3500FAC166 /* vcreatoraddfooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoraddfooter.h; sourceTree = "<group>"; };
 		DA01569A1C6A2E3500FAC166 /* vcreatoraddfooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddfooter.m; sourceTree = "<group>"; };
+		DA01569C1C6A2FAB00FAC166 /* mcreatoraddtypeprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoraddtypeprotocol.h; sourceTree = "<group>"; };
+		DA01569D1C6A300D00FAC166 /* mcreatoraddtypetext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoraddtypetext.h; sourceTree = "<group>"; };
+		DA01569E1C6A300D00FAC166 /* mcreatoraddtypetext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoraddtypetext.m; sourceTree = "<group>"; };
+		DA0156A01C6A303A00FAC166 /* mcreatoraddtypecolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoraddtypecolor.h; sourceTree = "<group>"; };
+		DA0156A11C6A303A00FAC166 /* mcreatoraddtypecolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoraddtypecolor.m; sourceTree = "<group>"; };
+		DA0156A31C6A308D00FAC166 /* mcreatoraddtypeimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoraddtypeimage.h; sourceTree = "<group>"; };
+		DA0156A41C6A308D00FAC166 /* mcreatoraddtypeimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoraddtypeimage.m; sourceTree = "<group>"; };
+		DA0156A61C6A309F00FAC166 /* mcreatoraddtypenumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoraddtypenumber.h; sourceTree = "<group>"; };
+		DA0156A71C6A309F00FAC166 /* mcreatoraddtypenumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoraddtypenumber.m; sourceTree = "<group>"; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
@@ -358,6 +371,9 @@
 				DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */,
 				DA8448B31C696F8B007B634F /* mcreatoradd.h */,
 				DA8448B41C696F8B007B634F /* mcreatoradd.m */,
+				DA01569C1C6A2FAB00FAC166 /* mcreatoraddtypeprotocol.h */,
+				DA01569D1C6A300D00FAC166 /* mcreatoraddtypetext.h */,
+				DA01569E1C6A300D00FAC166 /* mcreatoraddtypetext.m */,
 				DA8448B61C696FDA007B634F /* mcreatoraddtitle.h */,
 				DA8448B71C696FDA007B634F /* mcreatoraddtitle.m */,
 				DA8448B91C696FE6007B634F /* mcreatoradditem.h */,
@@ -370,6 +386,12 @@
 				DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */,
 				DA0156811C6A26E200FAC166 /* mcreatoradditemnumber.h */,
 				DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */,
+				DA0156A01C6A303A00FAC166 /* mcreatoraddtypecolor.h */,
+				DA0156A11C6A303A00FAC166 /* mcreatoraddtypecolor.m */,
+				DA0156A31C6A308D00FAC166 /* mcreatoraddtypeimage.h */,
+				DA0156A41C6A308D00FAC166 /* mcreatoraddtypeimage.m */,
+				DA0156A61C6A309F00FAC166 /* mcreatoraddtypenumber.h */,
+				DA0156A71C6A309F00FAC166 /* mcreatoraddtypenumber.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -740,6 +762,7 @@
 			files = (
 				DA97E40F1C6920D90084FFDF /* vrate.m in Sources */,
 				DA0156801C6A26D700FAC166 /* mcreatoradditemimage.m in Sources */,
+				DA0156A51C6A308D00FAC166 /* mcreatoraddtypeimage.m in Sources */,
 				DA0156921C6A2B9500FAC166 /* vcreatoraddcelcolor.m in Sources */,
 				DA8448B81C696FDA007B634F /* mcreatoraddtitle.m in Sources */,
 				DA97E4061C6920D90084FFDF /* cmain.m in Sources */,
@@ -754,7 +777,9 @@
 				DA8448B51C696F8B007B634F /* mcreatoradd.m in Sources */,
 				DA8448801C693B3D007B634F /* vstatusbar.m in Sources */,
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
+				DA0156A81C6A309F00FAC166 /* mcreatoraddtypenumber.m in Sources */,
 				DA8448A91C695D0D007B634F /* mcreatorheaderadd.m in Sources */,
+				DA01569F1C6A300D00FAC166 /* mcreatoraddtypetext.m in Sources */,
 				DA8448941C69525A007B634F /* ccreator.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA8448B21C69699A007B634F /* ccreatoradd.m in Sources */,
@@ -775,6 +800,7 @@
 				DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */,
 				DA8448751C693547007B634F /* cturing.m in Sources */,
 				DA97E3FE1C6920D90084FFDF /* appdel.m in Sources */,
+				DA0156A21C6A303A00FAC166 /* mcreatoraddtypecolor.m in Sources */,
 				DA97E4091C6920D90084FFDF /* mdbcreate.m in Sources */,
 				DA97E4011C6920D90084FFDF /* analytics.m in Sources */,
 				DA97E40C1C6920D90084FFDF /* vblur.m in Sources */,

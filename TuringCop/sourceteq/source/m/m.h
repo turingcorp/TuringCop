@@ -8,6 +8,7 @@
 #import "mcreatorheaderexport.h"
 #import "mcreatorheaderclose.h"
 #import "mcreatoradd.h"
+#import "mcreatoraddtypeprotocol.h"
 #import "mcreatoraddtitle.h"
 #import "mcreatoradditemtext.h"
 #import "mcreatoradditemcolor.h"
