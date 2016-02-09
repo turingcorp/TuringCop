@@ -8,6 +8,8 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor clearColor]];
     
+    self.model = [[mcreatorheader alloc] init];
+    
     UIButton *button = [[UIButton alloc] init];
     [button setTranslatesAutoresizingMaskIntoConstraints:NO];
     [button setClipsToBounds:YES];
@@ -30,11 +32,26 @@
     return self;
 }
 
-#pragma mark actions
+#pragma mark -
+#pragma mark col del
 
--(void)actionbutton:(UIButton*)button
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
+{
+    NSUInteger count = [self.model count];
     
+    return count;
+}
+
+-(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
+{
+    vcreatorheadercel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    
+    return cel;
 }
 
 @end
