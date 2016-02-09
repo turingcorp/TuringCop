@@ -16,4 +16,11 @@
     self.view = [[vcreator alloc] init:self];
 }
 
+#pragma mark public
+
+-(void)status
+{
+    [self.pages setViewControllers:@[[[cstatus alloc] init:self.pages]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+}
+
 @end
