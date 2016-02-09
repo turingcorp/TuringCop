@@ -1,13 +1,14 @@
-//
-//  vcreatoraddheader.m
-//  TuringCop
-//
-//  Created by zero on 2/9/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
-
 #import "vcreatoraddheader.h"
 
 @implementation vcreatoraddheader
+
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    [self setClipsToBounds:YES];
+    [self setBackgroundColor:[UIColor clearColor]];
+    
+    return self;
+}
 
 @end
