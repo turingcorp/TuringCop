@@ -7,3 +7,6 @@
 #import "mcreatorheaderadd.h"
 #import "mcreatorheaderexport.h"
 #import "mcreatorheaderclose.h"
+#import "mcreatoradd.h"
+#import "mcreatoraddtitle.h"
+#import "mcreatoradditem.h"
