@@ -11,7 +11,7 @@
 
 -(void)action:(ccreator*)controller
 {
-    
+    [controller add];
 }
 
 @end

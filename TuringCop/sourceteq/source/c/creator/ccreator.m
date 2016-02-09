@@ -23,4 +23,9 @@
     [self.pages setViewControllers:@[[[cstatus alloc] init:self.pages]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
 }
 
+-(void)add
+{
+    [self.navigationController pushViewController:[[ccreatoradd alloc] init] animated:YES];
+}
+
 @end

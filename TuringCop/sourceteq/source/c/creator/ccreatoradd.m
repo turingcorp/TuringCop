@@ -12,6 +12,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTitle:NSLocalizedString(@"creatoradd_title", nil)];
 }
 
 -(void)viewWillAppear:(BOOL)animated
