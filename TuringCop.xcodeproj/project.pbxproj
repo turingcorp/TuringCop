@@ -13,6 +13,8 @@
 		DA0156801C6A26D700FAC166 /* mcreatoradditemimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */; };
 		DA0156831C6A26E200FAC166 /* mcreatoradditemnumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */; };
 		DA0156861C6A27F800FAC166 /* vcreatoradd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156851C6A27F800FAC166 /* vcreatoradd.m */; };
+		DA0156891C6A2B5700FAC166 /* vcreatoraddheader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156881C6A2B5700FAC166 /* vcreatoraddheader.m */; };
+		DA01568C1C6A2B6000FAC166 /* vcreatoraddcel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01568B1C6A2B6000FAC166 /* vcreatoraddcel.m */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
@@ -75,6 +77,10 @@
 		DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemnumber.m; sourceTree = "<group>"; };
 		DA0156841C6A27F800FAC166 /* vcreatoradd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoradd.h; sourceTree = "<group>"; };
 		DA0156851C6A27F800FAC166 /* vcreatoradd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoradd.m; sourceTree = "<group>"; };
+		DA0156871C6A2B5700FAC166 /* vcreatoraddheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoraddheader.h; sourceTree = "<group>"; };
+		DA0156881C6A2B5700FAC166 /* vcreatoraddheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddheader.m; sourceTree = "<group>"; };
+		DA01568A1C6A2B6000FAC166 /* vcreatoraddcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoraddcel.h; sourceTree = "<group>"; };
+		DA01568B1C6A2B6000FAC166 /* vcreatoraddcel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddcel.m; sourceTree = "<group>"; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
@@ -305,6 +311,10 @@
 				DA84489D1C6953A3007B634F /* vcreatorcel.m */,
 				DA0156841C6A27F800FAC166 /* vcreatoradd.h */,
 				DA0156851C6A27F800FAC166 /* vcreatoradd.m */,
+				DA0156871C6A2B5700FAC166 /* vcreatoraddheader.h */,
+				DA0156881C6A2B5700FAC166 /* vcreatoraddheader.m */,
+				DA01568A1C6A2B6000FAC166 /* vcreatoraddcel.h */,
+				DA01568B1C6A2B6000FAC166 /* vcreatoraddcel.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -713,6 +723,7 @@
 				DA97E40B1C6920D90084FFDF /* valert.m in Sources */,
 				DA8448BB1C696FE6007B634F /* mcreatoradditem.m in Sources */,
 				DA97E40D1C6920D90084FFDF /* viewbase.m in Sources */,
+				DA01568C1C6A2B6000FAC166 /* vcreatoraddcel.m in Sources */,
 				DA8448B51C696F8B007B634F /* mcreatoradd.m in Sources */,
 				DA8448801C693B3D007B634F /* vstatusbar.m in Sources */,
 				DA97E4001C6920D90084FFDF /* main.m in Sources */,
@@ -729,6 +740,7 @@
 				DA8448A11C695C7B007B634F /* vcreatorheadercel.m in Sources */,
 				DA8448AC1C695D1A007B634F /* mcreatorheaderexport.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
+				DA0156891C6A2B5700FAC166 /* vcreatoraddheader.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
 				DA0156831C6A26E200FAC166 /* mcreatoradditemnumber.m in Sources */,
 				DA8448841C694717007B634F /* vturing.m in Sources */,
