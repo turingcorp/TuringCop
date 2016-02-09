@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */; };
+		DA01567A1C6A26C400FAC166 /* mcreatoradditemtext.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156791C6A26C400FAC166 /* mcreatoradditemtext.m */; };
+		DA01567D1C6A26CE00FAC166 /* mcreatoradditemcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01567C1C6A26CE00FAC166 /* mcreatoradditemcolor.m */; };
+		DA0156801C6A26D700FAC166 /* mcreatoradditemimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */; };
+		DA0156831C6A26E200FAC166 /* mcreatoradditemnumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
@@ -60,6 +64,14 @@
 /* Begin PBXFileReference section */
 		6A1C7E1967ABA1D73AAC0B0B /* Pods-TuringCop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.release.xcconfig"; sourceTree = "<group>"; };
 		6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuringCop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0156781C6A26C400FAC166 /* mcreatoradditemtext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoradditemtext.h; sourceTree = "<group>"; };
+		DA0156791C6A26C400FAC166 /* mcreatoradditemtext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemtext.m; sourceTree = "<group>"; };
+		DA01567B1C6A26CE00FAC166 /* mcreatoradditemcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoradditemcolor.h; sourceTree = "<group>"; };
+		DA01567C1C6A26CE00FAC166 /* mcreatoradditemcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemcolor.m; sourceTree = "<group>"; };
+		DA01567E1C6A26D700FAC166 /* mcreatoradditemimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoradditemimage.h; sourceTree = "<group>"; };
+		DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemimage.m; sourceTree = "<group>"; };
+		DA0156811C6A26E200FAC166 /* mcreatoradditemnumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoradditemnumber.h; sourceTree = "<group>"; };
+		DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemnumber.m; sourceTree = "<group>"; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
@@ -310,6 +322,14 @@
 				DA8448B71C696FDA007B634F /* mcreatoraddtitle.m */,
 				DA8448B91C696FE6007B634F /* mcreatoradditem.h */,
 				DA8448BA1C696FE6007B634F /* mcreatoradditem.m */,
+				DA0156781C6A26C400FAC166 /* mcreatoradditemtext.h */,
+				DA0156791C6A26C400FAC166 /* mcreatoradditemtext.m */,
+				DA01567B1C6A26CE00FAC166 /* mcreatoradditemcolor.h */,
+				DA01567C1C6A26CE00FAC166 /* mcreatoradditemcolor.m */,
+				DA01567E1C6A26D700FAC166 /* mcreatoradditemimage.h */,
+				DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */,
+				DA0156811C6A26E200FAC166 /* mcreatoradditemnumber.h */,
+				DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -679,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA97E40F1C6920D90084FFDF /* vrate.m in Sources */,
+				DA0156801C6A26D700FAC166 /* mcreatoradditemimage.m in Sources */,
 				DA8448B81C696FDA007B634F /* mcreatoraddtitle.m in Sources */,
 				DA97E4061C6920D90084FFDF /* cmain.m in Sources */,
 				DA97E40A1C6920D90084FFDF /* mdirs.m in Sources */,
@@ -694,13 +715,16 @@
 				DA8448941C69525A007B634F /* ccreator.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
 				DA8448B21C69699A007B634F /* ccreatoradd.m in Sources */,
+				DA01567D1C6A26CE00FAC166 /* mcreatoradditemcolor.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
+				DA01567A1C6A26C400FAC166 /* mcreatoradditemtext.m in Sources */,
 				DA84489B1C695398007B634F /* vcreatorheader.m in Sources */,
 				DA8448A11C695C7B007B634F /* vcreatorheadercel.m in Sources */,
 				DA8448AC1C695D1A007B634F /* mcreatorheaderexport.m in Sources */,
 				DA97E4071C6920D90084FFDF /* cpages.m in Sources */,
 				DA97E4081C6920D90084FFDF /* mdb.m in Sources */,
+				DA0156831C6A26E200FAC166 /* mcreatoradditemnumber.m in Sources */,
 				DA8448841C694717007B634F /* vturing.m in Sources */,
 				DA8448A51C695CF0007B634F /* mcreatorheader.m in Sources */,
 				DA84489E1C6953A3007B634F /* vcreatorcel.m in Sources */,
