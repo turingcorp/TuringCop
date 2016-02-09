@@ -1,13 +1,6 @@
-//
-//  vcreatoraddcelcolor.h
-//  TuringCop
-//
-//  Created by zero on 2/9/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "vcreatoraddcel.h"
 
-#import <Foundation/Foundation.h>
-
-@interface vcreatoraddcelcolor : NSObject
+@interface vcreatoraddcelcolor:vcreatoraddcel
 
 @end
