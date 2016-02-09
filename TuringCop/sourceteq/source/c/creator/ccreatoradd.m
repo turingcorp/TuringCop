@@ -21,4 +21,9 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+-(void)loadView
+{
+    self.view = [[vcreatoradd alloc] init:self];
+}
+
 @end
