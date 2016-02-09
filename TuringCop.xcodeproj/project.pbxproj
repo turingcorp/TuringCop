@@ -374,6 +374,12 @@
 				DA01569C1C6A2FAB00FAC166 /* mcreatoraddtypeprotocol.h */,
 				DA01569D1C6A300D00FAC166 /* mcreatoraddtypetext.h */,
 				DA01569E1C6A300D00FAC166 /* mcreatoraddtypetext.m */,
+				DA0156A01C6A303A00FAC166 /* mcreatoraddtypecolor.h */,
+				DA0156A11C6A303A00FAC166 /* mcreatoraddtypecolor.m */,
+				DA0156A31C6A308D00FAC166 /* mcreatoraddtypeimage.h */,
+				DA0156A41C6A308D00FAC166 /* mcreatoraddtypeimage.m */,
+				DA0156A61C6A309F00FAC166 /* mcreatoraddtypenumber.h */,
+				DA0156A71C6A309F00FAC166 /* mcreatoraddtypenumber.m */,
 				DA8448B61C696FDA007B634F /* mcreatoraddtitle.h */,
 				DA8448B71C696FDA007B634F /* mcreatoraddtitle.m */,
 				DA8448B91C696FE6007B634F /* mcreatoradditem.h */,
@@ -386,12 +392,6 @@
 				DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */,
 				DA0156811C6A26E200FAC166 /* mcreatoradditemnumber.h */,
 				DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */,
-				DA0156A01C6A303A00FAC166 /* mcreatoraddtypecolor.h */,
-				DA0156A11C6A303A00FAC166 /* mcreatoraddtypecolor.m */,
-				DA0156A31C6A308D00FAC166 /* mcreatoraddtypeimage.h */,
-				DA0156A41C6A308D00FAC166 /* mcreatoraddtypeimage.m */,
-				DA0156A61C6A309F00FAC166 /* mcreatoraddtypenumber.h */,
-				DA0156A71C6A309F00FAC166 /* mcreatoraddtypenumber.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";

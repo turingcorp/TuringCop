@@ -8,6 +8,7 @@
     
     self.title = [[mcreatoraddtitle alloc] init];
     self.array = [NSMutableArray array];
+    self.type = [[mcreatoraddtypetext alloc] init];
     
     return self;
 }
