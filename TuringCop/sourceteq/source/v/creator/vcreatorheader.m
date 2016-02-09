@@ -10,18 +10,7 @@
     
     self.model = [[mcreatorheader alloc] init];
     
-    UIButton *button = [[UIButton alloc] init];
-    [button setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [button setClipsToBounds:YES];
-    [button setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.5]];
-    [button.layer setCornerRadius:4];
-    [button setTitle:NSLocalizedString(@"creator_button_new", nil) forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithWhite:0 alpha:0.7] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithWhite:0 alpha:0.1] forState:UIControlStateHighlighted];
-    [button.titleLabel setFont:[UIFont fontWithName:fontname size:15]];
-    [button addTarget:self action:@selector(actionbutton:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self addSubview:button];
+    UICollectionViewFlowLayout *flow
     
     NSDictionary *views = @{@"button":button};
     NSDictionary *metrics = @{};
@@ -50,6 +39,7 @@
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
     vcreatorheadercel *cel = [col dequeueReusableCellWithReuseIdentifier:celid forIndexPath:index];
+    [cel config:[self.model item:index.item]];
     
     return cel;
 }
