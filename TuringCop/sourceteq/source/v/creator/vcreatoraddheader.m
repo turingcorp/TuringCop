@@ -82,6 +82,23 @@
 -(void)actionstepper:(UIStepper*)stepper
 {
     [self print];
+    
+    NSUInteger stepperval = stepper.value;
+    NSUInteger modelval = [self.creatoradd.model count];
+    
+    if(stepperval > modelval)
+    {
+        [self.creatoradd.model additem];
+    }
+    else if(stepperval < modelval)
+    {
+        if(modelval)
+        {
+            [self.creatoradd.model removelast];
+        }
+    }
+    
+    [self.creatoradd reload];
 }
 
 #pragma mark functionality

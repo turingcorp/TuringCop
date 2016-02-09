@@ -41,6 +41,13 @@
     return self;
 }
 
+#pragma mark public
+
+-(void)reload
+{
+    [self.collection reloadData];
+}
+
 #pragma mark -
 #pragma mark col del
 
@@ -84,6 +91,7 @@
     if(kind == UICollectionElementKindSectionHeader)
     {
         reusable = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerid forIndexPath:index];
+        ((vcreatoraddheader*)reusable).creatoradd = self;
     }
     else
     {

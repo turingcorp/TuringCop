@@ -5,6 +5,8 @@
 
 @interface vcreatoradd:viewbase<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
+-(void)reload;
+
 @property(strong, nonatomic)mcreatoradd *model;
 @property(weak, nonatomic)UICollectionView *collection;
 
