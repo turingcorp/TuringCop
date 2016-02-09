@@ -6,6 +6,7 @@
 
 @interface mcreatoradd:NSObject
 
+-(void)changetype:(id<mcreatoraddtypeprotocol>)type;
 -(NSUInteger)count;
 -(mcreatoradditem*)item:(NSUInteger)index;
 -(void)add:(mcreatoradditem*)item;

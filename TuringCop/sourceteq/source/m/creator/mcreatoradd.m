@@ -15,6 +15,19 @@
 
 #pragma mark public
 
+-(void)changetype:(id<mcreatoraddtypeprotocol>)type
+{
+    self.type = type;
+    
+    NSUInteger previous = [self count];
+    self.array = [NSMutableArray array];
+    
+    for(NSUInteger i = 0; i < previous; i++)
+    {
+        [self add:[type itemtype]];
+    }
+}
+
 -(NSUInteger)count
 {
     NSUInteger count = self.array.count;
