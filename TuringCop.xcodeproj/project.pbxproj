@@ -12,6 +12,7 @@
 		DA01567D1C6A26CE00FAC166 /* mcreatoradditemcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01567C1C6A26CE00FAC166 /* mcreatoradditemcolor.m */; };
 		DA0156801C6A26D700FAC166 /* mcreatoradditemimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */; };
 		DA0156831C6A26E200FAC166 /* mcreatoradditemnumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */; };
+		DA0156861C6A27F800FAC166 /* vcreatoradd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156851C6A27F800FAC166 /* vcreatoradd.m */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
@@ -72,6 +73,8 @@
 		DA01567F1C6A26D700FAC166 /* mcreatoradditemimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemimage.m; sourceTree = "<group>"; };
 		DA0156811C6A26E200FAC166 /* mcreatoradditemnumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatoradditemnumber.h; sourceTree = "<group>"; };
 		DA0156821C6A26E200FAC166 /* mcreatoradditemnumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatoradditemnumber.m; sourceTree = "<group>"; };
+		DA0156841C6A27F800FAC166 /* vcreatoradd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoradd.h; sourceTree = "<group>"; };
+		DA0156851C6A27F800FAC166 /* vcreatoradd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoradd.m; sourceTree = "<group>"; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				DA8448A01C695C7B007B634F /* vcreatorheadercel.m */,
 				DA84489C1C6953A3007B634F /* vcreatorcel.h */,
 				DA84489D1C6953A3007B634F /* vcreatorcel.m */,
+				DA0156841C6A27F800FAC166 /* vcreatoradd.h */,
+				DA0156851C6A27F800FAC166 /* vcreatoradd.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -717,6 +722,7 @@
 				DA8448B21C69699A007B634F /* ccreatoradd.m in Sources */,
 				DA01567D1C6A26CE00FAC166 /* mcreatoradditemcolor.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
+				DA0156861C6A27F800FAC166 /* vcreatoradd.m in Sources */,
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
 				DA01567A1C6A26C400FAC166 /* mcreatoradditemtext.m in Sources */,
 				DA84489B1C695398007B634F /* vcreatorheader.m in Sources */,
