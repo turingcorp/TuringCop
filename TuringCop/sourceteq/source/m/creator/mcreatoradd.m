@@ -57,4 +57,9 @@
     [self.array removeObjectAtIndex:index];
 }
 
+-(void)removelast
+{
+    [self.array removeLastObject];
+}
+
 @end

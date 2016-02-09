@@ -12,6 +12,7 @@
 -(void)add:(mcreatoradditem*)item;
 -(void)additem;
 -(void)remove:(NSUInteger)index;
+-(void)removelast;
 
 @property(strong, nonatomic)mcreatoraddtitle *title;
 @property(strong, nonatomic)id<mcreatoraddtypeprotocol> type;
