@@ -29,6 +29,7 @@
 		DA8448A91C695D0D007B634F /* mcreatorheaderadd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448A81C695D0D007B634F /* mcreatorheaderadd.m */; };
 		DA8448AC1C695D1A007B634F /* mcreatorheaderexport.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448AB1C695D1A007B634F /* mcreatorheaderexport.m */; };
 		DA8448AF1C695D34007B634F /* mcreatorheaderclose.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */; };
+		DA8448B21C69699A007B634F /* ccreatoradd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8448B11C69699A007B634F /* ccreatoradd.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DA97E3FB1C6920D90084FFDF /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B41C6920D90084FFDF /* analytics.plist */; };
 		DA97E3FC1C6920D90084FFDF /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3B51C6920D90084FFDF /* defs.plist */; };
@@ -97,6 +98,8 @@
 		DA8448AB1C695D1A007B634F /* mcreatorheaderexport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheaderexport.m; sourceTree = "<group>"; };
 		DA8448AD1C695D34007B634F /* mcreatorheaderclose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcreatorheaderclose.h; sourceTree = "<group>"; };
 		DA8448AE1C695D34007B634F /* mcreatorheaderclose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mcreatorheaderclose.m; sourceTree = "<group>"; };
+		DA8448B01C69699A007B634F /* ccreatoradd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccreatoradd.h; sourceTree = "<group>"; };
+		DA8448B11C69699A007B634F /* ccreatoradd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccreatoradd.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DA97E3B41C6920D90084FFDF /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DA97E3B51C6920D90084FFDF /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
@@ -259,6 +262,8 @@
 			children = (
 				DA8448921C69525A007B634F /* ccreator.h */,
 				DA8448931C69525A007B634F /* ccreator.m */,
+				DA8448B01C69699A007B634F /* ccreatoradd.h */,
+				DA8448B11C69699A007B634F /* ccreatoradd.m */,
 			);
 			path = creator;
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 				DA8448A91C695D0D007B634F /* mcreatorheaderadd.m in Sources */,
 				DA8448941C69525A007B634F /* ccreator.m in Sources */,
 				DA8448791C6937DF007B634F /* cstatus.m in Sources */,
+				DA8448B21C69699A007B634F /* ccreatoradd.m in Sources */,
 				DA97E4111C6920D90084FFDF /* vratemenucel.m in Sources */,
 				DA84487D1C6938F1007B634F /* vstatus.m in Sources */,
 				DA84489B1C695398007B634F /* vcreatorheader.m in Sources */,
