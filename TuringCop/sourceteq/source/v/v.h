@@ -16,4 +16,7 @@
 #import "vcreatorheadercel.h"
 #import "vcreatoradd.h"
 #import "vcreatoraddheader.h"
-#import "vcreatoraddcel.h"
+#import "vcreatoraddceltext.h"
+#import "vcreatoraddcelcolor.h"
+#import "vcreatoraddcelimage.h"
+#import "vcreatoraddcelnumber.h"
