@@ -30,7 +30,6 @@
     self.collection = collection;
     
     [self.model.type registercells:collection];
-    
     [self addSubview:collection];
     
     NSDictionary *views = @{@"col":collection};
@@ -76,6 +75,22 @@
     NSUInteger count = [self.model count];
     
     return count;
+}
+
+-(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
+{
+    UICollectionReusableView *reusable;
+    
+    if(kind == UICollectionElementKindSectionHeader)
+    {
+        reusable = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerid forIndexPath:index];
+    }
+    else
+    {
+        reusable = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerid forIndexPath:index];
+    }
+    
+    return reusable;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
