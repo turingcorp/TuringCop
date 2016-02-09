@@ -9,4 +9,7 @@
 #import "mcreatorheaderclose.h"
 #import "mcreatoradd.h"
 #import "mcreatoraddtitle.h"
-#import "mcreatoradditem.h"
+#import "mcreatoradditemtext.h"
+#import "mcreatoradditemcolor.h"
+#import "mcreatoradditemimage.h"
+#import "mcreatoradditemnumber.h"
