@@ -8,6 +8,13 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor clearColor]];
     
+    UITextField *field = [[UITextField alloc] init];
+    
+    UIStepper *stepper = [[UIStepper alloc] init];
+    
+    [self addSubview:field];
+    [self addSubview:stepper];
+    
     return self;
 }
 
