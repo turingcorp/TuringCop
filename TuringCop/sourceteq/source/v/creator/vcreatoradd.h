@@ -3,7 +3,7 @@
 
 @class mcreatoradd;
 
-@interface vcreatoradd:viewbase
+@interface vcreatoradd:viewbase<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property(strong, nonatomic)mcreatoradd *model;
 
