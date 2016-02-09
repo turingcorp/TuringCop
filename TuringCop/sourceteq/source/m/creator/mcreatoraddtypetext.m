@@ -14,7 +14,7 @@
 
 -(void)registercells:(UICollectionView*)collection
 {
-    
+    [collection registerClass:[vcreatoraddceltext class] forCellWithReuseIdentifier:celid];
 }
 
 @end
