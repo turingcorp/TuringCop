@@ -11,6 +11,7 @@
 "creator_header_close"="Close";
 
 "creatoradd_title"="New test";
+"creatoradd_header_title"="Test title";
 
 "rate_descr"="How would you rate this app?";
 "rate_donereview"="Rate sent. Would you write a review in the app store?";
