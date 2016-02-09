@@ -1,5 +1,5 @@
 #import "appdel.h"
 
-@interface vcreatoraddheader:UICollectionReusableView
+@interface vcreatoraddheader:UICollectionReusableView<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @end
