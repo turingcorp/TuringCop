@@ -11,6 +11,10 @@
     self.model = [[mcreatoradd alloc] init];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setMinimumInteritemSpacing:0];
+    [flow setMinimumLineSpacing:10];
+    [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [flow setSectionInset:UIEdgeInsetsMake(10, 0, 20, 0)];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setBackgroundColor:[UIColor clearColor]];
@@ -40,6 +44,27 @@
 
 #pragma mark -
 #pragma mark col del
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
+{
+    CGSize size = CGSizeMake(col.bounds.size.width, 100);
+    
+    return size;
+}
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    CGSize size = CGSizeMake(col.bounds.size.width, 200);
+    
+    return size;
+}
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
+{
+    CGSize size = CGSizeMake(col.bounds.size.width, 60);
+    
+    return size;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {

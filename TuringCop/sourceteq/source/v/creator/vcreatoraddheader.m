@@ -23,14 +23,24 @@
     [field setSpellCheckingType:UITextSpellCheckingTypeNo];
     [field setTextColor:[UIColor blackColor]];
     [field setTintColor:[UIColor blackColor]];
+    [field setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.field = field;
     
     UIStepper *stepper = [[UIStepper alloc] init];
+    [stepper setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [stepper setTintColor:colormain];
     
     self.stepper = stepper;
     
     [self addSubview:field];
     [self addSubview:stepper];
+    
+    NSDictionary *views = @{@"field":field, @"stepper":stepper};
+    NSDictionary *metrics = @{};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[field]-20-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[stepper]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[field]-10-[stepper]-20-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
