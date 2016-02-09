@@ -5,6 +5,7 @@
 
 "turing_stoptest"="Stop test";
 
+"creator_header_title"="Test creator";
 "creator_header_new"="New test";
 "creator_header_export"="Export";
 "creator_header_close"="Close";
