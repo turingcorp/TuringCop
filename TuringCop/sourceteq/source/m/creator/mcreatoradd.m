@@ -28,9 +28,9 @@
     return item;
 }
 
--(void)add:(mcreatoradditem *)item
+-(void)add:(mcreatoradditem*)item
 {
-    
+    [self.array addObject:item];
 }
 
 @end
