@@ -25,6 +25,8 @@
     [collection registerClass:[vcreatoraddfooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:footerid];
     self.collection = collection;
     
+    [self.model.type ]
+    
     [self addSubview:collection];
     
     NSDictionary *views = @{@"col":collection};
