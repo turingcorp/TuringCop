@@ -13,7 +13,7 @@
     [self setBackgroundColor:[UIColor clearColor]];
     
     self.model = [[mcreatorheader alloc] init];
-    topmargin = 20;
+    topmargin = 70;
     interitem = 2;
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
