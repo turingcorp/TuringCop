@@ -1,13 +1,10 @@
-//
-//  mcreatoradd.h
-//  TuringCop
-//
-//  Created by zero on 2/8/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@class mcreatoraddtitle;
 
-@interface mcreatoradd : NSObject
+@interface mcreatoradd:NSObject
+
+@property(strong, nonatomic)mcreatoraddtitle *title;
+@property(strong, nonatomic)NSMutableArray *array;
 
 @end
