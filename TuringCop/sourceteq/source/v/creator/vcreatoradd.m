@@ -18,6 +18,10 @@
     [collection setShowsHorizontalScrollIndicator:NO];
     [collection setShowsVerticalScrollIndicator:NO];
     [collection setAlwaysBounceVertical:YES];
+    [collection setDataSource:self];
+    [collection setDelegate:self];
+    [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [collection registerClass:[vcreatoraddheader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerid];
     
     [self addSubview:collection];
     

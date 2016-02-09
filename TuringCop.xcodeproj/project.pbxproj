@@ -19,6 +19,7 @@
 		DA0156921C6A2B9500FAC166 /* vcreatoraddcelcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156911C6A2B9500FAC166 /* vcreatoraddcelcolor.m */; };
 		DA0156951C6A2BA200FAC166 /* vcreatoraddcelimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156941C6A2BA200FAC166 /* vcreatoraddcelimage.m */; };
 		DA0156981C6A2BAD00FAC166 /* vcreatoraddcelnumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0156971C6A2BAD00FAC166 /* vcreatoraddcelnumber.m */; };
+		DA01569B1C6A2E3500FAC166 /* vcreatoraddfooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01569A1C6A2E3500FAC166 /* vcreatoraddfooter.m */; };
 		DA84486D1C6926E7007B634F /* crate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA84486C1C6926E7007B634F /* crate.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA8448711C692CBB007B634F /* in in Resources */ = {isa = PBXBuildFile; fileRef = DA8448701C692CBB007B634F /* in */; };
@@ -93,6 +94,8 @@
 		DA0156941C6A2BA200FAC166 /* vcreatoraddcelimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddcelimage.m; sourceTree = "<group>"; };
 		DA0156961C6A2BAD00FAC166 /* vcreatoraddcelnumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoraddcelnumber.h; sourceTree = "<group>"; };
 		DA0156971C6A2BAD00FAC166 /* vcreatoraddcelnumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddcelnumber.m; sourceTree = "<group>"; };
+		DA0156991C6A2E3500FAC166 /* vcreatoraddfooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vcreatoraddfooter.h; sourceTree = "<group>"; };
+		DA01569A1C6A2E3500FAC166 /* vcreatoraddfooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vcreatoraddfooter.m; sourceTree = "<group>"; };
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84486B1C6926E7007B634F /* crate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crate.h; sourceTree = "<group>"; };
 		DA84486C1C6926E7007B634F /* crate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crate.m; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				DA0156851C6A27F800FAC166 /* vcreatoradd.m */,
 				DA0156871C6A2B5700FAC166 /* vcreatoraddheader.h */,
 				DA0156881C6A2B5700FAC166 /* vcreatoraddheader.m */,
+				DA0156991C6A2E3500FAC166 /* vcreatoraddfooter.h */,
+				DA01569A1C6A2E3500FAC166 /* vcreatoraddfooter.m */,
 				DA01568A1C6A2B6000FAC166 /* vcreatoraddcel.h */,
 				DA01568B1C6A2B6000FAC166 /* vcreatoraddcel.m */,
 				DA01568D1C6A2B8B00FAC166 /* vcreatoraddceltext.h */,
@@ -781,6 +786,7 @@
 				DA97E40E1C6920D90084FFDF /* vspinner.m in Sources */,
 				DA84488A1C6949D2007B634F /* vturingheader.m in Sources */,
 				DA0156981C6A2BAD00FAC166 /* vcreatoraddcelnumber.m in Sources */,
+				DA01569B1C6A2E3500FAC166 /* vcreatoraddfooter.m in Sources */,
 				DA0156951C6A2BA200FAC166 /* vcreatoraddcelimage.m in Sources */,
 				DA97E4031C6920D90084FFDF /* updater.m in Sources */,
 			);
