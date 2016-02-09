@@ -6,7 +6,7 @@
 {
     self = [super initWithFrame:frame];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.4]];
+    [self setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.15]];
     
     UILabel *label = [[UILabel alloc] init];
     [label setBackgroundColor:[UIColor clearColor]];
@@ -15,6 +15,14 @@
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setFont:[UIFont fontWithName:fontname size:14]];
     self.label = label;
+    
+    [self addSubview:label];
+    
+    NSDictionary *views = @{@"label":label};
+    NSDictionary *metrics = @{};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[label]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[label]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -37,11 +45,11 @@
 {
     if(self.isSelected || self.isHighlighted)
     {
-        [self.label setTextColor:[UIColor colorWithWhite:0 alpha:0.1]];
+        [self.label setTextColor:[UIColor colorWithWhite:1 alpha:0.2]];
     }
     else
     {
-        [self.label setTextColor:[UIColor colorWithWhite:0 alpha:1]];
+        [self.label setTextColor:[UIColor colorWithWhite:1 alpha:0.7]];
     }
 }
 
@@ -50,6 +58,7 @@
 -(void)config:(id<mcreatorheaderprotocol>)model
 {
     [self.label setText:[model title]];
+    [self hover];
 }
 
 @end

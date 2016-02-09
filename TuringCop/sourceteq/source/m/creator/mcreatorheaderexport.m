@@ -6,7 +6,7 @@
 
 -(NSString*)title
 {
-    return @"";
+    return NSLocalizedString(@"creator_header_export", nil);
 }
 
 -(void)action:(ccreator*)controller

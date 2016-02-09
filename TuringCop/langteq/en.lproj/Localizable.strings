@@ -5,7 +5,9 @@
 
 "turing_stoptest"="Stop test";
 
-"creator_button_new"="New test";
+"creator_header_new"="New test";
+"creator_header_export"="Export";
+"creator_header_close"="Close";
 
 "rate_descr"="How would you rate this app?";
 "rate_donereview"="Rate sent. Would you write a review in the app store?";
