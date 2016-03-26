@@ -48,7 +48,6 @@ NSString *documents;
     [userdef removePersistentDomainForName:NSRegistrationDomain];
     [userdef setValue:appid forKey:@"appid"];
     [userdef setValue:@0 forKey:@"ttl"];
-    [userdef setValue:[[NSUUID UUID] UUIDString] forKey:@"uuid"];
     [userdef synchronize];
 }
 
