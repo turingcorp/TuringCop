@@ -1,13 +1,18 @@
-//
-//  gspatial.h
-//  TuringCop
-//
-//  Created by zero on 3/26/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import "gimage.h"
 
-#import <Foundation/Foundation.h>
+@interface gspatial:NSObject
 
-@interface gspatial : NSObject
+-(void)render;
+
+@property(strong, nonatomic)gimage *image;
+@property(nonatomic)GLKVector2 *pointerposition;
+@property(nonatomic)GLKVector2 *pointertexture;
+@property(nonatomic)GLKVector4 color;
+@property(nonatomic)GLsizei size;
+@property(nonatomic)CGFloat width;
+@property(nonatomic)CGFloat height;
+@property(nonatomic)CGFloat x;
+@property(nonatomic)CGFloat y;
 
 @end
