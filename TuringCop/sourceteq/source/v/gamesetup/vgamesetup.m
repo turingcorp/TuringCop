@@ -1,5 +1,8 @@
 #import "vgamesetup.h"
 
+static NSString* const gamesetupcell = @"cellid";
+static NSString* const gamesetupfooter = @"footerid";
+
 @interface vgamesetup ()
 
 @property(weak, nonatomic)cgamesetup *controller;
@@ -32,6 +35,8 @@
     [collection setAlwaysBounceVertical:YES];
     [collection setBackgroundColor:[UIColor clearColor]];
     [collection setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [collection registerClass:[vgamesetupcell class] forCellWithReuseIdentifier:gamesetupcell];
+    [collection registerClass:[vgamesetupfooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:gamesetupfooter];
     
     [self addSubview:collection];
     

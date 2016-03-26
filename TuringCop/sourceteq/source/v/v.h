@@ -6,3 +6,5 @@
 #import "vstorecell.h"
 #import "vhome.h"
 #import "vgamesetup.h"
+#import "vgamesetupcell.h"
+#import "vgamesetupfooter.h"
