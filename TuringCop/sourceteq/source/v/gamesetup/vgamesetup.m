@@ -2,7 +2,7 @@
 
 static NSString* const gamesetupcell = @"cellid";
 static NSString* const gamesetupfooter = @"footerid";
-static NSUInteger const footerheight = 100;
+static NSUInteger const footerheight = 150;
 
 @interface vgamesetup ()
 
@@ -42,6 +42,12 @@ static NSUInteger const footerheight = 100;
     
     [self addSubview:collection];
     
+    NSDictionary *views = @{@"col":collection};
+    NSDictionary *metrics = @{};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
+    
     return self;
 }
 
@@ -65,6 +71,15 @@ static NSUInteger const footerheight = 100;
     return size;
 }
 
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout sizeForItemAtIndexPath:(NSIndexPath*)index
+{
+    mgamesetupitem *model = [self item:index];
+    CGFloat width = col.bounds.size.width;
+    CGSize size = CGSizeMake(width, model.cellheight);
+    
+    return size;
+}
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
     return 1;
@@ -77,9 +92,18 @@ static NSUInteger const footerheight = 100;
     return count;
 }
 
+-(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
+{
+    vgamesetupfooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:gamesetupfooter forIndexPath:index];
+    
+    return footer;
+}
+
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
-    return nil;
+    vgamesetupcell *cell = [col dequeueReusableCellWithReuseIdentifier:gamesetupcell forIndexPath:index];
+    
+    return cell;
 }
 
 @end
