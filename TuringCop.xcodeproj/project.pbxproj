@@ -23,6 +23,7 @@
 		DA1BEC441CA7491800B464BF /* garea.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC431CA7491800B464BF /* garea.m */; };
 		DA1BEC481CA7496100B464BF /* gbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC471CA7496100B464BF /* gbase.m */; };
 		DA1BEC4B1CA74D3700B464BF /* gspatial.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC4A1CA74D3700B464BF /* gspatial.m */; };
+		DA1BEC4E1CA74D9300B464BF /* gimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC4D1CA74D9300B464BF /* gimage.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
@@ -99,6 +100,8 @@
 		DA1BEC471CA7496100B464BF /* gbase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gbase.m; sourceTree = "<group>"; };
 		DA1BEC491CA74D3700B464BF /* gspatial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gspatial.h; sourceTree = "<group>"; };
 		DA1BEC4A1CA74D3700B464BF /* gspatial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gspatial.m; sourceTree = "<group>"; };
+		DA1BEC4C1CA74D9300B464BF /* gimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gimage.h; sourceTree = "<group>"; };
+		DA1BEC4D1CA74D9300B464BF /* gimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gimage.m; sourceTree = "<group>"; };
 		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 				DA1BEC471CA7496100B464BF /* gbase.m */,
 				DA1BEC491CA74D3700B464BF /* gspatial.h */,
 				DA1BEC4A1CA74D3700B464BF /* gspatial.m */,
+				DA1BEC4C1CA74D9300B464BF /* gimage.h */,
+				DA1BEC4D1CA74D9300B464BF /* gimage.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,
 				DAE45A521CA61B6E00610E75 /* updater.m in Sources */,
 				DAE45A5B1CA61B6E00610E75 /* cstore.m in Sources */,
+				DA1BEC4E1CA74D9300B464BF /* gimage.m in Sources */,
 				DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */,
 				DABDF4421CA625C900B240B4 /* cgame.m in Sources */,
 			);
