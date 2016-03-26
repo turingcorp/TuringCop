@@ -1,13 +1,13 @@
-//
-//  gimage.h
-//  TuringCop
-//
-//  Created by zero on 3/26/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-#import <Foundation/Foundation.h>
+@interface gimage:NSObject
 
-@interface gimage : NSObject
+-(instancetype)init:(NSArray<NSString*>*)textures;
+
+@property(strong, nonatomic)NSMutableArray<NSNumber*> *textures;
+@property(nonatomic)GLuint current;
+@property(nonatomic)NSUInteger speed;
+@property(nonatomic)BOOL random;
 
 @end
