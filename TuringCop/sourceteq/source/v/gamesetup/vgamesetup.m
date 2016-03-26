@@ -95,6 +95,7 @@ static NSUInteger const footerheight = 150;
 -(UICollectionReusableView*)collectionView:(UICollectionView*)col viewForSupplementaryElementOfKind:(NSString*)kind atIndexPath:(NSIndexPath*)index
 {
     vgamesetupfooter *footer = [col dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:gamesetupfooter forIndexPath:index];
+    [footer config:self];
     
     return footer;
 }

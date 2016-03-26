@@ -8,19 +8,28 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor clearColor]];
     
-    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    [spinner setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [spinner startAnimating];
+    UIButton *buttonstart = [[UIButton alloc] initWithFrame:CGRectMake(20, 20, 200, 40)];
+    [buttonstart setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [buttonstart setTitle:@"Start" forState:UIControlStateNormal];
+    [buttonstart addTarget:self action:@selector(actionstart:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self addSubview:spinner];
-    
-    NSDictionary *views = @{@"spinner":spinner};
-    NSDictionary *metrics = @{};
-    
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
+    [self addSubview:buttonstart];
     
     return self;
+}
+
+#pragma mark actions
+
+-(void)actionstart:(UIButton*)button
+{
+    
+}
+
+#pragma mark public
+
+-(void)config:(vgamesetup*)view
+{
+    self.view = view;
 }
 
 @end
