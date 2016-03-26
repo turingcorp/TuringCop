@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5635B436196F1B2ED4B8D4CB /* libPods-TuringCop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4550A087E56041E29E0AC9 /* libPods-TuringCop.a */; };
 		DA1BEC091CA65D9C00B464BF /* vgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC081CA65D9C00B464BF /* vgamesetup.m */; };
+		DA1BEC181CA66ADE00B464BF /* uicolor+uicolormain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC171CA66ADE00B464BF /* uicolor+uicolormain.m */; };
+		DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC1A1CA66AEA00B464BF /* uifont+uifontmain.m */; };
+		DA1BEC1E1CA66B8300B464BF /* nsnotification+nsnotificationmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC1D1CA66B8300B464BF /* nsnotification+nsnotificationmain.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
@@ -59,6 +62,12 @@
 		DA020D641C691B9F000BF8A4 /* TuringCop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuringCop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1BEC071CA65D9C00B464BF /* vgamesetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetup.h; sourceTree = "<group>"; };
 		DA1BEC081CA65D9C00B464BF /* vgamesetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetup.m; sourceTree = "<group>"; };
+		DA1BEC161CA66ADE00B464BF /* uicolor+uicolormain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uicolor+uicolormain.h"; sourceTree = "<group>"; };
+		DA1BEC171CA66ADE00B464BF /* uicolor+uicolormain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "uicolor+uicolormain.m"; sourceTree = "<group>"; };
+		DA1BEC191CA66AEA00B464BF /* uifont+uifontmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uifont+uifontmain.h"; sourceTree = "<group>"; };
+		DA1BEC1A1CA66AEA00B464BF /* uifont+uifontmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "uifont+uifontmain.m"; sourceTree = "<group>"; };
+		DA1BEC1C1CA66B8300B464BF /* nsnotification+nsnotificationmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "nsnotification+nsnotificationmain.h"; sourceTree = "<group>"; };
+		DA1BEC1D1CA66B8300B464BF /* nsnotification+nsnotificationmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "nsnotification+nsnotificationmain.m"; sourceTree = "<group>"; };
 		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
@@ -284,14 +293,20 @@
 		DAE459DE1CA61B6E00610E75 /* generic */ = {
 			isa = PBXGroup;
 			children = (
+				DAE459E21CA61B6E00610E75 /* generic.h */,
 				DAE459DF1CA61B6E00610E75 /* analytics.h */,
 				DAE459E01CA61B6E00610E75 /* analytics.m */,
 				DAE459E11CA61B6E00610E75 /* constants.h */,
-				DAE459E21CA61B6E00610E75 /* generic.h */,
 				DAE459E31CA61B6E00610E75 /* tools.h */,
 				DAE459E41CA61B6E00610E75 /* tools.m */,
 				DAE459E51CA61B6E00610E75 /* updater.h */,
 				DAE459E61CA61B6E00610E75 /* updater.m */,
+				DA1BEC161CA66ADE00B464BF /* uicolor+uicolormain.h */,
+				DA1BEC171CA66ADE00B464BF /* uicolor+uicolormain.m */,
+				DA1BEC191CA66AEA00B464BF /* uifont+uifontmain.h */,
+				DA1BEC1A1CA66AEA00B464BF /* uifont+uifontmain.m */,
+				DA1BEC1C1CA66B8300B464BF /* nsnotification+nsnotificationmain.h */,
+				DA1BEC1D1CA66B8300B464BF /* nsnotification+nsnotificationmain.m */,
 			);
 			path = generic;
 			sourceTree = "<group>";
@@ -625,10 +640,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */,
 				DAE45A731CA61B6E00610E75 /* vtoast.m in Sources */,
 				DAE45A621CA61B6E00610E75 /* mstorepurchasesitem.m in Sources */,
 				DAE45A611CA61B6E00610E75 /* mstorepurchases.m in Sources */,
 				DAE45A601CA61B6E00610E75 /* mstore.m in Sources */,
+				DA1BEC181CA66ADE00B464BF /* uicolor+uicolormain.m in Sources */,
 				DAE45A5C1CA61B6E00610E75 /* mdb.m in Sources */,
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
@@ -637,6 +654,7 @@
 				DAE45A751CA61B6E00610E75 /* vstorebar.m in Sources */,
 				DAE45A701CA61B6E00610E75 /* vblur.m in Sources */,
 				DAE45A5F1CA61B6E00610E75 /* msettings.m in Sources */,
+				DA1BEC1E1CA66B8300B464BF /* nsnotification+nsnotificationmain.m in Sources */,
 				DAE45A711CA61B6E00610E75 /* viewbase.m in Sources */,
 				DAE45A661CA61B6E00610E75 /* mstorestatuspurchased.m in Sources */,
 				DAE45A5D1CA61B6E00610E75 /* mdbcreate.m in Sources */,

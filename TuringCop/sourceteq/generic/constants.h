@@ -6,6 +6,3 @@
 #define notpurchaseupd          @"purchaseupdate"
 
 // font
-
-#define fontregularname         @"AvenirNext-Regular"
-#define fontboldname            @"AvenirNext-DemiBold"

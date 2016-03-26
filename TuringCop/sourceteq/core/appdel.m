@@ -13,7 +13,7 @@
     [window makeKeyAndVisible];
     [window setBackgroundColor:[UIColor blackColor]];
     [window setRootViewController:[cmain singleton]];
-    
+
     [updater launch];
     [[SKPaymentQueue defaultQueue] addTransactionObserver:[mstore singleton]];
     

@@ -3,7 +3,6 @@
 #import <UIKit/UIKit.h>
 #import <Google/Analytics.h>
 #import <StoreKit/StoreKit.h>
-#import "analytics.h"
 #import "db.h"
 #import "timerbg.h"
 #import "generic.h"
