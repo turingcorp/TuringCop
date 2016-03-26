@@ -1,5 +1,6 @@
 #import "appdel.h"
+#import "gbase.h"
 
-@interface garea:NSObject
+@interface garea:gbase
 
 @end
