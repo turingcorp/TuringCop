@@ -2,4 +2,6 @@
 
 @interface chome:UIViewController
 
+-(void)play;
+
 @end

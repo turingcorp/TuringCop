@@ -16,8 +16,6 @@
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
     [self setExtendedLayoutIncludesOpaqueBars:NO];
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
-    
-    [[analytics singleton] trackscreen:ga_screen_stats];
 }
 
 -(BOOL)prefersStatusBarHidden
@@ -28,6 +26,13 @@
 -(void)loadView
 {
     self.view = [[vhome alloc] init:self];
+}
+
+#pragma mark public
+
+-(void)play
+{
+    
 }
 
 @end
