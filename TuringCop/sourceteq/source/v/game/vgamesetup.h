@@ -1,13 +1,6 @@
-//
-//  vgamesetup.h
-//  TuringCop
-//
-//  Created by zero on 3/26/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "viewbase.h"
 
-#import <Foundation/Foundation.h>
-
-@interface vgamesetup : NSObject
+@interface vgamesetup:viewbase<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @end
