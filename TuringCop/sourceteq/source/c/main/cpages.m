@@ -47,4 +47,10 @@
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 
+-(void)sectiongamestart
+{
+    UIViewController *controller = [[cgame alloc] init];
+    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
+}
+
 @end

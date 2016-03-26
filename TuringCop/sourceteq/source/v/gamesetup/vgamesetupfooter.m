@@ -22,7 +22,7 @@
 
 -(void)actionstart:(UIButton*)button
 {
-    
+    [(cgamesetup*)self.view.controller startgame];
 }
 
 #pragma mark public

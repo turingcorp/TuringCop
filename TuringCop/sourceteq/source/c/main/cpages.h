@@ -4,5 +4,6 @@
 
 -(void)sectionhome:(BOOL)animated;
 -(void)sectiongame;
+-(void)sectiongamestart;
 
 @end

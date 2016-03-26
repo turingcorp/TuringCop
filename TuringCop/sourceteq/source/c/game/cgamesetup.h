@@ -2,4 +2,6 @@
 
 @interface cgamesetup:UIViewController
 
+-(void)startgame;
+
 @end

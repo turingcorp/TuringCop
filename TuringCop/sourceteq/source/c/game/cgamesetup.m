@@ -28,4 +28,11 @@
     self.view = [[vgamesetup alloc] init:self];
 }
 
+#pragma mark public
+
+-(void)startgame
+{
+    [[cmain singleton].pages sectiongamestart];
+}
+
 @end
