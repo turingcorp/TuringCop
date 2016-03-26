@@ -101,7 +101,9 @@ static NSUInteger const footerheight = 150;
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index
 {
+    mgamesetupitem *model = [self item:index];
     vgamesetupcell *cell = [col dequeueReusableCellWithReuseIdentifier:gamesetupcell forIndexPath:index];
+    [cell config:[model overview]];
     
     return cell;
 }

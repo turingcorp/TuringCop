@@ -2,6 +2,8 @@
 
 @interface mgamesetupitem:NSObject
 
+-(UIView*)overview;
+
 @property(nonatomic)NSUInteger cellheight;
 
 @end
