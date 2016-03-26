@@ -24,8 +24,6 @@
 {
     [super viewDidLoad];
     [self setNavigationBarHidden:YES];
-
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:17], NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
 }
 
 -(BOOL)prefersStatusBarHidden

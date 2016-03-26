@@ -26,7 +26,7 @@ static NSUInteger const labelmarginright = 20;
     [statuslabel setBackgroundColor:[UIColor clearColor]];
     [statuslabel setUserInteractionEnabled:NO];
     [statuslabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [statuslabel setFont:[UIFont fontWithName:fontregularname size:17]];
+    [statuslabel setFont:[UIFont regularsize:17]];
     [statuslabel setTextColor:colormain];
     self.statuslabel = statuslabel;
     
@@ -43,7 +43,7 @@ static NSUInteger const labelmarginright = 20;
     [button setClipsToBounds:YES];
     [button setTranslatesAutoresizingMaskIntoConstraints:NO];
     [button.layer setCornerRadius:4];
-    [button.titleLabel setFont:[UIFont fontWithName:fontboldname size:15]];
+    [button.titleLabel setFont:[UIFont boldsize:15]];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor colorWithWhite:1 alpha:0.2] forState:UIControlStateHighlighted];
     [button setTitle:NSLocalizedString(@"purchase_button_purchase", nil) forState:UIControlStateNormal];

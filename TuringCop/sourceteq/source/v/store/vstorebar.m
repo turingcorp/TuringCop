@@ -25,7 +25,7 @@
     [buttonrestore setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [buttonrestore setTitleColor:[UIColor colorWithWhite:1 alpha:0.2] forState:UIControlStateHighlighted];
     [buttonrestore setTitle:NSLocalizedString(@"store_restore", nil) forState:UIControlStateNormal];
-    [buttonrestore.titleLabel setFont:[UIFont fontWithName:fontboldname size:18]];
+    [buttonrestore.titleLabel setFont:[UIFont boldsize:18]];
     [buttonrestore addTarget:self action:@selector(actionrestore:) forControlEvents:UIControlEventTouchUpInside];
     self.buttonrestore = buttonrestore;
     
@@ -33,7 +33,7 @@
     [label setUserInteractionEnabled:NO];
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setTextAlignment:NSTextAlignmentCenter];
-    [label setFont:[UIFont fontWithName:fontregularname size:18]];
+    [label setFont:[UIFont regularsize:18]];
     [label setTextColor:[UIColor whiteColor]];
     [label setText:NSLocalizedString(@"store_title", nil)];
     

@@ -48,7 +48,7 @@ static NSUInteger const cellheight = 170;
     [buttontryagain.layer setCornerRadius:4];
     [buttontryagain setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [buttontryagain setTitleColor:[UIColor colorWithWhite:1 alpha:0.2] forState:UIControlStateHighlighted];
-    [buttontryagain.titleLabel setFont:[UIFont fontWithName:fontregularname size:16]];
+    [buttontryagain.titleLabel setFont:[UIFont regularsize:16]];
     [buttontryagain setTitle:NSLocalizedString(@"store_tryagain", nil) forState:UIControlStateNormal];
     [buttontryagain setTranslatesAutoresizingMaskIntoConstraints:NO];
     [buttontryagain setHidden:YES];
