@@ -14,7 +14,7 @@
 {
     self = [super init:controller];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:[UIColor whiteColor]];
+    [self setBackgroundColor:[UIColor blackColor]];
     
     UIButton *buttonplay = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 200, 40)];
     [buttonplay setBackgroundColor:[UIColor blackColor]];

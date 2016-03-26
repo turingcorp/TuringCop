@@ -6,7 +6,7 @@
 {
     self = [super init];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:colorthird];
+    [self setBackgroundColor:colorsecond];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     self.controller = controller;

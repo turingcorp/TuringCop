@@ -6,3 +6,4 @@
 #import "vstorebar.h"
 #import "vstorecell.h"
 #import "vhome.h"
+#import "vgamesetup.h"

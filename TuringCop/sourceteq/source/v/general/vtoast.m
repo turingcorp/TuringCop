@@ -35,7 +35,7 @@ static NSUInteger const buttonheight = 50;
     [label setTranslatesAutoresizingMaskIntoConstraints:NO];
     [label setNumberOfLines:0];
     [label setFont:[UIFont fontWithName:fontregularname size:22]];
-    [label setTextColor:colorthird];
+    [label setTextColor:colorsecond];
     [label setTextAlignment:NSTextAlignmentCenter];
     [label setText:controller.message];
     

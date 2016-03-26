@@ -47,7 +47,7 @@ static NSUInteger const itempricesize = 14;
 -(void)loadskproduct:(SKProduct*)skproduct
 {
     NSDictionary *dicttitle = @{NSFontAttributeName:[UIFont fontWithName:fontboldname size:itemtitlesize], NSForegroundColorAttributeName:colormain};
-    NSDictionary *dictdescr = @{NSFontAttributeName:[UIFont fontWithName:fontregularname size:itemdescrsize], NSForegroundColorAttributeName:colorthird};
+    NSDictionary *dictdescr = @{NSFontAttributeName:[UIFont fontWithName:fontregularname size:itemdescrsize], NSForegroundColorAttributeName:colorsecond};
     NSDictionary *dictprice = @{NSFontAttributeName:[UIFont fontWithName:fontboldname size:itempricesize], NSForegroundColorAttributeName:[UIColor blackColor]};
     
     NSString *prodid = skproduct.productIdentifier;

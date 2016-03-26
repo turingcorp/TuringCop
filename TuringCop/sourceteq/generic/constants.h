@@ -7,5 +7,5 @@
 
 // font
 
-#define fontregularname         @"AppleSDGothicNeo-Light"
-#define fontboldname            @"AppleSDGothicNeo-Medium"
+#define fontregularname         @"AvenirNext-Regular"
+#define fontboldname            @"AvenirNext-DemiBold"
