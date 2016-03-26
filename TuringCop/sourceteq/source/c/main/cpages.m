@@ -5,7 +5,7 @@
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    [self sectionhome];
+    [self sectionhome:NO];
     
     return self;
 }
@@ -42,7 +42,8 @@
 
 -(void)sectionhome:(BOOL)animated
 {
-    [self changecontroller:[[chome alloc] init:chapter] direction:UIPageViewControllerNavigationDirectionForward animated:animated];
+    UIViewController *controller = [[chome alloc] init];
+    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:animated];
 }
 
 @end

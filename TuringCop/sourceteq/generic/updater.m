@@ -11,14 +11,6 @@ NSString *documents;
                    {
                        [updater update];
                        [msettings singleton];
-                       [mdb loadcourses];
-                       
-                       if(![mcourse singleton].courses[0].available)
-                       {
-                           [mcourse opencourse:[mcourseitemadd class]];
-                       }
-                       
-                       [[mcourse singleton] ready];
                    });
 }
 
