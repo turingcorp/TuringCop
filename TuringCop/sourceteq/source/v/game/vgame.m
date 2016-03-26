@@ -11,7 +11,36 @@
     self.controller = controller;
     [EAGLContext setCurrentContext:self.context];
     
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    CGFloat screenwidth;
+    CGFloat screenheight;
+    
+    if(width > height)
+    {
+        screenwidth = width;
+        screenheight = height;
+    }
+    else
+    {
+        screenwidth = height;
+        screenheight = width;
+    }
+    
+    self.effect = [[GLKBaseEffect alloc] init];
+    self.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, screenwidth, screenheight, 0, 1, -1);
+    self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
+    self.effect.texture2d0.target = GLKTextureTarget2D;
+    [self.effect prepareToDraw];
+    
     return self;
+}
+
+#pragma mark functionality
+
+-(void)notifydraw
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkdraw object:nil userInfo:@{userinfoeffect:self.effect}];
 }
 
 #pragma mark -

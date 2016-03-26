@@ -2,5 +2,4 @@
 
 @implementation NSNotification (nsnotificationmain)
 
-
 @end
