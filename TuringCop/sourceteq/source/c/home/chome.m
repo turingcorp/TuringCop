@@ -32,7 +32,7 @@
 
 -(void)play
 {
-    
+    [[cmain singleton].pages sectiongame];
 }
 
 @end

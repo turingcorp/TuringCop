@@ -12,6 +12,7 @@
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
 		DABDF4421CA625C900B240B4 /* cgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4411CA625C900B240B4 /* cgame.m */; };
+		DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4441CA626B900B240B4 /* cgamesetup.m */; };
 		DAE45A491CA61B6E00610E75 /* analytics.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE459D21CA61B6E00610E75 /* analytics.plist */; };
 		DAE45A4A1CA61B6E00610E75 /* defs.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAE459D31CA61B6E00610E75 /* defs.plist */; };
 		DAE45A4B1CA61B6E00610E75 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAE459D41CA61B6E00610E75 /* Localizable.strings */; };
@@ -61,6 +62,8 @@
 		DABDF43D1CA6210100B240B4 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
 		DABDF4401CA625C900B240B4 /* cgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgame.h; sourceTree = "<group>"; };
 		DABDF4411CA625C900B240B4 /* cgame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgame.m; sourceTree = "<group>"; };
+		DABDF4431CA626B900B240B4 /* cgamesetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgamesetup.h; sourceTree = "<group>"; };
+		DABDF4441CA626B900B240B4 /* cgamesetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgamesetup.m; sourceTree = "<group>"; };
 		DAE459D21CA61B6E00610E75 /* analytics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = analytics.plist; sourceTree = "<group>"; };
 		DAE459D31CA61B6E00610E75 /* defs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defs.plist; sourceTree = "<group>"; };
 		DAE459D51CA61B6E00610E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 			children = (
 				DABDF4401CA625C900B240B4 /* cgame.h */,
 				DABDF4411CA625C900B240B4 /* cgame.m */,
+				DABDF4431CA626B900B240B4 /* cgamesetup.h */,
+				DABDF4441CA626B900B240B4 /* cgamesetup.m */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -638,6 +643,7 @@
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,
 				DAE45A521CA61B6E00610E75 /* updater.m in Sources */,
 				DAE45A5B1CA61B6E00610E75 /* cstore.m in Sources */,
+				DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */,
 				DABDF4421CA625C900B240B4 /* cgame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

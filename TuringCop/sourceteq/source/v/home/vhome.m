@@ -17,6 +17,7 @@
     [self setBackgroundColor:[UIColor whiteColor]];
     
     UIButton *buttonplay = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 200, 40)];
+    [buttonplay setBackgroundColor:[UIColor blackColor]];
     [buttonplay setTitle:@"Play" forState:UIControlStateNormal];
     [buttonplay addTarget:self action:@selector(actionplay:) forControlEvents:UIControlEventTouchUpInside];
     
