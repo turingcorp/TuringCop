@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>appid</key>
-	<string>1077367127</string>
+	<string>1092349312</string>
 	<key>version</key>
 	<integer>10</integer>
 	<key>dbname</key>
-	<string>turingcop.db</string>
+	<string>gauss.db</string>
 </dict>
 </plist>

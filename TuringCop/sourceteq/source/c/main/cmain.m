@@ -13,7 +13,9 @@
 
 -(instancetype)init
 {
-    self = [super initWithRootViewController:[[cpages alloc] init]];
+    cpages *pages = [[cpages alloc] init];
+    self.pages = pages;
+    self = [super initWithRootViewController:pages];
     
     return self;
 }
@@ -21,13 +23,14 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationBar setBackgroundColor:[UIColor blackColor]];
-    [self.navigationBar setBarTintColor:[UIColor colorWithWhite:0.3 alpha:1]];
+    [self.navigationBar setBarTintColor:colormain];
     [self.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontname size:16], NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:18], NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self.navigationBar setTranslucent:NO];
-    
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontname size:16], NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
+    [self.navigationBar setShadowImage:[[UIImage alloc] init]];
+    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:fontboldname size:17], NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle

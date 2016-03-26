@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Google/Analytics.h>
-#import <AVFoundation/AVFoundation.h>
+#import <StoreKit/StoreKit.h>
 #import "analytics.h"
 #import "db.h"
 #import "timerbg.h"
@@ -11,6 +11,7 @@
 #import "m.h"
 #import "v.h"
 #import "c.h"
+#import "s.h"
 
 @interface appdel:UIResponder<UIApplicationDelegate>
 

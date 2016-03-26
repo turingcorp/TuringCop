@@ -1,35 +1,27 @@
 #import <Foundation/Foundation.h>
 
-// app
-
-// creator
-
-typedef NS_ENUM(NSUInteger, test_type)
-{
-    test_type_text,
-    test_type_color,
-    test_type_image,
-    test_type_number
-};
-
 // analytics
 
 typedef NS_ENUM(NSUInteger, ga_screen)
 {
-    ga_screen_status,
-    ga_screen_rate
+    ga_screen_stats,
+    ga_screen_options,
+    ga_screen_options_contact,
+    ga_screen_store,
+    ga_screen_play,
+    ga_screen_play_finish
 };
 
 typedef NS_ENUM(NSUInteger, ga_event)
 {
+    ga_event_purchase,
     ga_event_rate,
-    ga_event_rate_review
+    ga_event_review,
+    ga_event_email,
+    ga_event_message
 };
 
 typedef NS_ENUM(NSUInteger, ga_action)
 {
-    ga_action_error,
-    ga_action_start,
-    ga_action_completed,
-    ga_action_cancel
+    ga_action_optin
 };

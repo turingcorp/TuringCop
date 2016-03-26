@@ -1,24 +1,78 @@
-"app_title"="Turing";
+"course_open"="Chapter %@ in %@\nunlocked!";
 
-"status_taketest"="Start test";
-"status_creator"="Creator";
+"course_add_name"="Addition";
+"course_subs_name"="Subtraction";
+"course_mult_name"="Multiplication";
+"course_div_name"="Division";
 
-"turing_stoptest"="Stop test";
+"stats_empty"="No stats to show yet";
+"stats_title"="Last games";
 
-"creator_header_title"="Test creator";
-"creator_header_new"="New test";
-"creator_header_export"="Export";
-"creator_header_close"="Close";
+"chapter_cel_notactive"="Chapter not active";
+"chapter_cel_nevertaken"="Chapter never taken";
+"chapter_cel_buttonstore"="Store";
 
-"creatoradd_title"="New test";
-"creatoradd_header_title"="Test title";
+"play_back_alert_title"="Stop playing?";
+"play_back_alert_message"="All progress will be lost";
+"play_back_alert_accept"="Stop";
+"play_back_alert_cancel"="Keep playing";
+"play_loader_subtitle"="\nChapter %@";
+"play_loader_stats"="\nChallenge %@ of %@";
+"play_bar_timer"="%@:%@";
+"play_finish_title"="Finished";
+"play_finish_subtitle"="\nChapter %@\n\n\n\nScore\n";
+"play_finish_maxscore"="\nMax score: %@";
+"play_finish_newrecord"="\nNew max score!";
+"play_finish_bar_button"="Done";
+"play_finish_fails_badge"="Passed";
+"play_finish_points_maxscore"="Max score";
+"play_finish_points_currentscore"="Current score";
+"play_finish_points_maxcourse"="Max in course";
+"play_finish_chapters_title"="Chapters in this course";
 
-"rate_descr"="How would you rate this app?";
-"rate_donereview"="Rate sent. Would you write a review in the app store?";
-"rate_send"="Send";
-"rate_done"="Not now";
-"rate_review"="Review";
-"rate_accept"="Done";
-"rate_thankyou"="Thank you for your support";
+"toast_continue"="Continue";
 
-"alert_cancel"="Cancel";
+"elapsedtime_title"="%@ ago";
+"elapsedtime_days"="%@ days";
+"elapsedtime_hours"="%@ hours";
+"elapsedtime_minutes"="%@ minutes";
+
+"options_title"="Options";
+"options_item_store_title"="In-App purchases";
+"options_item_store_contact"="Contact us";
+"options_item_store_rate"="Review in the App Store";
+
+"contact_title"="Contact";
+"contact_rate_title"="How would you rate the app?";
+"contact_rate_rated"="Thank you for your feedback";
+"contact_email_button"="Email us";
+"contact_email_title"="Any questions?";
+"contact_email_subtitle"="\nSend us an email, be sure we are going to read it and get back to you as soon as possible.";
+"contact_write_generaltitle"="Send us a message";
+"contact_write_nametitle"="Your name (optional)";
+"contact_write_emailtitle"="Your email (optional)";
+"contact_write_messagetitle"="Message";
+"contact_write_buttonsend"="Send message";
+"contact_write_emptymessage"="Message was empty!";
+"contact_write_messagesent"="Thank you! We have received your message";
+
+"store_title"="Store";
+"store_tryagain"="Try again";
+"store_restore"="Restore";
+"store_restoring"="Restoring purchases";
+
+"error_connectionfailed"="Internet connection failed, try again";
+
+"purchase_substraction_title"="Subtraction";
+"purchase_substraction_descr"="Unlock the first chapter of this course";
+"purchase_multiplication_title"="Multiplication";
+"purchase_multiplication_descr"="Unlock the first chapter of this course";
+"purchase_division_title"="Division";
+"purchase_division_descr"="Unlock the first chapter of this course";
+
+"purchase_status_purchased"="Purchased";
+"purchase_status_new"="New";
+"purchase_status_purchasing"="Purchasing";
+"purchase_status_deferred"="Deferred";
+"purchase_status_notsupported"="Not supported";
+"purchase_button_purchase"="Purchase";

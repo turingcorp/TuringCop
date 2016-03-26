@@ -6,8 +6,20 @@ NSString *documents;
 
 +(void)launch
 {
-    [[analytics singleton] start];
-    [updater update];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
+                   ^
+                   {
+                       [updater update];
+                       [msettings singleton];
+                       [mdb loadcourses];
+                       
+                       if(![mcourse singleton].courses[0].available)
+                       {
+                           [mcourse opencourse:[mcourseitemadd class]];
+                       }
+                       
+                       [[mcourse singleton] ready];
+                   });
 }
 
 #pragma mark private
@@ -27,9 +39,8 @@ NSString *documents;
         if(pro_version < 10)
         {
             [updater firsttime:defaults];
+            [mdb updatedb];
         }
-        
-        [mdb updatedb];
     }
     
     dbname = [documents stringByAppendingPathComponent:[properties valueForKey:@"dbname"]];
@@ -38,8 +49,6 @@ NSString *documents;
 +(void)firsttime:(NSDictionary*)plist
 {
     NSNumber *appid = plist[@"appid"];
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-    
     NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];
     
     [userdef removePersistentDomainForName:NSGlobalDomain];
@@ -48,7 +57,6 @@ NSString *documents;
     [userdef setValue:appid forKey:@"appid"];
     [userdef setValue:@0 forKey:@"ttl"];
     [userdef setValue:[[NSUUID UUID] UUIDString] forKey:@"uuid"];
-    [userdef setValue:dictionary forKey:@"settings"];
     [userdef synchronize];
 }
 

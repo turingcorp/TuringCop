@@ -1,10 +1,6 @@
 #import "vspinner.h"
 
 @implementation vspinner
-{
-    timerbg *timer;
-    CGFloat rotlines;
-}
 
 -(instancetype)init
 {
@@ -14,9 +10,14 @@
     [self setUserInteractionEnabled:NO];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self setContentMode:UIViewContentModeScaleAspectFit];
-    [self setAnimationImages:@[[UIImage imageNamed:@"spinner1"], [UIImage imageNamed:@"spinner2"], [UIImage imageNamed:@"spinner3"]]];
-    [self setAnimationDuration:0.1];
-    [self startAnimating];
+    [self setAnimationDuration:1.5];
+    self.animationImages = @[
+                             [UIImage imageNamed:@"loader0"],
+                             [UIImage imageNamed:@"loader1"],
+                             [UIImage imageNamed:@"loader2"],
+                             [UIImage imageNamed:@"loader3"],
+                             [UIImage imageNamed:@"loader4"]
+                             ];
     
     return self;
 }

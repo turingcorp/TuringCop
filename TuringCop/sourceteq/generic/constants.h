@@ -1,21 +1,15 @@
-// color
-
-#define colormain               [UIColor colorWithRed:0.6862 green:0.4862 blue:1 alpha:1]
-#define colorsecond             [UIColor colorWithRed:0.3 green:0.6 blue:0.8 alpha:1]
-
-// font
-
-#define fontname                @"Menlo-Regular"
-#define fontboldname            @"Menlo-Bold"
-
-// ids
-
-#define celid                   @"cel"
-#define footerid                @"footer"
-#define headerid                @"header"
+#define colormain               [UIColor colorWithRed:0.84313 green:0.21568 blue:0.26274 alpha:1]
+#define colorsecond             [UIColor colorWithRed:0.8549 green:0.8549 blue:0.8549 alpha:1]
+#define colorthird              [UIColor colorWithWhite:0.55294 alpha:1]
 
 // notifications
 
-// extra
+#define notcoursesloaded        @"coursesloaded"
+#define notscoreready           @"scoreready"
+#define notpurchaseupd          @"purchaseupdate"
+#define notstatsready           @"statsready"
 
-#define stringdrawing           NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
+// font
+
+#define fontregularname         @"AppleSDGothicNeo-Light"
+#define fontboldname            @"AppleSDGothicNeo-Medium"
