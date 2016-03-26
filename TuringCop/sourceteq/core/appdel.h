@@ -5,6 +5,7 @@
 #import <StoreKit/StoreKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <GLKit/GLKit.h>
 #import "db.h"
 #import "timerbg.h"
 #import "generic.h"

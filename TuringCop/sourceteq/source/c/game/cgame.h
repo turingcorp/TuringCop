@@ -1,5 +1,5 @@
 #import "appdel.h"
 
-@interface cgame:UIViewController
+@interface cgame:GLKViewController<GLKViewControllerDelegate>
 
 @end
