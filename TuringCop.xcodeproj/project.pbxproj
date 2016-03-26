@@ -31,7 +31,6 @@
 		DAE45A541CA61B6E00610E75 /* libtimerbg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE459ED1CA61B6E00610E75 /* libtimerbg.a */; };
 		DAE45A551CA61B6E00610E75 /* cmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE459F61CA61B6E00610E75 /* cmain.m */; };
 		DAE45A561CA61B6E00610E75 /* cpages.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE459F81CA61B6E00610E75 /* cpages.m */; };
-		DAE45A571CA61B6E00610E75 /* ctoast.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE459FA1CA61B6E00610E75 /* ctoast.m */; };
 		DAE45A5B1CA61B6E00610E75 /* cstore.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A041CA61B6E00610E75 /* cstore.m */; };
 		DAE45A5C1CA61B6E00610E75 /* mdb.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A081CA61B6E00610E75 /* mdb.m */; };
 		DAE45A5D1CA61B6E00610E75 /* mdbcreate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A0A1CA61B6E00610E75 /* mdbcreate.m */; };
@@ -49,7 +48,6 @@
 		DAE45A701CA61B6E00610E75 /* vblur.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A3A1CA61B6E00610E75 /* vblur.m */; };
 		DAE45A711CA61B6E00610E75 /* viewbase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A3C1CA61B6E00610E75 /* viewbase.m */; };
 		DAE45A721CA61B6E00610E75 /* vspinner.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A3E1CA61B6E00610E75 /* vspinner.m */; };
-		DAE45A731CA61B6E00610E75 /* vtoast.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A401CA61B6E00610E75 /* vtoast.m */; };
 		DAE45A741CA61B6E00610E75 /* vstore.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A431CA61B6E00610E75 /* vstore.m */; };
 		DAE45A751CA61B6E00610E75 /* vstorebar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A451CA61B6E00610E75 /* vstorebar.m */; };
 		DAE45A761CA61B6E00610E75 /* vstorecell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A471CA61B6E00610E75 /* vstorecell.m */; };
@@ -104,8 +102,6 @@
 		DAE459F61CA61B6E00610E75 /* cmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmain.m; sourceTree = "<group>"; };
 		DAE459F71CA61B6E00610E75 /* cpages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpages.h; sourceTree = "<group>"; };
 		DAE459F81CA61B6E00610E75 /* cpages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cpages.m; sourceTree = "<group>"; };
-		DAE459F91CA61B6E00610E75 /* ctoast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctoast.h; sourceTree = "<group>"; };
-		DAE459FA1CA61B6E00610E75 /* ctoast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ctoast.m; sourceTree = "<group>"; };
 		DAE45A031CA61B6E00610E75 /* cstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstore.h; sourceTree = "<group>"; };
 		DAE45A041CA61B6E00610E75 /* cstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cstore.m; sourceTree = "<group>"; };
 		DAE45A071CA61B6E00610E75 /* mdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdb.h; sourceTree = "<group>"; };
@@ -143,8 +139,6 @@
 		DAE45A3C1CA61B6E00610E75 /* viewbase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewbase.m; sourceTree = "<group>"; };
 		DAE45A3D1CA61B6E00610E75 /* vspinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vspinner.h; sourceTree = "<group>"; };
 		DAE45A3E1CA61B6E00610E75 /* vspinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vspinner.m; sourceTree = "<group>"; };
-		DAE45A3F1CA61B6E00610E75 /* vtoast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vtoast.h; sourceTree = "<group>"; };
-		DAE45A401CA61B6E00610E75 /* vtoast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vtoast.m; sourceTree = "<group>"; };
 		DAE45A421CA61B6E00610E75 /* vstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstore.h; sourceTree = "<group>"; };
 		DAE45A431CA61B6E00610E75 /* vstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vstore.m; sourceTree = "<group>"; };
 		DAE45A441CA61B6E00610E75 /* vstorebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstorebar.h; sourceTree = "<group>"; };
@@ -375,8 +369,6 @@
 				DAE459F61CA61B6E00610E75 /* cmain.m */,
 				DAE459F71CA61B6E00610E75 /* cpages.h */,
 				DAE459F81CA61B6E00610E75 /* cpages.m */,
-				DAE459F91CA61B6E00610E75 /* ctoast.h */,
-				DAE459FA1CA61B6E00610E75 /* ctoast.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -486,8 +478,6 @@
 				DAE45A3C1CA61B6E00610E75 /* viewbase.m */,
 				DAE45A3D1CA61B6E00610E75 /* vspinner.h */,
 				DAE45A3E1CA61B6E00610E75 /* vspinner.m */,
-				DAE45A3F1CA61B6E00610E75 /* vtoast.h */,
-				DAE45A401CA61B6E00610E75 /* vtoast.m */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -641,7 +631,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */,
-				DAE45A731CA61B6E00610E75 /* vtoast.m in Sources */,
 				DAE45A621CA61B6E00610E75 /* mstorepurchasesitem.m in Sources */,
 				DAE45A611CA61B6E00610E75 /* mstorepurchases.m in Sources */,
 				DAE45A601CA61B6E00610E75 /* mstore.m in Sources */,
@@ -650,7 +639,6 @@
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
 				DAE45A651CA61B6E00610E75 /* mstorestatusnew.m in Sources */,
-				DAE45A571CA61B6E00610E75 /* ctoast.m in Sources */,
 				DAE45A751CA61B6E00610E75 /* vstorebar.m in Sources */,
 				DAE45A701CA61B6E00610E75 /* vblur.m in Sources */,
 				DAE45A5F1CA61B6E00610E75 /* msettings.m in Sources */,
