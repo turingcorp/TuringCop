@@ -5,7 +5,7 @@
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    [self sectionstats:UIPageViewControllerNavigationDirectionForward animated:NO];
+    [self sectionhome];
     
     return self;
 }
@@ -40,19 +40,9 @@
 
 #pragma mark public
 
--(void)sectionplay:(mcourseitemchapter*)chapter
+-(void)sectionhome:(BOOL)animated
 {
-    [self changecontroller:[[cplay alloc] init:chapter] direction:UIPageViewControllerNavigationDirectionForward animated:YES];
-}
-
--(void)sectionstats:(UIPageViewControllerNavigationDirection)direction animated:(BOOL)animated
-{
-    [self changecontroller:[[cstats alloc] init] direction:direction animated:animated];
-}
-
--(void)sectionoptions
-{
-    [self changecontroller:[[coptions alloc] init] direction:UIPageViewControllerNavigationDirectionReverse animated:YES];
+    [self changecontroller:[[chome alloc] init:chapter] direction:UIPageViewControllerNavigationDirectionForward animated:animated];
 }
 
 @end

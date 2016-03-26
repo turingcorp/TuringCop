@@ -106,7 +106,7 @@ static NSUInteger const itempricesize = 14;
                 case SKPaymentTransactionStatePurchased:
                     
                     item.status = [[mstorestatuspurchased alloc] init];
-                    [mcourse opencourse:NSClassFromString(item.courseclass)];
+//                    [mcourse opencourse:NSClassFromString(item.courseclass)];
                     [[SKPaymentQueue defaultQueue] finishTransaction:tran];
                     
                     break;
@@ -120,7 +120,7 @@ static NSUInteger const itempricesize = 14;
                 case SKPaymentTransactionStateRestored:
                     
                     item.status = [[mstorestatuspurchased alloc] init];
-                    [mcourse opencourse:NSClassFromString(item.courseclass)];
+//                    [mcourse opencourse:NSClassFromString(item.courseclass)];
                     [[SKPaymentQueue defaultQueue] finishTransaction:tran];
                     
                     break;
