@@ -1,6 +1,9 @@
 #import "appdel.h"
-#import "viewbase.h"
 
-@interface vgame:viewbase
+@interface vgame:GLKView<GLKViewDelegate>
+
+-(instancetype)init:(GLKViewController*)controller;
+
+@property(weak, nonatomic)GLKViewController *controller;
 
 @end

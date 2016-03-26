@@ -7,7 +7,6 @@ static NSUInteger const framespersecond = 60;
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor blackColor]];
     [self setPauseOnWillResignActive:YES];
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
