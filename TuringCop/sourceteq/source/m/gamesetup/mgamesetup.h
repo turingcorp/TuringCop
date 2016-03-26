@@ -1,5 +1,6 @@
 #import "appdel.h"
-#import "mgamesetupitem.h"
+
+@class mgamesetupitem;
 
 @interface mgamesetup:NSObject
 

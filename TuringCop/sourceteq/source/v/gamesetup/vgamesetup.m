@@ -2,6 +2,7 @@
 
 static NSString* const gamesetupcell = @"cellid";
 static NSString* const gamesetupfooter = @"footerid";
+static NSUInteger const footerheight = 100;
 
 @interface vgamesetup ()
 
@@ -18,6 +19,7 @@ static NSString* const gamesetupfooter = @"footerid";
     self = [super init:controller];
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor blackColor]];
+    self.model = [[mgamesetup alloc] init];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     [flow setHeaderReferenceSize:CGSizeZero];
@@ -43,8 +45,25 @@ static NSString* const gamesetupfooter = @"footerid";
     return self;
 }
 
+#pragma mark functionality
+
+-(mgamesetupitem*)item:(NSIndexPath*)index
+{
+    mgamesetupitem *model = self.model.items[index.item];
+    
+    return model;
+}
+
 #pragma mark -
 #pragma mark col del
+
+-(CGSize)collectionView:(UICollectionView*)col layout:(UICollectionViewLayout*)layout referenceSizeForFooterInSection:(NSInteger)section
+{
+    CGFloat width = col.bounds.size.width;
+    CGSize size = CGSizeMake(width, footerheight);
+    
+    return size;
+}
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView*)col
 {
@@ -53,7 +72,9 @@ static NSString* const gamesetupfooter = @"footerid";
 
 -(NSInteger)collectionView:(UICollectionView*)col numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    NSUInteger count = self.model.items.count;
+    
+    return count;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView*)col cellForItemAtIndexPath:(NSIndexPath*)index

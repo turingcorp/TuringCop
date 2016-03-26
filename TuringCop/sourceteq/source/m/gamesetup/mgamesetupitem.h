@@ -2,4 +2,6 @@
 
 @interface mgamesetupitem:NSObject
 
+@property(nonatomic)NSUInteger cellheight;
+
 @end
