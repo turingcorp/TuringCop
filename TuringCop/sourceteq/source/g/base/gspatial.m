@@ -60,4 +60,15 @@
     [self vectorx:minx y:miny];
 }
 
+-(void)draw:(GLKBaseEffect*)effect
+{
+    effect.texture2d0.name = self.image.current;
+    effect.constantColor = self.color;
+    [effect prepareToDraw];
+    
+    glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 0, self.pointertexture);
+    glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.pointerposition);
+    glDrawArrays(GL_TRIANGLES, 0, self.size);
+}
+
 @end

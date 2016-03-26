@@ -12,3 +12,4 @@
 #import "mstorestatusdeferred.h"
 #import "mgamesetup.h"
 #import "mgamesetupitemmap.h"
+#import "mgamearea.h"

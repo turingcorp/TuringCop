@@ -4,6 +4,7 @@
 @interface gspatial:NSObject
 
 -(void)render;
+-(void)draw:(GLKBaseEffect*)effect;
 
 @property(strong, nonatomic)gimage *image;
 @property(nonatomic)GLKVector2 *pointerposition;
