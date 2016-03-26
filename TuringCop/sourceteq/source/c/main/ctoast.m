@@ -21,14 +21,9 @@
     return self;
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 -(BOOL)prefersStatusBarHidden
 {
-    return NO;
+    return YES;
 }
 
 -(void)loadView

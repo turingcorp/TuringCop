@@ -18,14 +18,9 @@
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 -(BOOL)prefersStatusBarHidden
 {
-    return NO;
+    return YES;
 }
 
 #pragma mark actions

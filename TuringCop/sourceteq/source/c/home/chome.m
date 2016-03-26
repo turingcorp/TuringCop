@@ -20,10 +20,9 @@
     [[analytics singleton] trackscreen:ga_screen_stats];
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(BOOL)prefersStatusBarHidden
 {
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    return YES;
 }
 
 -(void)loadView
