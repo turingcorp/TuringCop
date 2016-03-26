@@ -14,6 +14,7 @@
 #import "v.h"
 #import "c.h"
 #import "s.h"
+#import "g.h"
 
 @interface appdel:UIResponder<UIApplicationDelegate>
 
