@@ -9,3 +9,4 @@
 #import "vgamesetupcell.h"
 #import "vgamesetupfooter.h"
 #import "vgamesetuplocator.h"
+#import "vgame.h"

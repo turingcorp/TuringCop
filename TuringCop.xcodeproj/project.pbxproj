@@ -19,6 +19,7 @@
 		DA1BEC351CA671F900B464BF /* mgamesetupitemmap.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC341CA671F900B464BF /* mgamesetupitemmap.m */; };
 		DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC371CA6776C00B464BF /* vgamesetuplocator.m */; };
 		DA1BEC3A1CA679D800B464BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BEC391CA679D800B464BF /* MapKit.framework */; };
+		DA1BEC3E1CA7425E00B464BF /* vgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC3D1CA7425E00B464BF /* vgame.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
@@ -86,6 +87,8 @@
 		DA1BEC361CA6776C00B464BF /* vgamesetuplocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocator.h; sourceTree = "<group>"; };
 		DA1BEC371CA6776C00B464BF /* vgamesetuplocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocator.m; sourceTree = "<group>"; };
 		DA1BEC391CA679D800B464BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA1BEC3C1CA7425E00B464BF /* vgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgame.h; sourceTree = "<group>"; };
+		DA1BEC3D1CA7425E00B464BF /* vgame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgame.m; sourceTree = "<group>"; };
 		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
@@ -258,6 +261,15 @@
 				DA1BEC341CA671F900B464BF /* mgamesetupitemmap.m */,
 			);
 			path = gamesetup;
+			sourceTree = "<group>";
+		};
+		DA1BEC3B1CA7425400B464BF /* game */ = {
+			isa = PBXGroup;
+			children = (
+				DA1BEC3C1CA7425E00B464BF /* vgame.h */,
+				DA1BEC3D1CA7425E00B464BF /* vgame.m */,
+			);
+			path = game;
 			sourceTree = "<group>";
 		};
 		DA97E3AE1C6920D90084FFDF /* db */ = {
@@ -499,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE45A481CA61B6E00610E75 /* v.h */,
+				DA1BEC3B1CA7425400B464BF /* game */,
 				DA1BEC221CA670A300B464BF /* gamesetup */,
 				DABDF43B1CA620F800B240B4 /* home */,
 				DAE45A361CA61B6E00610E75 /* general */,
@@ -681,6 +694,7 @@
 				DAE45A601CA61B6E00610E75 /* mstore.m in Sources */,
 				DA1BEC181CA66ADE00B464BF /* uicolor+uicolormain.m in Sources */,
 				DAE45A5C1CA61B6E00610E75 /* mdb.m in Sources */,
+				DA1BEC3E1CA7425E00B464BF /* vgame.m in Sources */,
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
 				DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
