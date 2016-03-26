@@ -27,7 +27,7 @@ static NSUInteger const labelmarginright = 20;
     [statuslabel setUserInteractionEnabled:NO];
     [statuslabel setTranslatesAutoresizingMaskIntoConstraints:NO];
     [statuslabel setFont:[UIFont regularsize:17]];
-    [statuslabel setTextColor:colormain];
+    [statuslabel setTextColor:[UIColor main]];
     self.statuslabel = statuslabel;
     
     UIImageView *statusicon = [[UIImageView alloc] init];
@@ -39,7 +39,7 @@ static NSUInteger const labelmarginright = 20;
     self.statusicon = statusicon;
     
     UIButton *button = [[UIButton alloc] init];
-    [button setBackgroundColor:colormain];
+    [button setBackgroundColor:[UIColor main]];
     [button setClipsToBounds:YES];
     [button setTranslatesAutoresizingMaskIntoConstraints:NO];
     [button.layer setCornerRadius:4];

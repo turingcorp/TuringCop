@@ -6,7 +6,7 @@
 {
     self = [super init];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:colorsecond];
+    [self setBackgroundColor:[UIColor second]];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     self.controller = controller;

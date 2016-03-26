@@ -17,7 +17,7 @@ static NSUInteger const cellheight = 170;
 {
     self = [super init:controller];
     [self setClipsToBounds:YES];
-    [self setBackgroundColor:colorsecond];
+    [self setBackgroundColor:[UIColor second]];
     
     vstorebar *bar = [[vstorebar alloc] init:controller];
     
@@ -43,7 +43,7 @@ static NSUInteger const cellheight = 170;
     self.collection = collection;
     
     UIButton *buttontryagain = [[UIButton alloc] init];
-    [buttontryagain setBackgroundColor:colormain];
+    [buttontryagain setBackgroundColor:[UIColor main]];
     [buttontryagain setClipsToBounds:YES];
     [buttontryagain.layer setCornerRadius:4];
     [buttontryagain setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
