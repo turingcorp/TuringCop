@@ -85,7 +85,6 @@
 		DAE459DD1CA61B6E00610E75 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAE459DF1CA61B6E00610E75 /* analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = analytics.h; sourceTree = "<group>"; };
 		DAE459E01CA61B6E00610E75 /* analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = analytics.m; sourceTree = "<group>"; };
-		DAE459E11CA61B6E00610E75 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		DAE459E21CA61B6E00610E75 /* generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic.h; sourceTree = "<group>"; };
 		DAE459E31CA61B6E00610E75 /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		DAE459E41CA61B6E00610E75 /* tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tools.m; sourceTree = "<group>"; };
@@ -290,7 +289,6 @@
 				DAE459E21CA61B6E00610E75 /* generic.h */,
 				DAE459DF1CA61B6E00610E75 /* analytics.h */,
 				DAE459E01CA61B6E00610E75 /* analytics.m */,
-				DAE459E11CA61B6E00610E75 /* constants.h */,
 				DAE459E31CA61B6E00610E75 /* tools.h */,
 				DAE459E41CA61B6E00610E75 /* tools.m */,
 				DAE459E51CA61B6E00610E75 /* updater.h */,
