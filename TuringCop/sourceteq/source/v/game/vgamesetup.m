@@ -17,6 +17,11 @@
     [self setBackgroundColor:[UIColor blackColor]];
     
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setHeaderReferenceSize:CGSizeZero];
+    [flow setMinimumLineSpacing:0];
+    [flow setMinimumInteritemSpacing:0];
+    [flow setSectionInset:UIEdgeInsetsZero];
+    [flow setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
     [collection setClipsToBounds:YES];

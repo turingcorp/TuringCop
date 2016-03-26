@@ -76,7 +76,7 @@ static NSUInteger const cellheight = 170;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bar(65)]-0-[col]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[col]-0-|" options:0 metrics:metrics views:views]];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedupdatepurchases:) name:notpurchaseupd object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedupdatepurchases:) name:notification_purchaseupd object:nil];
     
     return self;
 }

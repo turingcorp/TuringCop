@@ -28,7 +28,7 @@
 {
     self = [super init];
     
-    self.notification = [NSNotification notificationWithName:notpurchaseupd object:nil];
+    self.notification = [NSNotification notificationWithName:notification_purchaseupd object:nil];
     
     return self;
 }

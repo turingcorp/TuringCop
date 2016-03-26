@@ -51,7 +51,7 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[buttonrestore(110)]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-15-[buttonrestore(50)]" options:0 metrics:metrics views:views]];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedstorereloaded:) name:notpurchaseupd object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedstorereloaded:) name:notification_purchaseupd object:nil];
     
     return self;
 }

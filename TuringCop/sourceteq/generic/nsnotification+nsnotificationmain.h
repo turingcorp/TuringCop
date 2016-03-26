@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-static NSString* const notpurchaseupd = @"purchaseupdate";
+static NSString* const notification_purchaseupd = @"purchaseupdate";
 
 @interface NSNotification (nsnotificationmain)
 
