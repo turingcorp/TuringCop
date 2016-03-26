@@ -1,0 +1,78 @@
+"course_open"="Capitulo %@ en %@\ndesbloqueado!";
+
+"course_add_name"="Suma";
+"course_subs_name"="Resta";
+"course_mult_name"="Multiplicacion";
+"course_div_name"="Division";
+
+"stats_empty"="No hay estadisticas aun";
+"stats_title"="Ultimos juegos";
+
+"chapter_cel_notactive"="Capitulo no activado";
+"chapter_cel_nevertaken"="Capitulo nunca tomado";
+"chapter_cel_buttonstore"="Tienda";
+
+"play_back_alert_title"="¿Para juego?";
+"play_back_alert_message"="Tu avance se perdera";
+"play_back_alert_accept"="Parar";
+"play_back_alert_cancel"="Seguir jugando";
+"play_loader_subtitle"="\nCapitulo %@";
+"play_loader_stats"="\nReto %@ de %@";
+"play_bar_timer"="%@:%@";
+"play_finish_title"="Finalizdo";
+"play_finish_subtitle"="\nCapitulo %@\n\n\n\nPuntaje\n";
+"play_finish_maxscore"="\nMaximo puntaje: %@";
+"play_finish_newrecord"="\nNuevo puntaje maximo!";
+"play_finish_bar_button"="Listo";
+"play_finish_fails_badge"="Exitos";
+"play_finish_points_maxscore"="Maximo puntaje";
+"play_finish_points_currentscore"="Puntaje actual";
+"play_finish_points_maxcourse"="Maximo en el curso";
+"play_finish_chapters_title"="Capitulos en el curso";
+
+"toast_continue"="Continuar";
+
+"elapsedtime_title"="Hace %@";
+"elapsedtime_days"="%@ dias";
+"elapsedtime_hours"="%@ horas";
+"elapsedtime_minutes"="%@ minutos";
+
+"options_title"="Opciones";
+"options_item_store_title"="Compras en la app";
+"options_item_store_contact"="Contactanos";
+"options_item_store_rate"="Escribir reseña en la tienda";
+
+"contact_title"="Contacto";
+"contact_rate_title"="¿Como calificarias la app?";
+"contact_rate_rated"="Gracias por tu retroalimentacion";
+"contact_email_button"="Enviar email";
+"contact_email_title"="¿Tienes dudas?";
+"contact_email_subtitle"="\nEnvianos un email, Te aseguramos que los leeremos y te contestaremos pronto.";
+"contact_write_generaltitle"="Envianos un mensaje";
+"contact_write_nametitle"="Nombre (opcional)";
+"contact_write_emailtitle"="Email (opcional)";
+"contact_write_messagetitle"="Mensaje";
+"contact_write_buttonsend"="Enviar";
+"contact_write_emptymessage"="¡Mensaje vacio!";
+"contact_write_messagesent"="¡Gracias! Recibimos tu mensaje";
+
+"store_title"="Tienda";
+"store_tryagain"="Reintentar";
+"store_restore"="Restaurar";
+"store_restoring"="Restaruando compras";
+
+"error_connectionfailed"="La conexion a internet fallo, intenta de nuevo";
+
+"purchase_substraction_title"="Resta";
+"purchase_substraction_descr"="Desbloquea el primer capitulo de este curso";
+"purchase_multiplication_title"="Multiplicacion";
+"purchase_multiplication_descr"="Desbloquea el primer capitulo de este curso";
+"purchase_division_title"="Division";
+"purchase_division_descr"="Desbloquea el primer capitulo de este curso";
+
+"purchase_status_purchased"="Comprado";
+"purchase_status_new"="Nuevo";
+"purchase_status_purchasing"="Comprando";
+"purchase_status_deferred"="Detenido";
+"purchase_status_notsupported"="No soportado";
+"purchase_button_purchase"="Comprar";

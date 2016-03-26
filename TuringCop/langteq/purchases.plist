@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>iturbide.GaussAcademy.substraction</string>
+		<key>title</key>
+		<string>purchase_substraction_title</string>
+		<key>descr</key>
+		<string>purchase_substraction_descr</string>
+        <key>courseclass</key>
+        <string>mcourseitemsubs</string>
+	</dict>
+    <dict>
+        <key>id</key>
+        <string>iturbide.GaussAcademy.multiplication</string>
+        <key>title</key>
+        <string>purchase_multiplication_title</string>
+        <key>descr</key>
+        <string>purchase_multiplication_descr</string>
+        <key>courseclass</key>
+        <string>mcourseitemmult</string>
+    </dict>
+    <dict>
+        <key>id</key>
+        <string>iturbide.GaussAcademy.division</string>
+        <key>title</key>
+        <string>purchase_division_title</string>
+        <key>descr</key>
+        <string>purchase_division_descr</string>
+        <key>courseclass</key>
+        <string>mcourseitemdiv</string>
+    </dict>
+</array>
+</plist>
