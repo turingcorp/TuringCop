@@ -1,13 +1,9 @@
-//
-//  mfoe.h
-//  TuringCop
-//
-//  Created by zero on 3/27/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@class mfoeitem;
 
-@interface mfoe : NSObject
+@interface mfoe:NSObject
+
+@property(strong, nonatomic)NSMutableArray<mfoeitem*> *items;
 
 @end

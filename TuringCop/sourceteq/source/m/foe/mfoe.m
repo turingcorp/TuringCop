@@ -1,13 +1,13 @@
-//
-//  mfoe.m
-//  TuringCop
-//
-//  Created by zero on 3/27/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
-
 #import "mfoe.h"
 
 @implementation mfoe
+
+-(instancetype)init
+{
+    self = [super init];
+    self.items = [NSMutableArray array];
+    
+    return self;
+}
 
 @end

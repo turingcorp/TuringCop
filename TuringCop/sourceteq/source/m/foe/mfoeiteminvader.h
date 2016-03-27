@@ -1,13 +1,6 @@
-//
-//  mfoeiteminvader.h
-//  TuringCop
-//
-//  Created by zero on 3/27/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "mfoeitem.h"
 
-#import <Foundation/Foundation.h>
-
-@interface mfoeiteminvader : NSObject
+@interface mfoeiteminvader:mfoeitem
 
 @end
