@@ -14,4 +14,4 @@
 #import "mgamesetupitemmap.h"
 #import "mgamearea.h"
 #import "mfoe.h"
-#import "mfoeinvader.h"
+#import "mfoeiteminvader.h"
