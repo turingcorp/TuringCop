@@ -1,13 +1,7 @@
-//
-//  mgamearea.h
-//  TuringCop
-//
-//  Created by zero on 3/26/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
 
-#import <Foundation/Foundation.h>
+@interface mgamearea:NSObject
 
-@interface mgamearea : NSObject
+@property(strong, nonatomic)UIImage *image;
 
 @end
