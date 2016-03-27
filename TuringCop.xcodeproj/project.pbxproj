@@ -296,6 +296,7 @@
 			children = (
 				DA1BEC401CA748E600B464BF /* g.h */,
 				DA1BEC451CA7495400B464BF /* base */,
+				DAB395041CA86D2900D69DDA /* foe */,
 				DA1BEC411CA7490A00B464BF /* area */,
 			);
 			path = g;
@@ -340,6 +341,13 @@
 				DA97E3AF1C6920D90084FFDF /* turingcop.db */,
 			);
 			path = db;
+			sourceTree = "<group>";
+		};
+		DAB395041CA86D2900D69DDA /* foe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = foe;
 			sourceTree = "<group>";
 		};
 		DABDF43B1CA620F800B240B4 /* home */ = {
