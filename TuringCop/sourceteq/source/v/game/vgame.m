@@ -10,7 +10,16 @@
     [self setDelegate:self];
     self.controller = controller;
     [EAGLContext setCurrentContext:self.context];
+    [self starteffect];
+    [self startglk];
     
+    return self;
+}
+
+#pragma mark functionality
+
+-(void)starteffect
+{
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     CGFloat screenwidth;
@@ -32,11 +41,12 @@
     self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
     self.effect.texture2d0.target = GLKTextureTarget2D;
     [self.effect prepareToDraw];
-    
-    return self;
 }
 
-#pragma mark functionality
+-(void)startglk
+{
+    
+}
 
 -(void)notifydraw
 {

@@ -47,9 +47,9 @@
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 
--(void)sectiongamestart
+-(void)sectiongamestart:(mgamearea*)modelarea;
 {
-    UIViewController *controller = [[cgame alloc] init];
+    UIViewController *controller = [[cgame alloc] init:modelarea];
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 

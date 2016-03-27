@@ -25,6 +25,7 @@
 		DA1BEC4B1CA74D3700B464BF /* gspatial.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC4A1CA74D3700B464BF /* gspatial.m */; };
 		DA1BEC4E1CA74D9300B464BF /* gimage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC4D1CA74D9300B464BF /* gimage.m */; };
 		DA1BEC521CA7596E00B464BF /* mgamearea.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC511CA7596E00B464BF /* mgamearea.m */; };
+		DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC541CA75D3B00B464BF /* gareaspatial.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
@@ -105,6 +106,8 @@
 		DA1BEC4D1CA74D9300B464BF /* gimage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gimage.m; sourceTree = "<group>"; };
 		DA1BEC501CA7596E00B464BF /* mgamearea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgamearea.h; sourceTree = "<group>"; };
 		DA1BEC511CA7596E00B464BF /* mgamearea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgamearea.m; sourceTree = "<group>"; };
+		DA1BEC531CA75D3B00B464BF /* gareaspatial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gareaspatial.h; sourceTree = "<group>"; };
+		DA1BEC541CA75D3B00B464BF /* gareaspatial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gareaspatial.m; sourceTree = "<group>"; };
 		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 			children = (
 				DA1BEC421CA7491800B464BF /* garea.h */,
 				DA1BEC431CA7491800B464BF /* garea.m */,
+				DA1BEC531CA75D3B00B464BF /* gareaspatial.h */,
+				DA1BEC541CA75D3B00B464BF /* gareaspatial.m */,
 			);
 			path = area;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 				DAE45A641CA61B6E00610E75 /* mstorestatusdeferred.m in Sources */,
 				DA1BEC521CA7596E00B464BF /* mgamearea.m in Sources */,
 				DAE45A631CA61B6E00610E75 /* mstorestatus.m in Sources */,
+				DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */,
 				DAE45A511CA61B6E00610E75 /* tools.m in Sources */,
 				DABDF43E1CA6210100B240B4 /* vhome.m in Sources */,
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,

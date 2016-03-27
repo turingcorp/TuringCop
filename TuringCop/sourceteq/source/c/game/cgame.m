@@ -2,7 +2,23 @@
 
 static NSUInteger const framespersecond = 60;
 
+@interface cgame ()
+
+@property(strong, nonatomic)vgame *view;
+
+@end
+
 @implementation cgame
+
+@dynamic view;
+
+-(instancetype)init:(mgamearea*)modelarea
+{
+    self = [super init];
+    self.modelarea = modelarea;
+    
+    return self;
+}
 
 -(void)viewDidLoad
 {
@@ -11,6 +27,11 @@ static NSUInteger const framespersecond = 60;
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
     [self setDelegate:self];
+}
+
+-(void)loadView
+{
+    self.view = [[vgame alloc] init:self];
 }
 
 #pragma mark -

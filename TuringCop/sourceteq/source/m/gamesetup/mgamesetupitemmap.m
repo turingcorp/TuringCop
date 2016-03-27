@@ -18,6 +18,15 @@ static NSUInteger const mapcellheight = 200;
     return self;
 }
 
+#pragma mark public
+
+-(mgamearea*)modelarea
+{
+    mgamearea *modelarea = self.locator.gamearea;
+    
+    return modelarea;
+}
+
 #pragma mark -
 #pragma mark game setup
 
