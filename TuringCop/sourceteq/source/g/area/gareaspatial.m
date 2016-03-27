@@ -8,8 +8,8 @@
     self.model = model;
     self.x = 0;
     self.y = 0;
-    self.width = 400;
-    self.height = 400;
+    self.width = 2000;
+    self.height = 2000;
     [self.image loadtextureimage:model.image];
     [self render];
     
