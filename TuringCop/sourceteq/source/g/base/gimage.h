@@ -3,7 +3,8 @@
 
 @interface gimage:NSObject
 
--(instancetype)init:(NSArray<NSString*>*)textures;
+-(void)loadtextures:(NSArray<NSString*>*)textures;
+-(void)loadtextureimage:(UIImage*)image;
 
 @property(strong, nonatomic)NSMutableArray<NSNumber*> *textures;
 @property(nonatomic)GLuint current;

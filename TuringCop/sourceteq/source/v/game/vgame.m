@@ -2,7 +2,7 @@
 
 @implementation vgame
 
--(instancetype)init:(GLKViewController*)controller
+-(instancetype)init:(cgame*)controller
 {
     self = [super init];
     [self setBackgroundColor:[UIColor blackColor]];
@@ -45,7 +45,7 @@
 
 -(void)startglk
 {
-    
+    self.glkarea = [[garea alloc] init:self.controller.modelarea];
 }
 
 -(void)notifydraw

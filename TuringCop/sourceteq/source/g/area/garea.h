@@ -8,7 +8,6 @@
 
 -(instancetype)init:(mgamearea*)model;
 
-@property(weak, nonatomic)mgamearea *model;
 @property(strong, nonatomic)gareaspatial *spatial;
 
 @end

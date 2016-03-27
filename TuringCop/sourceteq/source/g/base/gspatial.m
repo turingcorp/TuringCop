@@ -21,6 +21,7 @@
     self.pointertexture[3] = GLKVector2Make(1, 1);
     self.pointertexture[4] = GLKVector2Make(1, 0);
     self.pointertexture[5] = GLKVector2Make(0, 0);
+    self.image = [[gimage alloc] init];
     
     return self;
 }

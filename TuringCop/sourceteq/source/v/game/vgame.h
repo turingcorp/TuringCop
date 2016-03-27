@@ -1,12 +1,16 @@
 #import "appdel.h"
 
+@class cgame;
+@class garea;
+
 static NSString* const userinfoeffect = @"effect";
 
 @interface vgame:GLKView<GLKViewDelegate>
 
--(instancetype)init:(GLKViewController*)controller;
+-(instancetype)init:(cgame*)controller;
 
-@property(weak, nonatomic)GLKViewController *controller;
+@property(strong, nonatomic)garea *glkarea;
+@property(weak, nonatomic)cgame *controller;
 @property(strong, nonatomic)GLKBaseEffect *effect;
 
 @end

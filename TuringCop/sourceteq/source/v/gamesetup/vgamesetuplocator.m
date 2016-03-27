@@ -83,7 +83,7 @@ static CGFloat const mapspanradius = 0.02;
     
     MKMapSnapshotOptions *options = [[MKMapSnapshotOptions alloc] init];
     options.region = region;
-    options.size = CGSizeMake(2500, 2500);
+    options.size = CGSizeMake(1000, 1000);
     options.showsBuildings = NO;
     options.showsPointsOfInterest = NO;
     options.mapType = MKMapTypeStandard;
