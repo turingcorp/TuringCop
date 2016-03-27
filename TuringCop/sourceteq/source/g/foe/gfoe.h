@@ -1,13 +1,6 @@
-//
-//  gfoe.h
-//  TuringCop
-//
-//  Created by zero on 3/27/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "gbase.h"
 
-#import <Foundation/Foundation.h>
-
-@interface gfoe : NSObject
+@interface gfoe:gbase
 
 @end

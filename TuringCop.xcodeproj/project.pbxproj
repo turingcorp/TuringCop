@@ -29,6 +29,7 @@
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DAB395071CA86D4E00D69DDA /* gfoe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395061CA86D4E00D69DDA /* gfoe.m */; };
+		DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395091CA86D9A00D69DDA /* gfoeinvader.m */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
 		DABDF4421CA625C900B240B4 /* cgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4411CA625C900B240B4 /* cgame.m */; };
 		DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4441CA626B900B240B4 /* cgamesetup.m */; };
@@ -113,6 +114,8 @@
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DAB395051CA86D4E00D69DDA /* gfoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoe.h; sourceTree = "<group>"; };
 		DAB395061CA86D4E00D69DDA /* gfoe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoe.m; sourceTree = "<group>"; };
+		DAB395081CA86D9A00D69DDA /* gfoeinvader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeinvader.h; sourceTree = "<group>"; };
+		DAB395091CA86D9A00D69DDA /* gfoeinvader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeinvader.m; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABDF43D1CA6210100B240B4 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
 		DABDF4401CA625C900B240B4 /* cgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgame.h; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 			children = (
 				DAB395051CA86D4E00D69DDA /* gfoe.h */,
 				DAB395061CA86D4E00D69DDA /* gfoe.m */,
+				DAB395081CA86D9A00D69DDA /* gfoeinvader.h */,
+				DAB395091CA86D9A00D69DDA /* gfoeinvader.m */,
 			);
 			path = foe;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				DA1BEC3E1CA7425E00B464BF /* vgame.m in Sources */,
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
 				DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */,
+				DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
 				DA1BEC2B1CA670BC00B464BF /* vgamesetupfooter.m in Sources */,
 				DAE45A651CA61B6E00610E75 /* mstorestatusnew.m in Sources */,
