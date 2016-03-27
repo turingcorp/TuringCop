@@ -42,17 +42,4 @@ static NSUInteger const framespersecond = 60;
     self.glkarea = [[garea alloc] init:self.modelarea];
 }
 
-#pragma mark -
-#pragma mark glkcontroller del
-
--(void)glkViewController:(GLKViewController*)controller willPause:(BOOL)pause
-{
-    NSLog(@"will pause");
-}
-
--(void)glkViewControllerUpdate:(GLKViewController*)controller
-{
-//    [[NSNotificationCenter defaultCenter] postNotification:notificationmove];
-}
-
 @end

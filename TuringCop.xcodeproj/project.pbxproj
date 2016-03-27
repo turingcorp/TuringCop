@@ -33,6 +33,7 @@
 		DAB3950E1CA86E0500D69DDA /* mfoe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB3950D1CA86E0500D69DDA /* mfoe.m */; };
 		DAB395141CA86E5C00D69DDA /* mfoeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395131CA86E5C00D69DDA /* mfoeitem.m */; };
 		DAB395171CA86E6600D69DDA /* mfoeiteminvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395161CA86E6600D69DDA /* mfoeiteminvader.m */; };
+		DAB3951A1CA86FEB00D69DDA /* cgamedelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395191CA86FEB00D69DDA /* cgamedelegate.m */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
 		DABDF4421CA625C900B240B4 /* cgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4411CA625C900B240B4 /* cgame.m */; };
 		DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4441CA626B900B240B4 /* cgamesetup.m */; };
@@ -125,6 +126,8 @@
 		DAB395131CA86E5C00D69DDA /* mfoeitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mfoeitem.m; sourceTree = "<group>"; };
 		DAB395151CA86E6600D69DDA /* mfoeiteminvader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mfoeiteminvader.h; sourceTree = "<group>"; };
 		DAB395161CA86E6600D69DDA /* mfoeiteminvader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mfoeiteminvader.m; sourceTree = "<group>"; };
+		DAB395181CA86FEB00D69DDA /* cgamedelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgamedelegate.h; sourceTree = "<group>"; };
+		DAB395191CA86FEB00D69DDA /* cgamedelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgamedelegate.m; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABDF43D1CA6210100B240B4 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
 		DABDF4401CA625C900B240B4 /* cgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgame.h; sourceTree = "<group>"; };
@@ -396,6 +399,8 @@
 			children = (
 				DABDF4401CA625C900B240B4 /* cgame.h */,
 				DABDF4411CA625C900B240B4 /* cgame.m */,
+				DAB395181CA86FEB00D69DDA /* cgamedelegate.h */,
+				DAB395191CA86FEB00D69DDA /* cgamedelegate.m */,
 				DABDF4431CA626B900B240B4 /* cgamesetup.h */,
 				DABDF4441CA626B900B240B4 /* cgamesetup.m */,
 			);
@@ -797,6 +802,7 @@
 				DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */,
 				DAE45A621CA61B6E00610E75 /* mstorepurchasesitem.m in Sources */,
 				DAE45A611CA61B6E00610E75 /* mstorepurchases.m in Sources */,
+				DAB3951A1CA86FEB00D69DDA /* cgamedelegate.m in Sources */,
 				DAE45A601CA61B6E00610E75 /* mstore.m in Sources */,
 				DA1BEC181CA66ADE00B464BF /* uicolor+uicolormain.m in Sources */,
 				DAE45A5C1CA61B6E00610E75 /* mdb.m in Sources */,
