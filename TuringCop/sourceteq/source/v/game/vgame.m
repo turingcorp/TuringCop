@@ -11,7 +11,6 @@
     self.controller = controller;
     [EAGLContext setCurrentContext:self.context];
     [self starteffect];
-    [self startglk];
     
     return self;
 }
@@ -41,11 +40,6 @@
     self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
     self.effect.texture2d0.target = GLKTextureTarget2D;
     [self.effect prepareToDraw];
-}
-
--(void)startglk
-{
-    self.glkarea = [[garea alloc] init:self.controller.modelarea];
 }
 
 -(void)notifydraw

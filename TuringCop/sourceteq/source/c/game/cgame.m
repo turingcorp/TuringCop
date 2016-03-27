@@ -27,11 +27,19 @@ static NSUInteger const framespersecond = 60;
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
     [self setDelegate:self];
+    [self startglk];
 }
 
 -(void)loadView
 {
     self.view = [[vgame alloc] init:self];
+}
+
+#pragma mark functionality
+
+-(void)startglk
+{
+    self.glkarea = [[garea alloc] init:self.modelarea];
 }
 
 #pragma mark -
