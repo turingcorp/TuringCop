@@ -26,7 +26,8 @@ static NSUInteger const framespersecond = 60;
     [self setPauseOnWillResignActive:YES];
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
-    [self setDelegate:self];
+    [self setDelegate:[[cgamedelegate alloc] init]];
+    [self startmodel];
     [self startglk];
 }
 
@@ -36,6 +37,11 @@ static NSUInteger const framespersecond = 60;
 }
 
 #pragma mark functionality
+
+-(void)startmodel
+{
+    self.modelfoe = [[mfoe alloc] init];
+}
 
 -(void)startglk
 {

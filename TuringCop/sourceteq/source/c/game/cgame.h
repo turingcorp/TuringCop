@@ -5,7 +5,7 @@
 @class garea;
 @class gfoe;
 
-@interface cgame:GLKViewController<GLKViewControllerDelegate>
+@interface cgame:GLKViewController
 
 -(instancetype)init:(mgamearea*)modelarea;
 
