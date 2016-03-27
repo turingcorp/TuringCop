@@ -1,13 +1,6 @@
-//
-//  gareaspatial.h
-//  TuringCop
-//
-//  Created by zero on 3/26/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "gspatial.h"
 
-#import <Foundation/Foundation.h>
-
-@interface gareaspatial : NSObject
+@interface gareaspatial:gspatial
 
 @end
