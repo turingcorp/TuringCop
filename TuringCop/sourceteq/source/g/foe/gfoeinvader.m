@@ -8,8 +8,9 @@
     self.model = model;
     self.x = 0;
     self.y = 0;
-    self.width = 100;
-    self.height = 100;
+    self.width = 84;
+    self.height = 84;
+    self.color = GLKVector4Make(1, 0, 0, 1);
     [self.image loadtextures:@[@"foe_invader0"]];
     [self render];
     
