@@ -83,7 +83,7 @@
                        {
                            NSString *texturename = textures[i];
                            UIImage *image = [UIImage imageNamed:texturename];
-                           GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:nil error:nil];
+                           GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:@{GLKTextureLoaderSRGB:@(YES)} error:nil];
                            GLuint texture = textureinfo.name;
                            [self.textures addObject:@(texture)];
                        }

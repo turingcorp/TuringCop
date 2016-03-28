@@ -16,6 +16,7 @@
 -(void)draw:(GLKBaseEffect*)effect
 {
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
+    effect.useConstantColor = NO;
     
     for(mfoeitem *item in self.model.items)
     {

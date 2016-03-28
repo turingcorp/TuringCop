@@ -16,6 +16,7 @@
 -(void)draw:(GLKBaseEffect*)effect
 {
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
+    effect.useConstantColor = NO;
     [self.spatial draw:effect];
 }
 
