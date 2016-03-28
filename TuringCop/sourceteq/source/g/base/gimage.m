@@ -11,7 +11,7 @@
 -(instancetype)init
 {
     self = [super init];
-    self.speed = 30;
+    self.speed = 15;
     self.textures = [NSMutableArray array];
     self.random = NO;
     self.srgb = NO;
