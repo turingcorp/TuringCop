@@ -9,13 +9,18 @@ static NSUInteger const framespersecond = 60;
 @end
 
 @implementation cgame
+{
+    NSNotification *notificationmove;
+}
 
 @dynamic view;
+@dynamic delegate;
 
 -(instancetype)init:(mgamearea*)modelarea
 {
     self = [super init];
     self.modelarea = modelarea;
+    notificationmove = [NSNotification notificationWithName:notification_glkmove object:nil];
     
     return self;
 }
@@ -26,7 +31,7 @@ static NSUInteger const framespersecond = 60;
     [self setPauseOnWillResignActive:YES];
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
-    [self setDelegate:[[cgamedelegate alloc] init]];
+    [self setDelegate:self];
     [self startmodel];
     [self startglk];
 }
@@ -47,6 +52,19 @@ static NSUInteger const framespersecond = 60;
 {
     self.glkarea = [[garea alloc] init:self.modelarea];
     self.glkfoe = [[gfoe alloc] init:self.modelfoe];
+}
+
+#pragma mark -
+#pragma mark glk del
+
+-(void)glkViewController:(GLKViewController*)controller willPause:(BOOL)pause
+{
+    NSLog(@"will pause");
+}
+
+-(void)glkViewControllerUpdate:(GLKViewController*)controller
+{
+    [[NSNotificationCenter defaultCenter] postNotification:notificationmove];
 }
 
 @end
