@@ -6,6 +6,7 @@
 {
     self = [super init];
     self.items = [NSMutableArray array];
+    [self.items addObject:[[mfoeiteminvader alloc] init]];
     
     return self;
 }

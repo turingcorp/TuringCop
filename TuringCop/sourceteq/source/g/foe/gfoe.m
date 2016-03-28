@@ -16,7 +16,11 @@
 -(void)draw:(GLKBaseEffect*)effect
 {
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
-//    [self.spatial draw:effect];
+    
+    for(mfoeitem *item in self.model.items)
+    {
+        [item.spatial draw:effect];
+    }
 }
 
 @end
