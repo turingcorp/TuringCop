@@ -15,7 +15,7 @@
 
 -(void)draw:(GLKBaseEffect*)effect
 {
-    effect.texture2d0.envMode = GLKTextureEnvModeModulate;
+    effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     
     for(mfoeitem *item in self.model.items)
     {

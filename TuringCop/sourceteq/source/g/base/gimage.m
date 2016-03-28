@@ -1,4 +1,5 @@
 #import "gimage.h"
+#import "nsnotification+nsnotificationmain.h"
 
 @implementation gimage
 {
@@ -14,8 +15,6 @@
     self.textures = [NSMutableArray array];
     speedcounter = 0;
     
-#warning "add animation, add notification move"
-    
     return self;
 }
 
@@ -29,6 +28,19 @@
     }
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark notified
+
+-(void)notifiedglkmove:(NSNotification*)notification
+{
+    speedcounter++;
+    
+    if(speedcounter >= self.speed)
+    {
+        speedcounter = 0;
+        [self nextimage];
+    }
 }
 
 #pragma mark functionality
@@ -64,15 +76,6 @@
 {
     counter = textures.count;
     
-    if(counter == 1)
-    {
-        self.random = NO;
-    }
-    else
-    {
-        self.random = YES;
-    }
-    
     dispatch_async(dispatch_get_main_queue(),
                    ^
                    {
@@ -86,6 +89,7 @@
                        }
                        
                        [self nextimage];
+                       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
                    });
 }
 

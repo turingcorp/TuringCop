@@ -37,7 +37,6 @@
     
     self.effect = [[GLKBaseEffect alloc] init];
     self.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, screenwidth, screenheight, 0, 1, -1);
-    self.effect.texture2d0.envMode = GLKTextureEnvModeModulate;
     self.effect.texture2d0.target = GLKTextureTarget2D;
     [self.effect prepareToDraw];
 }
@@ -53,7 +52,7 @@
 -(void)glkView:(GLKView*)view drawInRect:(CGRect)rect
 {
     glDisable(GL_DEPTH_TEST);
-    glClearColor(0,0,0,1);
+    glClearColor(0,0,0,0);
     glClear(GL_COLOR_BUFFER_BIT);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
