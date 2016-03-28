@@ -12,6 +12,7 @@
     self.height = 84;
     [self.image loadtextures:@[@"foe_invader0", @"foe_invader1"]];
     self.image.random = YES;
+    self.image.srgb = YES;
     [self render];
     
     return self;

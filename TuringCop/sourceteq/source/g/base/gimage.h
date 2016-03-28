@@ -10,5 +10,6 @@
 @property(nonatomic)GLuint current;
 @property(nonatomic)NSUInteger speed;
 @property(nonatomic)BOOL random;
+@property(nonatomic)BOOL srgb;
 
 @end

@@ -14,6 +14,7 @@
     self.speed = 30;
     self.textures = [NSMutableArray array];
     self.random = NO;
+    self.srgb = NO;
     speedcounter = 0;
     
     return self;
@@ -73,7 +74,7 @@
 
 -(void)addimage:(UIImage*)image
 {
-    GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:@{GLKTextureLoaderSRGB:@(YES)} error:nil];
+    GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:@{GLKTextureLoaderSRGB:@(self.srgb)} error:nil];
     GLuint texture = textureinfo.name;
     [self.textures addObject:@(texture)];
 }
