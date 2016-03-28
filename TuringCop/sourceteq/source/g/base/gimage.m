@@ -13,6 +13,7 @@
     self = [super init];
     self.speed = 30;
     self.textures = [NSMutableArray array];
+    self.random = NO;
     speedcounter = 0;
     
     return self;
@@ -70,6 +71,13 @@
     [self loadcurrent];
 }
 
+-(void)addimage:(UIImage*)image
+{
+    GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:@{GLKTextureLoaderSRGB:@(YES)} error:nil];
+    GLuint texture = textureinfo.name;
+    [self.textures addObject:@(texture)];
+}
+
 #pragma mark public
 
 -(void)loadtextures:(NSArray<NSString*>*)textures
@@ -83,9 +91,7 @@
                        {
                            NSString *texturename = textures[i];
                            UIImage *image = [UIImage imageNamed:texturename];
-                           GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:@{GLKTextureLoaderSRGB:@(YES)} error:nil];
-                           GLuint texture = textureinfo.name;
-                           [self.textures addObject:@(texture)];
+                           [self addimage:image];
                        }
                        
                        [self nextimage];
@@ -98,10 +104,8 @@
     dispatch_async(dispatch_get_main_queue(),
                    ^
                    {
-                       GLKTextureInfo *textureinfo = [GLKTextureLoader textureWithCGImage:image.CGImage options:nil error:nil];
-                       GLuint texture = textureinfo.name;
+                       [self addimage:image];
                        self.current = 0;
-                       [self.textures addObject:@(texture)];
                        [self loadcurrent];
                    });
 }
