@@ -6,10 +6,10 @@
 {
     self = [super init];
     self.model = model;
-    self.x = 1000;
-    self.y = 100;
-    self.width = 2000;
-    self.height = 2000;
+    self.x = 0;
+    self.y = 0;
+    self.width = 100;
+    self.height = 100;
     [self.image loadtextures:@[@"foe_invader0"]];
     [self render];
     

@@ -46,7 +46,7 @@ static NSUInteger const framespersecond = 60;
 -(void)startglk
 {
     self.glkarea = [[garea alloc] init:self.modelarea];
-    self.glkfoe = [[gfoe alloc] init];
+    self.glkfoe = [[gfoe alloc] init:self.modelfoe];
 }
 
 @end
