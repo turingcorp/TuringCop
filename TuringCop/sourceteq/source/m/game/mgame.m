@@ -31,6 +31,7 @@
                                                          ^
                                                          {
                                                              [weakself.modelarea loadarea];
+                                                             weakself.modelfoe = [[mfoe alloc] init];
                                                              
                                                              dispatch_async(dispatch_get_main_queue(),
                                                                             ^
