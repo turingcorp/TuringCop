@@ -45,8 +45,8 @@
     
     CGFloat width_2 = self.width / 2;
     CGFloat height_2 = self.height / 2;
-    self.x = self.centerx = width_2 - screenwidth_2;
-    self.y = self.centery = height_2 - screenheight_2;
+    self.x = self.centerx = - (width_2 - screenwidth_2);
+    self.y = self.centery = - (height_2 - screenheight_2);
     
     [self loadgraphics];
 }
