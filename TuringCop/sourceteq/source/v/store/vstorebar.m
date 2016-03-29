@@ -84,7 +84,7 @@
     [button setUserInteractionEnabled:NO];
     [self.controller.model restorepurchases];
     
-    [valert alert:NSLocalizedString(@"store_restoring", nil) inview:self.superview offsettop:65];
+//    [valert alert:NSLocalizedString(@"store_restoring", nil) inview:self.superview offsettop:65];
 }
 
 @end

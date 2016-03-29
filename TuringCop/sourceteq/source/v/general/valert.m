@@ -10,7 +10,7 @@
 #warning "needs revision"
                        
                        valert *alert = [[valert alloc] init:message];
-                       [view addSubview:alert];
+//                       [view addSubview:alert];
                        
                        NSDictionary *views = @{@"alert":alert};
                        NSDictionary *metrics = @{@"top":@(0)};

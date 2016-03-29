@@ -98,7 +98,7 @@ static NSUInteger const cellheight = 170;
                        
                        if(self.controller.model.error)
                        {
-                           [valert alert:self.controller.model.error inview:self offsettop:65];
+//                           [valert alert:self.controller.model.error inview:self offsettop:65];
                            [self.buttontryagain setHidden:NO];
                            [self.collection setHidden:YES];
                        }

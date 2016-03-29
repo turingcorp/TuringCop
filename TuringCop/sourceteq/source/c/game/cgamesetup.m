@@ -32,7 +32,7 @@
 
 -(void)startgame
 {
-    [[cmain singleton].pages sectiongameload:[self.view.model modelarea]];
+//    [[cmain singleton].pages sectiongameload:[self.view.model modelarea]];
 }
 
 @end

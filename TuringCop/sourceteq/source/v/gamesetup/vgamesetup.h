@@ -1,10 +1,12 @@
 #import "appdel.h"
 #import "viewbase.h"
 
-@class mgamesetup;
+@class vspinner;
 
-@interface vgamesetup:viewbase<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface vgamesetup:viewbase
 
-@property(strong, nonatomic)mgamesetup *model;
+-(void)locationready;
+
+@property(weak, nonatomic)vspinner *spinner;
 
 @end

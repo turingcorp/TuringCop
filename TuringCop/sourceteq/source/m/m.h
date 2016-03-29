@@ -10,8 +10,6 @@
 #import "mstorestatusnew.h"
 #import "mstorestatuspurchasing.h"
 #import "mstorestatusdeferred.h"
-#import "mgamesetup.h"
-#import "mgamesetupitemmap.h"
 #import "mgamearea.h"
 #import "mgameareadelta.h"
 #import "mgame.h"
