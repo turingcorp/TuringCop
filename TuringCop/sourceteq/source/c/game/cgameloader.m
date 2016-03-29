@@ -1,13 +1,23 @@
-//
-//  cgameloader.m
-//  TuringCop
-//
-//  Created by zero on 3/29/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
-
 #import "cgameloader.h"
 
 @implementation cgameloader
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    [self setExtendedLayoutIncludesOpaqueBars:NO];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+-(void)loadView
+{
+    self.view = [[vgamesetup alloc] init:self];
+}
 
 @end

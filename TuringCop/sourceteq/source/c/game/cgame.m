@@ -42,6 +42,11 @@ static NSUInteger const framespersecond = 60;
     self.view = [[vgame alloc] init:self];
 }
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 #pragma mark functionality
 
 -(void)startmodel

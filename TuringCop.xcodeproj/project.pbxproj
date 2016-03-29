@@ -77,6 +77,7 @@
 		DAFB8E651CAACC0800CDDAD8 /* gfoeitemocto.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E641CAACC0800CDDAD8 /* gfoeitemocto.m */; };
 		DAFB8E681CAACC7E00CDDAD8 /* mfoeitemocto.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */; };
 		DAFB8E6B1CAADE1200CDDAD8 /* cgameloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E6A1CAADE1200CDDAD8 /* cgameloader.m */; };
+		DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +222,8 @@
 		DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mfoeitemocto.m; sourceTree = "<group>"; };
 		DAFB8E691CAADE1200CDDAD8 /* cgameloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgameloader.h; sourceTree = "<group>"; };
 		DAFB8E6A1CAADE1200CDDAD8 /* cgameloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgameloader.m; sourceTree = "<group>"; };
+		DAFB8E6D1CAADE8700CDDAD8 /* vgameloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgameloader.h; sourceTree = "<group>"; };
+		DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgameloader.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -652,6 +655,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE45A481CA61B6E00610E75 /* v.h */,
+				DAFB8E6C1CAADE7C00CDDAD8 /* gameloader */,
 				DA1BEC3B1CA7425400B464BF /* game */,
 				DA1BEC221CA670A300B464BF /* gamesetup */,
 				DABDF43B1CA620F800B240B4 /* home */,
@@ -696,6 +700,15 @@
 				DAE45A791CA61D6500610E75 /* chome.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		DAFB8E6C1CAADE7C00CDDAD8 /* gameloader */ = {
+			isa = PBXGroup;
+			children = (
+				DAFB8E6D1CAADE8700CDDAD8 /* vgameloader.h */,
+				DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */,
+			);
+			path = gameloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -878,6 +891,7 @@
 				DA1BEC521CA7596E00B464BF /* mgamearea.m in Sources */,
 				DAE45A631CA61B6E00610E75 /* mstorestatus.m in Sources */,
 				DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */,
+				DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */,
 				DAE45A511CA61B6E00610E75 /* tools.m in Sources */,
 				DABDF43E1CA6210100B240B4 /* vhome.m in Sources */,
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,
