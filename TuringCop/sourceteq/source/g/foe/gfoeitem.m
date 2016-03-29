@@ -10,7 +10,7 @@
     self.image.random = YES;
     self.image.srgb = YES;
     self.image.speed = 100;
-    self.shadow = [[gfoeshadow alloc] init];
+    self.shadow = [[gfoeshadow alloc] init:self];
     
     return self;
 }
