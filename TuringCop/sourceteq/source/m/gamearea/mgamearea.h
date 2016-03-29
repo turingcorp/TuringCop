@@ -2,6 +2,9 @@
 
 @interface mgamearea:NSObject
 
+-(instancetype)init:(UIImage*)image;
+-(void)loadarea;
+
 @property(strong, nonatomic)UIImage *image;
 @property(nonatomic)CGFloat x;
 @property(nonatomic)CGFloat y;

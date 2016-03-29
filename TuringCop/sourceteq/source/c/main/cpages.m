@@ -47,10 +47,15 @@
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 
--(void)sectiongamestart:(mgamearea*)modelarea;
+-(void)sectiongameload:(mgamearea*)modelarea;
 {
-//    UIViewController *controller = [[cgame alloc] init:modelarea];
-    UIViewController *controller = [[cgameloader alloc] init];
+    UIViewController *controller = [[cgameloader alloc] init:modelarea];
+    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
+}
+
+-(void)sectiongamestart:(mgame*)model
+{
+    UIViewController *controller = [[cgame alloc] init:model];
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 

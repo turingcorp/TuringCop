@@ -139,7 +139,7 @@ static CGFloat const mapspanradius = 0.002;
                                
                                [self addSubview:image];
                                
-                               self.gamearea = [[mgamearea alloc] init];
+                               self.gamearea = [[mgamearea alloc] init:snapshot.image];
                                self.gamearea.image = snapshot.image;
                            });
         }

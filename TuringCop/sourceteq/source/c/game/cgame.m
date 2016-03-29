@@ -16,14 +16,11 @@ static NSUInteger const framespersecond = 60;
 @dynamic view;
 @dynamic delegate;
 
--(instancetype)init:(mgamearea*)modelarea
+-(instancetype)init:(mgame*)model
 {
     self = [super init];
-    self.modelarea = modelarea;
+    self.model = model;
     notificationmove = [NSNotification notificationWithName:notification_glkmove object:nil];
-    
-    [self startmodel];
-    [self startglk];
     
     return self;
 }
@@ -45,19 +42,6 @@ static NSUInteger const framespersecond = 60;
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
-}
-
-#pragma mark functionality
-
--(void)startmodel
-{
-    self.modelfoe = [[mfoe alloc] init];
-}
-
--(void)startglk
-{
-    self.glkarea = [[garea alloc] init:self.modelarea];
-    self.glkfoe = [[gfoe alloc] init:self.modelfoe];
 }
 
 #pragma mark -

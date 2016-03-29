@@ -1,11 +1,13 @@
 #import "appdel.h"
 
 @class mgamearea;
+@class mgame;
 
 @interface cpages:UIPageViewController
 
 -(void)sectionhome:(BOOL)animated;
 -(void)sectiongame;
--(void)sectiongamestart:(mgamearea*)modelarea;
+-(void)sectiongameload:(mgamearea*)modelarea;
+-(void)sectiongamestart:(mgame*)model;
 
 @end

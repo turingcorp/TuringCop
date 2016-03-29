@@ -5,6 +5,8 @@
 
 @interface mgame:NSObject
 
+-(instancetype)init:(mgamearea*)modelarea;
+
 @property(strong, nonatomic)mgamearea *modelarea;
 @property(strong, nonatomic)mfoe *modelfoe;
 

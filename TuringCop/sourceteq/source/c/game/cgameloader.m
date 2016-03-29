@@ -5,6 +5,14 @@
     BOOL firsttime;
 }
 
+-(instancetype)init:(mgamearea*)modelarea
+{
+    self = [super init];
+    self.modelarea = modelarea;
+    
+    return self;
+}
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,7 +55,19 @@
 
 -(void)startloading
 {
+    __weak typeof(self) weakself = self;
+    weakself.model = [[mgame alloc] init:weakself.modelarea];
     
+    dispatch_async(dispatch_get_main_queue(),
+                   ^
+                   {
+                       [weakself loadingfinished];
+                   });
+}
+
+-(void)loadingfinished
+{
+    [[cmain singleton].pages sectiongamestart:self.model];
 }
 
 @end
