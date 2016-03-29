@@ -96,7 +96,11 @@
                        }
                        
                        [self nextimage];
-                       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
+                       
+                       if(counter > 1)
+                       {
+                           [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
+                       }
                    });
 }
 

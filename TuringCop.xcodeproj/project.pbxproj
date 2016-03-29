@@ -27,6 +27,8 @@
 		DA1BEC521CA7596E00B464BF /* mgamearea.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC511CA7596E00B464BF /* mgamearea.m */; };
 		DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC541CA75D3B00B464BF /* gareaspatial.m */; };
 		DA84486F1C692C58007B634F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84486E1C692C58007B634F /* Images.xcassets */; };
+		DA87FADE1CAA032700E46A0A /* gfoeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87FADD1CAA032700E46A0A /* gfoeitem.m */; };
+		DA87FAE11CAA033200E46A0A /* gfoeiteminvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87FAE01CAA033200E46A0A /* gfoeiteminvader.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DAB395071CA86D4E00D69DDA /* gfoe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395061CA86D4E00D69DDA /* gfoe.m */; };
 		DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395091CA86D9A00D69DDA /* gfoeinvader.m */; };
@@ -116,6 +118,10 @@
 		DA1BEC531CA75D3B00B464BF /* gareaspatial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gareaspatial.h; sourceTree = "<group>"; };
 		DA1BEC541CA75D3B00B464BF /* gareaspatial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gareaspatial.m; sourceTree = "<group>"; };
 		DA84486E1C692C58007B634F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA87FADC1CAA032700E46A0A /* gfoeitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeitem.h; sourceTree = "<group>"; };
+		DA87FADD1CAA032700E46A0A /* gfoeitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeitem.m; sourceTree = "<group>"; };
+		DA87FADF1CAA033200E46A0A /* gfoeiteminvader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeiteminvader.h; sourceTree = "<group>"; };
+		DA87FAE01CAA033200E46A0A /* gfoeiteminvader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeiteminvader.m; sourceTree = "<group>"; };
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DAB395051CA86D4E00D69DDA /* gfoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoe.h; sourceTree = "<group>"; };
 		DAB395061CA86D4E00D69DDA /* gfoe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoe.m; sourceTree = "<group>"; };
@@ -373,6 +379,10 @@
 				DAB395291CA9FFF000D69DDA /* gfoeshadow.m */,
 				DAB395081CA86D9A00D69DDA /* gfoeinvader.h */,
 				DAB395091CA86D9A00D69DDA /* gfoeinvader.m */,
+				DA87FADC1CAA032700E46A0A /* gfoeitem.h */,
+				DA87FADD1CAA032700E46A0A /* gfoeitem.m */,
+				DA87FADF1CAA033200E46A0A /* gfoeiteminvader.h */,
+				DA87FAE01CAA033200E46A0A /* gfoeiteminvader.m */,
 			);
 			path = foe;
 			sourceTree = "<group>";
@@ -823,6 +833,7 @@
 				DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */,
 				DAB395141CA86E5C00D69DDA /* mfoeitem.m in Sources */,
 				DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */,
+				DA87FAE11CAA033200E46A0A /* gfoeiteminvader.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
 				DA1BEC2B1CA670BC00B464BF /* vgamesetupfooter.m in Sources */,
 				DAE45A651CA61B6E00610E75 /* mstorestatusnew.m in Sources */,
@@ -861,6 +872,7 @@
 				DAE45A521CA61B6E00610E75 /* updater.m in Sources */,
 				DAE45A5B1CA61B6E00610E75 /* cstore.m in Sources */,
 				DA1BEC4E1CA74D9300B464BF /* gimage.m in Sources */,
+				DA87FADE1CAA032700E46A0A /* gfoeitem.m in Sources */,
 				DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */,
 				DABDF4421CA625C900B240B4 /* cgame.m in Sources */,
 				DAB395171CA86E6600D69DDA /* mfoeiteminvader.m in Sources */,
