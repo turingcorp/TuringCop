@@ -83,9 +83,10 @@ static NSInteger floatmax = 30;
         if(changed)
         {
             self.y = self.realy - self.height + currentfloat;
-            [self render];
         }
     }
+    
+    [self render];
 }
 
 #pragma mark -

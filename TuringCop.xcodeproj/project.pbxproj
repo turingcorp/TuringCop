@@ -81,6 +81,7 @@
 		DAFB8E711CAAE6E100CDDAD8 /* loader.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */; };
 		DAFB8E751CAAF17900CDDAD8 /* mgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E741CAAF17900CDDAD8 /* mgame.m */; };
 		DAFB8E781CAB0D9100CDDAD8 /* vgamehub.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */; };
+		DAFB8E7B1CAB25EA00CDDAD8 /* mgameareadelta.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -232,6 +233,8 @@
 		DAFB8E741CAAF17900CDDAD8 /* mgame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgame.m; sourceTree = "<group>"; };
 		DAFB8E761CAB0D9100CDDAD8 /* vgamehub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamehub.h; sourceTree = "<group>"; };
 		DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamehub.m; sourceTree = "<group>"; };
+		DAFB8E791CAB25EA00CDDAD8 /* mgameareadelta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgameareadelta.h; sourceTree = "<group>"; };
+		DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgameareadelta.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -377,6 +380,8 @@
 			children = (
 				DA1BEC501CA7596E00B464BF /* mgamearea.h */,
 				DA1BEC511CA7596E00B464BF /* mgamearea.m */,
+				DAFB8E791CAB25EA00CDDAD8 /* mgameareadelta.h */,
+				DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */,
 			);
 			path = gamearea;
 			sourceTree = "<group>";
@@ -904,6 +909,7 @@
 				DAE45A6F1CA61B6E00610E75 /* valert.m in Sources */,
 				DA1BEC271CA670A300B464BF /* vgamesetup.m in Sources */,
 				DA1BEC321CA671EC00B464BF /* mgamesetupitem.m in Sources */,
+				DAFB8E7B1CAB25EA00CDDAD8 /* mgameareadelta.m in Sources */,
 				DAE45A4F1CA61B6E00610E75 /* main.m in Sources */,
 				DA1BEC351CA671F900B464BF /* mgamesetupitemmap.m in Sources */,
 				DAE45A561CA61B6E00610E75 /* cpages.m in Sources */,

@@ -10,40 +10,12 @@
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     self.controller = controller;
     self.modelarea = controller.model.modelarea;
-    self.moved = YES;
  
     UIPanGestureRecognizer *pangesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panrecognized:)];
     self.pangesture = pangesture;
     [self addGestureRecognizer:pangesture];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkdraw:) name:notification_glkdraw object:nil];
-    
     return self;
-}
-
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-#pragma mark notified
-
--(void)notifiedglkdraw:(NSNotification*)notification
-{
-    if(self.moved)
-    {
-        self.moved = NO;
-        
-        CGFloat left = self.modelarea.x;
-        CGFloat top = self.modelarea.y;
-        CGFloat right = self.modelarea.x + self.modelarea.width;
-        CGFloat bottom = self.modelarea.y + self.modelarea.height;
-        
-        GLKBaseEffect *effect = notification.userInfo[userinfoeffect];
-        effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(left, right, bottom, top, 1, -1);
-        
-        [self.modelarea.glkarea.spatial render];
-    }
 }
 
 #pragma mark gestures
@@ -99,9 +71,13 @@
     
     NSLog(@"%@ %@", @(newx), @(newy));
     
+    CGFloat deltax = self.modelarea.x - newx;
+    CGFloat deltay = self.modelarea.y - newy;
+    mgameareadelta *areadelta = [[mgameareadelta alloc] init:deltax y:deltay];
     self.modelarea.x = newx;
     self.modelarea.y = newy;
-    self.moved = YES;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkscreenmoved object:nil userInfo:areadelta];
 }
 
 @end

@@ -9,9 +9,6 @@ static NSUInteger const framespersecond = 60;
 @end
 
 @implementation cgame
-{
-    NSNotification *notificationmove;
-}
 
 @dynamic view;
 @dynamic delegate;
@@ -20,7 +17,6 @@ static NSUInteger const framespersecond = 60;
 {
     self = [super init];
     self.model = model;
-    notificationmove = [NSNotification notificationWithName:notification_glkmove object:nil];
     
     return self;
 }
@@ -44,6 +40,13 @@ static NSUInteger const framespersecond = 60;
     return YES;
 }
 
+#pragma mark functionality
+
+-(void)notifymove
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkmove object:nil userInfo:nil];
+}
+
 #pragma mark -
 #pragma mark glk del
 
@@ -54,7 +57,7 @@ static NSUInteger const framespersecond = 60;
 
 -(void)glkViewControllerUpdate:(GLKViewController*)controller
 {
-    [[NSNotificationCenter defaultCenter] postNotification:notificationmove];
+    [self notifymove];
 }
 
 @end
