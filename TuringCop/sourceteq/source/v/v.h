@@ -11,3 +11,4 @@
 #import "vgamesetuplocator.h"
 #import "vgameloader.h"
 #import "vgame.h"
+#import "vgamehub.h"

@@ -80,6 +80,7 @@
 		DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */; };
 		DAFB8E711CAAE6E100CDDAD8 /* loader.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */; };
 		DAFB8E751CAAF17900CDDAD8 /* mgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E741CAAF17900CDDAD8 /* mgame.m */; };
+		DAFB8E781CAB0D9100CDDAD8 /* vgamehub.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +230,8 @@
 		DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loader.xcassets; sourceTree = "<group>"; };
 		DAFB8E731CAAF17900CDDAD8 /* mgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgame.h; sourceTree = "<group>"; };
 		DAFB8E741CAAF17900CDDAD8 /* mgame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgame.m; sourceTree = "<group>"; };
+		DAFB8E761CAB0D9100CDDAD8 /* vgamehub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamehub.h; sourceTree = "<group>"; };
+		DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamehub.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,6 +331,8 @@
 			children = (
 				DA1BEC3C1CA7425E00B464BF /* vgame.h */,
 				DA1BEC3D1CA7425E00B464BF /* vgame.m */,
+				DAFB8E761CAB0D9100CDDAD8 /* vgamehub.h */,
+				DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -863,6 +868,7 @@
 				DA1BEC441CA7491800B464BF /* garea.m in Sources */,
 				DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */,
 				DAE45A621CA61B6E00610E75 /* mstorepurchasesitem.m in Sources */,
+				DAFB8E781CAB0D9100CDDAD8 /* vgamehub.m in Sources */,
 				DAE45A611CA61B6E00610E75 /* mstorepurchases.m in Sources */,
 				DAE45A601CA61B6E00610E75 /* mstore.m in Sources */,
 				DA1BEC181CA66ADE00B464BF /* uicolor+uicolormain.m in Sources */,

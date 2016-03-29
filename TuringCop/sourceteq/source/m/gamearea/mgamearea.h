@@ -17,5 +17,9 @@
 @property(nonatomic)CGFloat centery;
 @property(nonatomic)CGFloat screenwidth;
 @property(nonatomic)CGFloat screenheight;
+@property(nonatomic)CGFloat minx;
+@property(nonatomic)CGFloat maxx;
+@property(nonatomic)CGFloat miny;
+@property(nonatomic)CGFloat maxy;
 
 @end

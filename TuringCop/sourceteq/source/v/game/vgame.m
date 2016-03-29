@@ -12,6 +12,17 @@
     self.controller = controller;
     [self starteffect];
     
+    vgamehub *hub = [[vgamehub alloc] init:controller];
+    self.hub = hub;
+    
+    [self addSubview:hub];
+
+    NSDictionary *views = @{@"hub":hub};
+    NSDictionary *metrics = @{};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[hub]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[hub]-0-|" options:0 metrics:metrics views:views]];
+    
     return self;
 }
 
@@ -23,7 +34,6 @@
     self.effect = [[GLKBaseEffect alloc] init];
     self.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, modelarea.screenwidth, modelarea.screenheight, 0, 1, -1);
     self.effect.texture2d0.target = GLKTextureTarget2D;
-    [self.effect prepareToDraw];
 }
 
 -(void)notifydraw

@@ -1,6 +1,7 @@
 #import "appdel.h"
 
 @class cgame;
+@class vgamehub;
 
 static NSString* const userinfoeffect = @"effect";
 
@@ -9,6 +10,7 @@ static NSString* const userinfoeffect = @"effect";
 -(instancetype)init:(cgame*)controller;
 
 @property(weak, nonatomic)cgame *controller;
+@property(weak, nonatomic)vgamehub *hub;
 @property(strong, nonatomic)GLKBaseEffect *effect;
 
 @end
