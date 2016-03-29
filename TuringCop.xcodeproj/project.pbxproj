@@ -75,6 +75,7 @@
 		DAE45A761CA61B6E00610E75 /* vstorecell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A471CA61B6E00610E75 /* vstorecell.m */; };
 		DAE45A7A1CA61D6500610E75 /* chome.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE45A791CA61D6500610E75 /* chome.m */; };
 		DAFB8E651CAACC0800CDDAD8 /* gfoeitemocto.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E641CAACC0800CDDAD8 /* gfoeitemocto.m */; };
+		DAFB8E681CAACC7E00CDDAD8 /* mfoeitemocto.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +216,8 @@
 		DAE45A791CA61D6500610E75 /* chome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chome.m; sourceTree = "<group>"; };
 		DAFB8E631CAACC0800CDDAD8 /* gfoeitemocto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeitemocto.h; sourceTree = "<group>"; };
 		DAFB8E641CAACC0800CDDAD8 /* gfoeitemocto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeitemocto.m; sourceTree = "<group>"; };
+		DAFB8E661CAACC7E00CDDAD8 /* mfoeitemocto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mfoeitemocto.h; sourceTree = "<group>"; };
+		DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mfoeitemocto.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -396,6 +399,8 @@
 				DAB395131CA86E5C00D69DDA /* mfoeitem.m */,
 				DAB395151CA86E6600D69DDA /* mfoeiteminvader.h */,
 				DAB395161CA86E6600D69DDA /* mfoeiteminvader.m */,
+				DAFB8E661CAACC7E00CDDAD8 /* mfoeitemocto.h */,
+				DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */,
 			);
 			path = foe;
 			sourceTree = "<group>";
@@ -842,6 +847,7 @@
 				DAE45A5F1CA61B6E00610E75 /* msettings.m in Sources */,
 				DA1BEC2F1CA671D900B464BF /* mgamesetup.m in Sources */,
 				DA1BEC1E1CA66B8300B464BF /* nsnotification+nsnotificationmain.m in Sources */,
+				DAFB8E681CAACC7E00CDDAD8 /* mfoeitemocto.m in Sources */,
 				DAFB8E651CAACC0800CDDAD8 /* gfoeitemocto.m in Sources */,
 				DAE45A711CA61B6E00610E75 /* viewbase.m in Sources */,
 				DAE45A661CA61B6E00610E75 /* mstorestatuspurchased.m in Sources */,

@@ -15,3 +15,4 @@
 #import "mgamearea.h"
 #import "mfoe.h"
 #import "mfoeiteminvader.h"
+#import "mfoeitemocto.h"
