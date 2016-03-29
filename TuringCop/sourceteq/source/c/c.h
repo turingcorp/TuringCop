@@ -3,4 +3,5 @@
 #import "cstore.h"
 #import "chome.h"
 #import "cgame.h"
+#import "cgameloader.h"
 #import "cgamesetup.h"

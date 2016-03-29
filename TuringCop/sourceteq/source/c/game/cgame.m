@@ -22,6 +22,9 @@ static NSUInteger const framespersecond = 60;
     self.modelarea = modelarea;
     notificationmove = [NSNotification notificationWithName:notification_glkmove object:nil];
     
+    [self startmodel];
+    [self startglk];
+    
     return self;
 }
 
@@ -32,8 +35,6 @@ static NSUInteger const framespersecond = 60;
     [self setPreferredFramesPerSecond:framespersecond];
     [self setResumeOnDidBecomeActive:YES];
     [self setDelegate:self];
-    [self startmodel];
-    [self startglk];
 }
 
 -(void)loadView
