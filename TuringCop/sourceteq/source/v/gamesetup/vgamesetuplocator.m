@@ -1,7 +1,10 @@
 #import "vgamesetuplocator.h"
 
+static NSString* const searchquery = @"";
 static CGFloat const mapspanradius = 0.001;
 static CGFloat const searchspanradius = 0.005;
+static NSUInteger const mapwidth = 1600;
+static NSUInteger const mapheight = 1200;
 
 @implementation vgamesetuplocator
 
@@ -77,71 +80,79 @@ static CGFloat const searchspanradius = 0.005;
 #warning "implement default location"
 }
 
--(void)mapfor:(CLLocationCoordinate2D)coordinates
+-(void)maponvenue:(MKMapItem*)venue
 {
-    MKCoordinateSpan mapspan = MKCoordinateSpanMake(mapspanradius, mapspanradius);
-    MKCoordinateRegion region = MKCoordinateRegionMake(coordinates, mapspan);
+    __weak typeof(self) weakself = self;
     
+    CLLocationCoordinate2D location = venue.placemark.location.coordinate;
+    MKCoordinateSpan mapspan = MKCoordinateSpanMake(mapspanradius, mapspanradius);
+    MKCoordinateRegion region = MKCoordinateRegionMake(location, mapspan);
     MKMapSnapshotOptions *options = [[MKMapSnapshotOptions alloc] init];
     options.region = region;
-    options.size = CGSizeMake(1600, 1200);
+    options.size = CGSizeMake(mapwidth, mapheight);
     options.showsBuildings = NO;
     options.showsPointsOfInterest = NO;
     options.mapType = MKMapTypeStandard;
     
-    /*
-    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
-    request.region = region;
-    request.naturalLanguageQuery = @"mall";
-    request.naturalLanguageQuery = @"museum";
-    
-    search = [[MKLocalSearch alloc] initWithRequest:request];
-    [search startWithCompletionHandler:
-     ^(MKLocalSearchResponse * _Nullable _response, NSError * _Nullable _error)
+    MKMapSnapshotter *snapper = [[MKMapSnapshotter alloc] initWithOptions:options];
+    [snapper startWithQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0) completionHandler:
+     ^(MKMapSnapshot *_Nullable snapshot, NSError *_Nullable error)
      {
-         if(_error)
+         if(error)
          {
-             NSLog(@"error %@", _error.localizedDescription);
+             [valert alert:error.localizedDescription];
          }
          else
          {
-             NSArray<MKMapItem*> *items = _response.mapItems;
-             NSInteger count = items.count;
-             
-             for(NSInteger i = 0; i < count; i++)
-             {
-                 MKMapItem *item = items[i];
-                 NSLog(@"%@", item.name);
-             }
+             dispatch_async(dispatch_get_main_queue(),
+                            ^
+                            {
+                                UIImage *rawimage = snapshot.image;
+                                UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+                                [image setImage:rawimage];
+                                [image setClipsToBounds:YES];
+                                [image setContentMode:UIViewContentModeCenter];
+                                
+                                [self addSubview:image];
+                                self.gamearea = [[mgamearea alloc] init:rawimage];
+                            });
          }
-     }];*/
+     }];
+}
+
+-(void)venueinlocation:(CLLocationCoordinate2D)coordinates
+{
+    __weak typeof(self) weakself = self;
     
-    MKMapSnapshotter *snapper = [[MKMapSnapshotter alloc] initWithOptions:options];
-    [snapper startWithQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0) completionHandler:
-     ^(MKMapSnapshot * _Nullable snapshot, NSError * _Nullable error)
+    MKCoordinateSpan searchspan = MKCoordinateSpanMake(searchspanradius, searchspanradius);
+    MKCoordinateRegion searchregion = MKCoordinateRegionMake(coordinates, searchspan);
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+    request.region = searchregion;
+    request.naturalLanguageQuery = searchquery;
+    
+    MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:request];
+    [search startWithCompletionHandler:
+     ^(MKLocalSearchResponse *_Nullable response, NSError *_Nullable error)
     {
         if(error)
         {
-            NSLog(@"%@", error);
+            [valert alert:error.localizedDescription];
         }
         else
         {
-//            UIImage *image = snapshot.image;
-//            NSData *data = UIImagePNGRepresentation(image);
-//            [data writeToFile:[self snapshotFilename] atomically:YES];
+            NSArray<MKMapItem*> *venues = response.mapItems;
+            NSUInteger count = venues.count;
             
-            dispatch_async(dispatch_get_main_queue(),
-                           ^
-                           {
-                               UIImage *rawimage = snapshot.image;
-                               UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-                               [image setImage:rawimage];
-                               [image setClipsToBounds:YES];
-                               [image setContentMode:UIViewContentModeCenter];
-                               
-                               [self addSubview:image];
-                               self.gamearea = [[mgamearea alloc] init:rawimage];
-                           });
+            if(count)
+            {
+#warning "no venue found"
+            }
+            else
+            {
+                NSUInteger venueindex = arc4random_uniform((CGFloat)count);
+                MKMapItem *venue = venues[venueindex];
+                [weakself maponvenue:venue];
+            }
         }
     }];
 }
@@ -169,7 +180,7 @@ static CGFloat const searchspanradius = 0.005;
         [manager setDelegate:nil];
         
         CLLocation *location = locations[0];
-        [self mapfor:location.coordinate];
+        [self venueinlocation:location.coordinate];
     }
 }
 
