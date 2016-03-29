@@ -1,5 +1,7 @@
 #import "vgameloader.h"
 
+static NSUInteger const spinnerheight = 50;
+
 @interface vgameloader ()
 
 @property(weak, nonatomic)cgameloader *controller;
@@ -16,6 +18,8 @@
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor blackColor]];
     [self setUserInteractionEnabled:NO];
+    
+    UILabel
  
     vspinner *spinner = [[vspinner alloc] init];
     self.spinner = spinner;
@@ -26,7 +30,7 @@
     NSDictionary *metrics = @{};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-180-[spinner(80)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-150-[spinner(50)]" options:0 metrics:metrics views:views]];
     
     return self;
 }

@@ -20,7 +20,7 @@
 -(void)starteffect
 {
     self.effect = [[GLKBaseEffect alloc] init];
-    self.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, screenwidth, screenheight, 0, 1, -1);
+//    self.effect.transform.projectionMatrix = GLKMatrix4MakeOrtho(0, screenwidth, screenheight, 0, 1, -1);
     self.effect.texture2d0.target = GLKTextureTarget2D;
     [self.effect prepareToDraw];
 }

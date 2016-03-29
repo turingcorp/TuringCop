@@ -49,7 +49,8 @@
 
 -(void)sectiongamestart:(mgamearea*)modelarea;
 {
-    UIViewController *controller = [[cgame alloc] init:modelarea];
+//    UIViewController *controller = [[cgame alloc] init:modelarea];
+    UIViewController *controller = [[cgameloader alloc] init];
     [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:YES];
 }
 
