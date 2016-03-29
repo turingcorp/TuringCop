@@ -13,6 +13,7 @@
 #import "mgamesetup.h"
 #import "mgamesetupitemmap.h"
 #import "mgamearea.h"
+#import "mgame.h"
 #import "mfoe.h"
 #import "mfoeiteminvader.h"
 #import "mfoeitemocto.h"

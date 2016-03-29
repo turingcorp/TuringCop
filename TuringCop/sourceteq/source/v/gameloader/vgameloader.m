@@ -37,7 +37,7 @@ static NSUInteger const spinnerheight = 50;
     NSDictionary *views = @{@"spinner":spinner, @"title":title};
     NSDictionary *metrics = @{@"spinnerheight":@(spinnerheight)};
     
-    self.layoutspinnertop = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+    self.layoutspinnertop = [NSLayoutConstraint constraintWithItem:spinner attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[title]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[spinner(spinnerheight)]-10-[title]" options:0 metrics:metrics views:views]];
