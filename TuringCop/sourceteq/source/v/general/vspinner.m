@@ -13,6 +13,7 @@ static CGFloat const animationduration = 1.0;
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self setContentMode:UIViewContentModeScaleAspectFit];
     [self setAnimationDuration:animationduration];
+    [self startAnimating];
     self.animationImages = @[
                              [UIImage imageNamed:@"loader0"],
                              [UIImage imageNamed:@"loader1"],
