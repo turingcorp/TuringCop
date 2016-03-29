@@ -7,8 +7,10 @@
 @interface gfoeitem:gspatial
 
 -(instancetype)init:(mfoeitem*)model;
+-(void)floatovershadow;
 
 @property(weak, nonatomic)mfoeitem *model;
 @property(strong, nonatomic)gfoeshadow *shadow;
+@property(nonatomic)CGFloat realy;
 
 @end
