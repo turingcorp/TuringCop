@@ -7,10 +7,9 @@
     self = [super init];
     [self setBackgroundColor:[UIColor blackColor]];
     [self setContext:controller.model.context];
+    [EAGLContext setCurrentContext:controller.model.context];
     [self setDelegate:self];
     self.controller = controller;
-    [EAGLContext setCurrentContext:controller.model.context];
-    
     [self starteffect];
     
     return self;

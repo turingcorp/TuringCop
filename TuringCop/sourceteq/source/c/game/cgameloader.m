@@ -38,14 +38,7 @@
     if(firsttime)
     {
         firsttime = NO;
-        
-        __weak typeof(self) weakself = self;
-        
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0),
-                       ^
-                       {
-                           [weakself startloading];
-                       });
+        [self startloading];
     }
 }
 
@@ -63,15 +56,10 @@
 
 -(void)startloading
 {
-    __weak typeof(self) weakself = self;
-    weakself.model = [[mgame alloc] init:weakself.modelarea];
-    
-    dispatch_async(dispatch_get_main_queue(),
-                   ^
-                   {
-                       [weakself loadingfinished];
-                   });
+    self.model = [[mgame alloc] init:self];
 }
+
+#pragma mark public
 
 -(void)loadingfinished
 {
