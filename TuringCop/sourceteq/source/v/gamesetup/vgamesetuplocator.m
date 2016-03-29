@@ -132,15 +132,14 @@ static CGFloat const mapspanradius = 0.002;
             dispatch_async(dispatch_get_main_queue(),
                            ^
                            {
+                               UIImage *rawimage = snapshot.image;
                                UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-                               [image setImage:snapshot.image];
+                               [image setImage:rawimage];
                                [image setClipsToBounds:YES];
                                [image setContentMode:UIViewContentModeCenter];
                                
                                [self addSubview:image];
-                               
-                               self.gamearea = [[mgamearea alloc] init:snapshot.image];
-                               self.gamearea.image = snapshot.image;
+                               self.gamearea = [[mgamearea alloc] init:rawimage];
                            });
         }
     }];

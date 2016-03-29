@@ -6,8 +6,8 @@
 {
     self = [super init];
     self.model = model;
-    self.x = model.centerx;
-    self.y = model.centery;
+    self.x = model.x;
+    self.y = model.y;
     self.width = model.width;
     self.height = model.height;
     [self.image loadtextureimage:model.image];

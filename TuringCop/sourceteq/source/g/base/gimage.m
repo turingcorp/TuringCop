@@ -83,6 +83,7 @@
 
 -(void)loadtextures:(NSArray<NSString*>*)textures
 {
+    __weak typeof(self) weakself = self;
     counter = textures.count;
     
     dispatch_async(dispatch_get_main_queue(),
@@ -92,26 +93,28 @@
                        {
                            NSString *texturename = textures[i];
                            UIImage *image = [UIImage imageNamed:texturename];
-                           [self addimage:image];
+                           [weakself addimage:image];
                        }
                        
-                       [self nextimage];
+                       [weakself nextimage];
                        
                        if(counter > 1)
                        {
-                           [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
+                           [[NSNotificationCenter defaultCenter] addObserver:weakself selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
                        }
                    });
 }
 
 -(void)loadtextureimage:(UIImage*)image
 {
+    __weak typeof(self) weakself = self;
+    
     dispatch_async(dispatch_get_main_queue(),
                    ^
                    {
-                       [self addimage:image];
-                       self.current = 0;
-                       [self loadcurrent];
+                       [weakself addimage:image];
+                       weakself.current = 0;
+                       [weakself loadcurrent];
                    });
 }
 

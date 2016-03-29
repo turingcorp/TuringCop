@@ -16,6 +16,8 @@
 
 -(void)loadall
 {
+    self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    [EAGLContext setCurrentContext:self.context];
     [self.modelarea loadarea];
 }
 

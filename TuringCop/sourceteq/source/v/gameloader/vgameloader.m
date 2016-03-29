@@ -60,4 +60,11 @@ static NSUInteger const spinnerheight = 50;
     [self.spinner stopAnimating];
 }
 
+#pragma mark public
+
+-(void)loadfinished
+{
+    [self.spinner stopAnimating];
+}
+
 @end

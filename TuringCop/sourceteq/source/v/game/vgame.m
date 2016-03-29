@@ -6,10 +6,11 @@
 {
     self = [super init];
     [self setBackgroundColor:[UIColor blackColor]];
-    [self setContext:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2]];
+    [self setContext:controller.model.context];
     [self setDelegate:self];
     self.controller = controller;
-    [EAGLContext setCurrentContext:self.context];
+    [EAGLContext setCurrentContext:controller.model.context];
+    
     [self starteffect];
     
     return self;

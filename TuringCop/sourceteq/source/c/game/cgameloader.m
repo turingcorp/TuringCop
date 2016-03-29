@@ -1,9 +1,17 @@
 #import "cgameloader.h"
 
+@interface cgameloader ()
+
+@property(strong, nonatomic)vgameloader *view;
+
+@end
+
 @implementation cgameloader
 {
     BOOL firsttime;
 }
+
+@dynamic view;
 
 -(instancetype)init:(mgamearea*)modelarea
 {
@@ -67,6 +75,7 @@
 
 -(void)loadingfinished
 {
+    [self.view loadfinished];
     [[cmain singleton].pages sectiongamestart:self.model];
 }
 
