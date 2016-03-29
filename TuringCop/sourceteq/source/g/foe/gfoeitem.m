@@ -1,4 +1,5 @@
 #import "gfoeitem.h"
+#import "gfoeshadow.h"
 
 @implementation gfoeitem
 
@@ -9,8 +10,28 @@
     self.image.random = YES;
     self.image.srgb = YES;
     self.image.speed = 100;
+    self.shadow = [[gfoeshadow alloc] init];
     
     return self;
+}
+
+#pragma mark -
+#pragma mark spatial
+
+-(void)render
+{
+    self.shadow.x = self.x;
+    self.shadow.y = self.y + (self.height / 2.0);
+    self.shadow.width = self.width;
+    
+    [super render];
+    [self.shadow render];
+}
+
+-(void)draw:(GLKBaseEffect*)effect
+{
+    [self.shadow draw:effect];
+    [super draw:effect];
 }
 
 @end

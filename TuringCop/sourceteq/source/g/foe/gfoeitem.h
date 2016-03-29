@@ -2,6 +2,7 @@
 #import "gspatial.h"
 
 @class mfoeitem;
+@class gfoeshadow;
 
 @interface gfoeitem:gspatial
 

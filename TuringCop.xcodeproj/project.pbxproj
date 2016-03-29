@@ -31,7 +31,6 @@
 		DA87FAE11CAA033200E46A0A /* gfoeiteminvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA87FAE01CAA033200E46A0A /* gfoeiteminvader.m */; };
 		DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */ = {isa = PBXBuildFile; fileRef = DA97E3AF1C6920D90084FFDF /* turingcop.db */; };
 		DAB395071CA86D4E00D69DDA /* gfoe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395061CA86D4E00D69DDA /* gfoe.m */; };
-		DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395091CA86D9A00D69DDA /* gfoeinvader.m */; };
 		DAB3950E1CA86E0500D69DDA /* mfoe.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB3950D1CA86E0500D69DDA /* mfoe.m */; };
 		DAB395141CA86E5C00D69DDA /* mfoeitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395131CA86E5C00D69DDA /* mfoeitem.m */; };
 		DAB395171CA86E6600D69DDA /* mfoeiteminvader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395161CA86E6600D69DDA /* mfoeiteminvader.m */; };
@@ -125,8 +124,6 @@
 		DA97E3AF1C6920D90084FFDF /* turingcop.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turingcop.db; sourceTree = "<group>"; };
 		DAB395051CA86D4E00D69DDA /* gfoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoe.h; sourceTree = "<group>"; };
 		DAB395061CA86D4E00D69DDA /* gfoe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoe.m; sourceTree = "<group>"; };
-		DAB395081CA86D9A00D69DDA /* gfoeinvader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeinvader.h; sourceTree = "<group>"; };
-		DAB395091CA86D9A00D69DDA /* gfoeinvader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeinvader.m; sourceTree = "<group>"; };
 		DAB3950C1CA86E0500D69DDA /* mfoe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mfoe.h; sourceTree = "<group>"; };
 		DAB3950D1CA86E0500D69DDA /* mfoe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mfoe.m; sourceTree = "<group>"; };
 		DAB395121CA86E5C00D69DDA /* mfoeitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mfoeitem.h; sourceTree = "<group>"; };
@@ -377,8 +374,6 @@
 				DAB395061CA86D4E00D69DDA /* gfoe.m */,
 				DAB395281CA9FFF000D69DDA /* gfoeshadow.h */,
 				DAB395291CA9FFF000D69DDA /* gfoeshadow.m */,
-				DAB395081CA86D9A00D69DDA /* gfoeinvader.h */,
-				DAB395091CA86D9A00D69DDA /* gfoeinvader.m */,
 				DA87FADC1CAA032700E46A0A /* gfoeitem.h */,
 				DA87FADD1CAA032700E46A0A /* gfoeitem.m */,
 				DA87FADF1CAA033200E46A0A /* gfoeiteminvader.h */,
@@ -832,7 +827,6 @@
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
 				DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */,
 				DAB395141CA86E5C00D69DDA /* mfoeitem.m in Sources */,
-				DAB3950A1CA86D9A00D69DDA /* gfoeinvader.m in Sources */,
 				DA87FAE11CAA033200E46A0A /* gfoeiteminvader.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
 				DA1BEC2B1CA670BC00B464BF /* vgamesetupfooter.m in Sources */,
