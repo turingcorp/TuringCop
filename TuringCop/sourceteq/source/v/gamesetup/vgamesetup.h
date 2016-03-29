@@ -8,5 +8,6 @@
 -(void)locationready;
 
 @property(weak, nonatomic)vspinner *spinner;
+@property(weak, nonatomic)UILabel *loadingtitle;
 
 @end
