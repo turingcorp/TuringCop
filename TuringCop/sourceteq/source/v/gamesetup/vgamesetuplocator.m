@@ -1,6 +1,7 @@
 #import "vgamesetuplocator.h"
 
-static CGFloat const mapspanradius = 0.002;
+static CGFloat const mapspanradius = 0.001;
+static CGFloat const searchspanradius = 0.005;
 
 @implementation vgamesetuplocator
 
@@ -83,7 +84,7 @@ static CGFloat const mapspanradius = 0.002;
     
     MKMapSnapshotOptions *options = [[MKMapSnapshotOptions alloc] init];
     options.region = region;
-    options.size = CGSizeMake(2000, 2000);
+    options.size = CGSizeMake(1600, 1200);
     options.showsBuildings = NO;
     options.showsPointsOfInterest = NO;
     options.mapType = MKMapTypeStandard;

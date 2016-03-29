@@ -15,9 +15,10 @@
     self.controller = controller;
     self.modelarea = controller.model.modelarea;
  
-    UIPanGestureRecognizer *pangesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panrecognized:)];
-    self.pangesture = pangesture;
-    [self addGestureRecognizer:pangesture];
+    if(self.modelarea.screenwidth < self.modelarea.width || self.modelarea.screenheight < self.modelarea.height)
+    {
+        [self addmovility];
+    }
     
     return self;
 }
@@ -51,6 +52,13 @@
 }
 
 #pragma mark functionality
+
+-(void)addmovility
+{
+    UIPanGestureRecognizer *pangesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panrecognized:)];
+    self.pangesture = pangesture;
+    [self addGestureRecognizer:pangesture];
+}
 
 -(void)movearea
 {
