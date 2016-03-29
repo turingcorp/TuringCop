@@ -103,4 +103,11 @@ static NSInteger floatmax = 30;
     [super draw:effect];
 }
 
+-(void)screenmovedx:(CGFloat)x y:(CGFloat)y
+{
+    self.x -= x;
+    self.y -= y;
+    self.realy -= y;
+}
+
 @end

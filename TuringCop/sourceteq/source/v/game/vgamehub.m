@@ -1,6 +1,10 @@
 #import "vgamehub.h"
 
 @implementation vgamehub
+{
+    CGFloat originx;
+    CGFloat originy;
+}
 
 -(instancetype)init:(cgame*)controller
 {
@@ -27,6 +31,9 @@
         case UIGestureRecognizerStateBegan:
         case UIGestureRecognizerStatePossible:
             
+            originx = self.modelarea.x;
+            originy = self.modelarea.y;
+            
             break;
             
         case UIGestureRecognizerStateChanged:
@@ -48,8 +55,8 @@
 -(void)movearea
 {
     CGPoint pointmove = [self.pangesture translationInView:self];
-    CGFloat newx = self.modelarea.x + pointmove.x;
-    CGFloat newy = self.modelarea.y + pointmove.y;
+    CGFloat newx = originx + pointmove.x;
+    CGFloat newy = originy + pointmove.y;
     
     if(newx < self.modelarea.minx)
     {
@@ -74,8 +81,6 @@
     mgameareadelta *areadelta = [[mgameareadelta alloc] init:deltax y:deltay];
     self.modelarea.x = newx;
     self.modelarea.y = newy;
-    
-    NSLog(@"%@ %@", @(deltax), @(deltay));
     
     [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkscreenmoved object:nil userInfo:areadelta];
 }
