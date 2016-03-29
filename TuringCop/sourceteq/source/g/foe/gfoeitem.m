@@ -1,6 +1,7 @@
 #import "gfoeitem.h"
 #import "gfoeshadow.h"
 
+static CGFloat maxshadowheight = 30;
 static NSInteger floatmax = 30;
 static NSUInteger floatspeed = 3;
 
@@ -103,6 +104,7 @@ static NSUInteger floatspeed = 3;
     self.shadow.x = self.x + currentfloat;
     self.shadow.y = self.realy;
     self.shadow.width = self.width - (currentfloat * 2);
+    self.shadow.height = maxshadowheight - currentfloat;s
     
     [super render];
     [self.shadow render];
