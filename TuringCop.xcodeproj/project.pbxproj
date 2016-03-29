@@ -78,6 +78,7 @@
 		DAFB8E681CAACC7E00CDDAD8 /* mfoeitemocto.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E671CAACC7E00CDDAD8 /* mfoeitemocto.m */; };
 		DAFB8E6B1CAADE1200CDDAD8 /* cgameloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E6A1CAADE1200CDDAD8 /* cgameloader.m */; };
 		DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */; };
+		DAFB8E711CAAE6E100CDDAD8 /* loader.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +225,7 @@
 		DAFB8E6A1CAADE1200CDDAD8 /* cgameloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cgameloader.m; sourceTree = "<group>"; };
 		DAFB8E6D1CAADE8700CDDAD8 /* vgameloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgameloader.h; sourceTree = "<group>"; };
 		DAFB8E6E1CAADE8700CDDAD8 /* vgameloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgameloader.m; sourceTree = "<group>"; };
+		DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = loader.xcassets; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB395261CA9AFDB00D69DDA /* foe.xcassets */,
+				DAFB8E701CAAE6E100CDDAD8 /* loader.xcassets */,
 			);
 			path = imateq;
 			sourceTree = "<group>";
@@ -781,6 +784,7 @@
 				DA97E3FA1C6920D90084FFDF /* turingcop.db in Resources */,
 				DAB395271CA9AFDB00D69DDA /* foe.xcassets in Resources */,
 				DA84486F1C692C58007B634F /* Images.xcassets in Resources */,
+				DAFB8E711CAAE6E100CDDAD8 /* loader.xcassets in Resources */,
 				DAE45A4A1CA61B6E00610E75 /* defs.plist in Resources */,
 				DAE45A491CA61B6E00610E75 /* analytics.plist in Resources */,
 				DAE45A4C1CA61B6E00610E75 /* purchases.plist in Resources */,

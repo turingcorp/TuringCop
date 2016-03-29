@@ -1,5 +1,7 @@
 #import "vspinner.h"
 
+static CGFloat const animationduration = 1.0;
+
 @implementation vspinner
 
 -(instancetype)init
@@ -10,13 +12,14 @@
     [self setUserInteractionEnabled:NO];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self setContentMode:UIViewContentModeScaleAspectFit];
-    [self setAnimationDuration:1.5];
+    [self setAnimationDuration:animationduration];
     self.animationImages = @[
                              [UIImage imageNamed:@"loader0"],
                              [UIImage imageNamed:@"loader1"],
                              [UIImage imageNamed:@"loader2"],
                              [UIImage imageNamed:@"loader3"],
-                             [UIImage imageNamed:@"loader4"]
+                             [UIImage imageNamed:@"loader4"],
+                             [UIImage imageNamed:@"loader5"]
                              ];
     
     return self;
