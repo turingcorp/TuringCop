@@ -13,7 +13,7 @@
     [self.image loadtextures:@[@"foe_invader0", @"foe_invader1", @"foe_invader2"]];
     self.image.random = YES;
     self.image.srgb = YES;
-    self.image.speed = 90;
+    self.image.speed = 100;
     [self render];
     
     return self;
