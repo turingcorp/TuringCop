@@ -15,6 +15,7 @@
 #import "mgamearea.h"
 #import "mgameareadelta.h"
 #import "mgame.h"
+#import "mgameeffect.h"
 #import "mfoe.h"
 #import "mfoeiteminvader.h"
 #import "mfoeitemocto.h"

@@ -38,7 +38,8 @@
 
 -(void)notifydraw
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkdraw object:nil userInfo:@{userinfoeffect:self.effect}];
+    mgameeffect *modeleffect = [[mgameeffect alloc] init:self.effect];
+    [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkdraw object:nil userInfo:modeleffect];
 }
 
 #pragma mark -

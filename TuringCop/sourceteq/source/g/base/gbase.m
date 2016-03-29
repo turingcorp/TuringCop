@@ -20,7 +20,8 @@
 
 -(void)notifiedglkdraw:(NSNotification*)notification
 {
-    GLKBaseEffect *effect = notification.userInfo[userinfoeffect];
+    mgameeffect *modeleffect = (mgameeffect*)notification.userInfo;
+    GLKBaseEffect *effect = modeleffect.effect;
     [self draw:effect];
 }
 
