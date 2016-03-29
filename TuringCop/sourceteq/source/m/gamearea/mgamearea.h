@@ -9,5 +9,7 @@
 @property(nonatomic)CGFloat height;
 @property(nonatomic)CGFloat centerx;
 @property(nonatomic)CGFloat centery;
+@property(nonatomic)CGFloat screenwidth;
+@property(nonatomic)CGFloat screenheight;
 
 @end
