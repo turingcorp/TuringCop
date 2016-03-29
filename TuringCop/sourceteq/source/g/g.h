@@ -2,3 +2,4 @@
 #import "gareaspatial.h"
 #import "gfoe.h"
 #import "gfoeinvader.h"
+#import "gfoeshadow.h"
