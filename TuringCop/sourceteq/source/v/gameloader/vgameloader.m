@@ -19,20 +19,40 @@ static NSUInteger const spinnerheight = 50;
     [self setBackgroundColor:[UIColor blackColor]];
     [self setUserInteractionEnabled:NO];
     
-    UILabel
+    UILabel *title = [[UILabel alloc] init];
+    [title setTextColor:[UIColor main]];
+    [title setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [title setBackgroundColor:[UIColor clearColor]];
+    [title setUserInteractionEnabled:NO];
+    [title setFont:[UIFont regularsize:18]];
+    [title setTextAlignment:NSTextAlignmentCenter];
+    [title setText:NSLocalizedString(@"game_loader_title", nil)];
  
     vspinner *spinner = [[vspinner alloc] init];
     self.spinner = spinner;
     
+    [self addSubview:title];
     [self addSubview:spinner];
     
-    NSDictionary *views = @{@"spinner":spinner};
-    NSDictionary *metrics = @{};
+    NSDictionary *views = @{@"spinner":spinner, @"title":title};
+    NSDictionary *metrics = @{@"spinnerheight":@(spinnerheight)};
     
+    self.layoutspinnertop = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-150-[spinner(50)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[title]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[spinner(spinnerheight)]-10-[title]" options:0 metrics:metrics views:views]];
+    [self addConstraint:self.layoutspinnertop];
     
     return self;
+}
+
+-(void)layoutSubviews
+{
+    CGFloat height = self.bounds.size.height;
+    CGFloat margin = (height - spinnerheight) / 2.0;
+    
+    self.layoutspinnertop.constant = margin;
+    [super layoutSubviews];
 }
 
 -(void)dealloc
