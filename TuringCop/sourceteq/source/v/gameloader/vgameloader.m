@@ -8,6 +8,8 @@
 
 @implementation vgameloader
 
+@dynamic controller;
+
 -(instancetype)init:(cgameloader*)controller
 {
     self = [super init:controller];
