@@ -10,6 +10,13 @@
     return self;
 }
 
+#pragma mark functionality
+
+-(void)loadgraphics
+{
+    self.glkarea = [[garea alloc] init:self];
+}
+
 #pragma mark public
 
 -(void)loadarea

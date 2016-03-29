@@ -6,10 +6,10 @@
 {
     self = [super init];
     self.model = model;
-    self.x = 0;
-    self.y = 0;
-    self.width = 2000;
-    self.height = 2000;
+    self.x = model.centerx;
+    self.y = model.centery;
+    self.width = model.width;
+    self.height = model.height;
     [self.image loadtextureimage:model.image];
     [self render];
     
