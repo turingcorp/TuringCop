@@ -15,6 +15,7 @@
 -(void)loadgraphics
 {
     self.glkarea = [[garea alloc] init:self];
+    self.image = nil;
 }
 
 #pragma mark public
