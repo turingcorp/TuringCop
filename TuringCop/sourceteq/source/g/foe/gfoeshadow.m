@@ -10,4 +10,8 @@
     return self;
 }
 
+-(void)screenmovedx:(CGFloat)x y:(CGFloat)y
+{
+}
+
 @end

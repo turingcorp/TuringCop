@@ -69,13 +69,13 @@
         newy = self.modelarea.maxy;
     }
     
-    NSLog(@"%@ %@", @(newx), @(newy));
-    
     CGFloat deltax = self.modelarea.x - newx;
     CGFloat deltay = self.modelarea.y - newy;
     mgameareadelta *areadelta = [[mgameareadelta alloc] init:deltax y:deltay];
     self.modelarea.x = newx;
     self.modelarea.y = newy;
+    
+    NSLog(@"%@ %@", @(deltax), @(deltay));
     
     [[NSNotificationCenter defaultCenter] postNotificationName:notification_glkscreenmoved object:nil userInfo:areadelta];
 }

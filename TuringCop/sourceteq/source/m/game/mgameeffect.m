@@ -6,14 +6,10 @@ static NSString* const effectkey = @"effect";
 
 -(instancetype)init:(GLKBaseEffect*)effect
 {
-    self = [super initWithDictionary:@{effectkey:effect}];
+    self = [super init];
+    self.effect = effect;
     
     return self;
-}
-
--(GLKBaseEffect*)effect
-{
-    return self[effectkey];
 }
 
 @end

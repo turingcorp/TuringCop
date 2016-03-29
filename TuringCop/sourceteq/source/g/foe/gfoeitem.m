@@ -20,21 +20,7 @@ static NSInteger floatmax = 30;
     self.shadow = [[gfoeshadow alloc] init];
     currentfloat = 0;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
-    
     return self;
-}
-
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-#pragma mark notified
-
--(void)notifiedglkmove:(NSNotification*)notification
-{
-    [self floatovershadow];
 }
 
 #pragma mark public
@@ -85,8 +71,6 @@ static NSInteger floatmax = 30;
             self.y = self.realy - self.height + currentfloat;
         }
     }
-    
-    [self render];
 }
 
 #pragma mark -
@@ -94,6 +78,8 @@ static NSInteger floatmax = 30;
 
 -(void)render
 {
+    [self floatovershadow];
+    
     CGFloat currentfloat2 = currentfloat * 2;
     CGFloat shadowheight = maxshadowheight - currentfloat;
     

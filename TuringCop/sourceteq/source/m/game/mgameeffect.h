@@ -4,6 +4,6 @@
 
 -(instancetype)init:(GLKBaseEffect*)effect;
 
-@property(weak, nonatomic, readonly)GLKBaseEffect *effect;
+@property(weak, nonatomic)GLKBaseEffect *effect;
 
 @end

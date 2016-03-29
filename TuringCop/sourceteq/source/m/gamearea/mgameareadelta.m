@@ -1,22 +1,17 @@
 #import "mgameareadelta.h"
 
+static NSString* const xkey = @"x";
+static NSString* const ykey = @"y";
+
 @implementation mgameareadelta
 
 -(instancetype)init:(CGFloat)x y:(CGFloat)y
 {
-    self = [super initWithDictionary:@{@"x":@(x), @"y":@(y)}];
+    self = [super init];
+    self.deltax = x;
+    self.deltay = y;
     
     return self;
-}
-
--(CGFloat)deltax
-{
-    return [self[@"x"] doubleValue];
-}
-
--(CGFloat)deltay
-{
-    return [self[@"y"] doubleValue];
 }
 
 @end

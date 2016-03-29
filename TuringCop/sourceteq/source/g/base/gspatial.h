@@ -5,6 +5,7 @@
 
 -(void)render;
 -(void)draw:(GLKBaseEffect*)effect;
+-(void)screenmovedx:(CGFloat)x y:(CGFloat)y;
 
 @property(strong, nonatomic)gimage *image;
 @property(nonatomic)GLKVector2 *pointerposition;

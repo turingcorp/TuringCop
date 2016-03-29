@@ -1,4 +1,5 @@
 #import "gspatial.h"
+#import "appdel.h"
 
 @interface gspatial ()
 
@@ -23,12 +24,28 @@
     self.pointertexture[5] = GLKVector2Make(0, 0);
     self.image = [[gimage alloc] init];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedscreenmoved:) name:notification_glkscreenmoved object:nil];
+    
     return self;
 }
 
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark notifications
+
+-(void)notifiedglkmove:(NSNotification*)notification
+{
+    [self render];
+}
+
+-(void)notifiedscreenmoved:(NSNotification*)notification
+{
+    mgameareadelta *areadelta = (mgameareadelta*)notification.userInfo;
+    [self screenmovedx:areadelta.deltax y:areadelta.deltay];
 }
 
 #pragma mark functionality
@@ -70,6 +87,12 @@
     glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, 0, self.pointertexture);
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, 0, self.pointerposition);
     glDrawArrays(GL_TRIANGLES, 0, self.size);
+}
+
+-(void)screenmovedx:(CGFloat)x y:(CGFloat)y
+{
+    self.x -= x;
+    self.y -= y;
 }
 
 @end
