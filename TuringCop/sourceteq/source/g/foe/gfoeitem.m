@@ -2,13 +2,11 @@
 #import "gfoeshadow.h"
 
 static CGFloat maxshadowheight = 30;
-static CGFloat floatmoveratio = 6;
+static CGFloat floatmoveratio = 30;
 static NSInteger floatmax = 30;
-static NSUInteger floatspeed = 6;
 
 @implementation gfoeitem
 {
-    NSUInteger floatcounter;
     NSInteger currentfloat;
 }
 
@@ -20,7 +18,6 @@ static NSUInteger floatspeed = 6;
     self.image.srgb = YES;
     self.image.speed = 180;
     self.shadow = [[gfoeshadow alloc] init];
-    floatcounter = 0;
     currentfloat = 0;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedglkmove:) name:notification_glkmove object:nil];
@@ -37,13 +34,7 @@ static NSUInteger floatspeed = 6;
 
 -(void)notifiedglkmove:(NSNotification*)notification
 {
-    floatcounter++;
-    
-    if(YES)
-    {
-        floatcounter = 0;
-        [self floatovershadow];
-    }
+    [self floatovershadow];
 }
 
 #pragma mark public
