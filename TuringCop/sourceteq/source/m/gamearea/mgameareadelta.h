@@ -4,7 +4,7 @@
 
 -(instancetype)init:(CGFloat)x y:(CGFloat)y;
 
-@property(nonatomic)CGFloat deltax;
-@property(nonatomic)CGFloat deltay;
+@property(nonatomic, readonly)CGFloat deltax;
+@property(nonatomic, readonly)CGFloat deltay;
 
 @end

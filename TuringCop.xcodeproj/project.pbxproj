@@ -82,6 +82,7 @@
 		DAFB8E751CAAF17900CDDAD8 /* mgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E741CAAF17900CDDAD8 /* mgame.m */; };
 		DAFB8E781CAB0D9100CDDAD8 /* vgamehub.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */; };
 		DAFB8E7B1CAB25EA00CDDAD8 /* mgameareadelta.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */; };
+		DAFB8E7E1CAB272200CDDAD8 /* mgameeffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,6 +236,8 @@
 		DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamehub.m; sourceTree = "<group>"; };
 		DAFB8E791CAB25EA00CDDAD8 /* mgameareadelta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgameareadelta.h; sourceTree = "<group>"; };
 		DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgameareadelta.m; sourceTree = "<group>"; };
+		DAFB8E7C1CAB272200CDDAD8 /* mgameeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgameeffect.h; sourceTree = "<group>"; };
+		DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgameeffect.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -733,6 +736,8 @@
 			children = (
 				DAFB8E731CAAF17900CDDAD8 /* mgame.h */,
 				DAFB8E741CAAF17900CDDAD8 /* mgame.m */,
+				DAFB8E7C1CAB272200CDDAD8 /* mgameeffect.h */,
+				DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -902,6 +907,7 @@
 				DAE45A5D1CA61B6E00610E75 /* mdbcreate.m in Sources */,
 				DA1BEC281CA670A300B464BF /* vgamesetupcell.m in Sources */,
 				DAE45A5E1CA61B6E00610E75 /* mdirs.m in Sources */,
+				DAFB8E7E1CAB272200CDDAD8 /* mgameeffect.m in Sources */,
 				DAB395071CA86D4E00D69DDA /* gfoe.m in Sources */,
 				DAE45A761CA61B6E00610E75 /* vstorecell.m in Sources */,
 				DAE45A721CA61B6E00610E75 /* vspinner.m in Sources */,

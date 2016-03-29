@@ -3,8 +3,6 @@
 @class cgame;
 @class vgamehub;
 
-static NSString* const userinfoeffect = @"effect";
-
 @interface vgame:GLKView<GLKViewDelegate>
 
 -(instancetype)init:(cgame*)controller;
