@@ -47,7 +47,9 @@
 
 -(void)locationready
 {
-    
+    [self.spinner stopAnimating];
+    [self.spinner removeFromSuperview];
+    [self.loadingtitle removeFromSuperview];
 }
 
 @end
