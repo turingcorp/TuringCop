@@ -2,8 +2,9 @@
 #import "gfoeshadow.h"
 
 static CGFloat maxshadowheight = 30;
+static CGFloat floatmoveratio = 6;
 static NSInteger floatmax = 30;
-static NSUInteger floatspeed = 3;
+static NSUInteger floatspeed = 6;
 
 @implementation gfoeitem
 {
@@ -38,7 +39,7 @@ static NSUInteger floatspeed = 3;
 {
     floatcounter++;
     
-    if(floatcounter >= floatspeed)
+    if(YES)
     {
         floatcounter = 0;
         [self floatovershadow];
@@ -50,7 +51,7 @@ static NSUInteger floatspeed = 3;
 -(void)floatovershadow
 {
     NSInteger delta = 0;
-    NSUInteger shouldchange = arc4random_uniform(8);
+    NSUInteger shouldchange = arc4random_uniform(floatmoveratio);
     
     switch(shouldchange)
     {
@@ -101,10 +102,18 @@ static NSUInteger floatspeed = 3;
 
 -(void)render
 {
+    CGFloat currentfloat2 = currentfloat * 2;
+    CGFloat shadowheight = maxshadowheight - currentfloat;
+    
+    if(shadowheight < 0)
+    {
+        shadowheight = 0;
+    }
+    
     self.shadow.x = self.x + currentfloat;
     self.shadow.y = self.realy;
-    self.shadow.width = self.width - (currentfloat * 2);
-    self.shadow.height = maxshadowheight - currentfloat;s
+    self.shadow.width = self.width - currentfloat2;
+    self.shadow.height = shadowheight;
     
     [super render];
     [self.shadow render];
