@@ -117,7 +117,7 @@ static NSUInteger const mapheight = 1200;
     options.size = CGSizeMake(mapwidth, mapheight);
     options.showsBuildings = NO;
     options.showsPointsOfInterest = NO;
-    options.mapType = MKMapTypeStandard;
+    options.mapType = MKMapTypeSatellite;
     
     MKMapSnapshotter *snapper = [[MKMapSnapshotter alloc] initWithOptions:options];
     [snapper startWithQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0) completionHandler:

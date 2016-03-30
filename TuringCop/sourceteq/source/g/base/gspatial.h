@@ -16,5 +16,6 @@
 @property(nonatomic)CGFloat height;
 @property(nonatomic)CGFloat x;
 @property(nonatomic)CGFloat y;
+@property(nonatomic)CGFloat visualy;
 
 @end

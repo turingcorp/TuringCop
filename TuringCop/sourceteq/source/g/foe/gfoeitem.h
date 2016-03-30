@@ -10,6 +10,5 @@
 
 @property(weak, nonatomic)mfoeitem *model;
 @property(strong, nonatomic)gfoeshadow *shadow;
-@property(nonatomic)CGFloat realy;
 
 @end

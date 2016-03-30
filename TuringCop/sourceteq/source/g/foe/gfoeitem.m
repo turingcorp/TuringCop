@@ -68,7 +68,7 @@ static NSInteger floatmax = 30;
         
         if(changed)
         {
-            self.y = self.realy - self.height + currentfloat;
+            self.visualy = self.y - self.height + currentfloat;
         }
     }
 }
@@ -89,7 +89,7 @@ static NSInteger floatmax = 30;
     }
     
     self.shadow.x = self.x + currentfloat;
-    self.shadow.y = self.realy;
+    self.shadow.y = self.y;
     self.shadow.width = self.width - currentfloat2;
     self.shadow.height = shadowheight;
     
@@ -107,7 +107,7 @@ static NSInteger floatmax = 30;
 {
     self.x -= x;
     self.y -= y;
-    self.realy -= y;
+    self.visualy -= y;
 }
 
 @end

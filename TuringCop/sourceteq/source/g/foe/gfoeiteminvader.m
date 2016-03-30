@@ -14,7 +14,7 @@
 {
     self = [super init:model];
     self.x = 100;
-    self.y = self.realy = 100;
+    self.y = self.visualy = 100;
     self.width = 50;
     self.height = 50;
     [self.image loadtextures:@[@"foe_invader0", @"foe_invader1", @"foe_invader2"]];
