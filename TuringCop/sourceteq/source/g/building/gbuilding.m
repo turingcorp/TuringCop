@@ -17,7 +17,7 @@
 {
     effect.texture2d0.envMode = GLKTextureEnvModeReplace;
     
-    for(mfoeitem *item in self.model.items)
+    for(mbuildingitem *item in self.model.items)
     {
         [item.spatial draw:effect];
     }

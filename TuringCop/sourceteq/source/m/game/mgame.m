@@ -31,8 +31,8 @@
                                                          ^
                                                          {
                                                              [weakself.modelarea loadarea];
-                                                             weakself.modelfoe = [[mfoe alloc] init];
                                                              weakself.modelbuilding = [[mbuilding alloc] init];
+                                                             weakself.modelfoe = [[mfoe alloc] init];
                                                              
                                                              dispatch_async(dispatch_get_main_queue(),
                                                                             ^
