@@ -31,6 +31,8 @@
 		DAB395271CA9AFDB00D69DDA /* foe.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB395261CA9AFDB00D69DDA /* foe.xcassets */; };
 		DAB3952A1CA9FFF000D69DDA /* gfoeshadow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB395291CA9FFF000D69DDA /* gfoeshadow.m */; };
 		DAB7A0411CAC23020047A49E /* building.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0401CAC23020047A49E /* building.xcassets */; };
+		DAB7A0431CAC23A00047A49E /* buildings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0421CAC23A00047A49E /* buildings.plist */; };
+		DAB7A0471CAC240B0047A49E /* mbuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A0461CAC240A0047A49E /* mbuilding.m */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
 		DABDF4421CA625C900B240B4 /* cgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4411CA625C900B240B4 /* cgame.m */; };
 		DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4441CA626B900B240B4 /* cgamesetup.m */; };
@@ -129,6 +131,9 @@
 		DAB395281CA9FFF000D69DDA /* gfoeshadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfoeshadow.h; sourceTree = "<group>"; };
 		DAB395291CA9FFF000D69DDA /* gfoeshadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gfoeshadow.m; sourceTree = "<group>"; };
 		DAB7A0401CAC23020047A49E /* building.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = building.xcassets; sourceTree = "<group>"; };
+		DAB7A0421CAC23A00047A49E /* buildings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildings.plist; sourceTree = "<group>"; };
+		DAB7A0451CAC240A0047A49E /* mbuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbuilding.h; sourceTree = "<group>"; };
+		DAB7A0461CAC240A0047A49E /* mbuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbuilding.m; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABDF43D1CA6210100B240B4 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
 		DABDF4401CA625C900B240B4 /* cgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgame.h; sourceTree = "<group>"; };
@@ -417,6 +422,15 @@
 			path = imateq;
 			sourceTree = "<group>";
 		};
+		DAB7A0441CAC23EF0047A49E /* building */ = {
+			isa = PBXGroup;
+			children = (
+				DAB7A0451CAC240A0047A49E /* mbuilding.h */,
+				DAB7A0461CAC240A0047A49E /* mbuilding.m */,
+			);
+			path = building;
+			sourceTree = "<group>";
+		};
 		DABDF43B1CA620F800B240B4 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +460,7 @@
 				DAE459D31CA61B6E00610E75 /* defs.plist */,
 				DAE459D41CA61B6E00610E75 /* Localizable.strings */,
 				DAE459D71CA61B6E00610E75 /* purchases.plist */,
+				DAB7A0421CAC23A00047A49E /* buildings.plist */,
 			);
 			path = langteq;
 			sourceTree = "<group>";
@@ -577,6 +592,7 @@
 			isa = PBXGroup;
 			children = (
 				DAE45A121CA61B6E00610E75 /* m.h */,
+				DAB7A0441CAC23EF0047A49E /* building */,
 				DAFB8E721CAAF15E00CDDAD8 /* game */,
 				DAB3950B1CA86DF700D69DDA /* foe */,
 				DA1BEC4F1CA7596200B464BF /* gamearea */,
@@ -796,6 +812,7 @@
 				DAE45A4A1CA61B6E00610E75 /* defs.plist in Resources */,
 				DAE45A491CA61B6E00610E75 /* analytics.plist in Resources */,
 				DAE45A4C1CA61B6E00610E75 /* purchases.plist in Resources */,
+				DAB7A0431CAC23A00047A49E /* buildings.plist in Resources */,
 				DAE45A4E1CA61B6E00610E75 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -908,6 +925,7 @@
 				DABDF43E1CA6210100B240B4 /* vhome.m in Sources */,
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,
 				DAE45A521CA61B6E00610E75 /* updater.m in Sources */,
+				DAB7A0471CAC240B0047A49E /* mbuilding.m in Sources */,
 				DAE45A5B1CA61B6E00610E75 /* cstore.m in Sources */,
 				DA1BEC4E1CA74D9300B464BF /* gimage.m in Sources */,
 				DA87FADE1CAA032700E46A0A /* gfoeitem.m in Sources */,
