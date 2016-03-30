@@ -1,13 +1,12 @@
-//
-//  gbuildingitem.h
-//  TuringCop
-//
-//  Created by zero on 3/30/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "gspatial.h"
 
-#import <Foundation/Foundation.h>
+@class mbuildingitem;
 
-@interface gbuildingitem : NSObject
+@interface gbuildingitem:gspatial
+
+-(instancetype)init:(mbuildingitem*)model;
+
+@property(weak, nonatomic)mbuildingitem *model;
 
 @end

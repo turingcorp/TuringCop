@@ -3,6 +3,7 @@
 @class cgameloader;
 @class mgamearea;
 @class mfoe;
+@class mbuilding;
 
 @interface mgame:NSObject
 
@@ -11,5 +12,6 @@
 @property(strong, nonatomic)EAGLContext *context;
 @property(strong, nonatomic)mgamearea *modelarea;
 @property(strong, nonatomic)mfoe *modelfoe;
+@property(strong, nonatomic)mbuilding *modelbuilding;
 
 @end
