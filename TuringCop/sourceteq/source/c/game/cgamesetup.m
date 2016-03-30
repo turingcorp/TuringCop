@@ -1,7 +1,7 @@
 #import "cgamesetup.h"
 
 static NSString* const searchquery = @"";
-static CGFloat const mapspanradius = 0.001;
+static CGFloat const mapspanradius = 0.006;
 static CGFloat const searchspanradius = 0.003;
 static NSUInteger const mapwidth = 1600;
 static NSUInteger const mapheight = 1200;
@@ -183,7 +183,7 @@ static NSUInteger const mapheight = 1200;
 
 -(void)startgame
 {
-//    [[cmain singleton].pages sectiongameload:[self.view.model modelarea]];
+    [[cmain singleton].pages sectiongameload:self.model];
 }
 
 -(void)cancelgame

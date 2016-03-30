@@ -1,6 +1,6 @@
 #import "vgamesetup.h"
 
-static NSUInteger const buttonbackheight = 90;
+static NSUInteger const buttonbackheight = 60;
 
 @interface vgamesetup ()
 
@@ -55,7 +55,7 @@ static NSUInteger const buttonbackheight = 90;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[spinner(50)]-10-[loadingtitle]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[loadingtitle]-0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[buttonback(160)]" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[buttonback(120)]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonback(buttonbackheight)]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
