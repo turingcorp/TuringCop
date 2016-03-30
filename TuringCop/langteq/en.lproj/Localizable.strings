@@ -1,4 +1,5 @@
 "game_setup_loading_title"="Loading area";
 "game_setup_cancel_button"="Cancel";
-"game_setup_mission_title"="Mission at: %@";
+"game_setup_mission_title"="Mission\n";
+"game_setup_mission_unknown"="Unknown";
 "game_loader_title"="Loading";
