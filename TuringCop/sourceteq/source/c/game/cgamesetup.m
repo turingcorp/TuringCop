@@ -35,4 +35,9 @@
 //    [[cmain singleton].pages sectiongameload:[self.view.model modelarea]];
 }
 
+-(void)cancelgame
+{
+    [[cmain singleton].pages sectionhome:YES direction:UIPageViewControllerNavigationDirectionReverse];
+}
+
 @end

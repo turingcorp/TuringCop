@@ -5,7 +5,7 @@
 -(instancetype)init
 {
     self = [super initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
-    [self sectionhome:NO];
+    [self sectionhome:NO direction:UIPageViewControllerNavigationDirectionForward];
     
     return self;
 }
@@ -35,10 +35,10 @@
 
 #pragma mark public
 
--(void)sectionhome:(BOOL)animated
+-(void)sectionhome:(BOOL)animated direction:(UIPageViewControllerNavigationDirection)direction
 {
     UIViewController *controller = [[chome alloc] init];
-    [self changecontroller:controller direction:UIPageViewControllerNavigationDirectionForward animated:animated];
+    [self changecontroller:controller direction:direction animated:animated];
 }
 
 -(void)sectiongame

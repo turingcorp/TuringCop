@@ -3,5 +3,6 @@
 @interface cgamesetup:UIViewController
 
 -(void)startgame;
+-(void)cancelgame;
 
 @end
