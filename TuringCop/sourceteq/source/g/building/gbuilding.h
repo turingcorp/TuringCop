@@ -1,13 +1,12 @@
-//
-//  gbuilding.h
-//  TuringCop
-//
-//  Created by zero on 3/30/16.
-//  Copyright © 2016 Iturbide. All rights reserved.
-//
+#import "appdel.h"
+#import "gbase.h"
 
-#import <Foundation/Foundation.h>
+@class mbuilding;
 
-@interface gbuilding : NSObject
+@interface gbuilding:gbase
+
+-(instancetype)init:(mbuilding*)model;
+
+@property(weak, nonatomic)mbuilding *model;
 
 @end

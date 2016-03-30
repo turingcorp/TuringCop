@@ -4,3 +4,5 @@
 #import "gfoeiteminvader.h"
 #import "gfoeitemocto.h"
 #import "gfoeshadow.h"
+#import "gbuilding.h"
+#import "gbuildingitem.h"

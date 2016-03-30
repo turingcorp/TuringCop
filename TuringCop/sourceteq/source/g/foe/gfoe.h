@@ -2,7 +2,6 @@
 #import "gbase.h"
 
 @class mfoe;
-@class gspatial;
 
 @interface gfoe:gbase
 
