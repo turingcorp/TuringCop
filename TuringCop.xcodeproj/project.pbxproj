@@ -12,7 +12,6 @@
 		DA1BEC1B1CA66AEA00B464BF /* uifont+uifontmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC1A1CA66AEA00B464BF /* uifont+uifontmain.m */; };
 		DA1BEC1E1CA66B8300B464BF /* nsnotification+nsnotificationmain.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC1D1CA66B8300B464BF /* nsnotification+nsnotificationmain.m */; };
 		DA1BEC271CA670A300B464BF /* vgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC241CA670A300B464BF /* vgamesetup.m */; };
-		DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC371CA6776C00B464BF /* vgamesetuplocator.m */; };
 		DA1BEC3A1CA679D800B464BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1BEC391CA679D800B464BF /* MapKit.framework */; };
 		DA1BEC3E1CA7425E00B464BF /* vgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC3D1CA7425E00B464BF /* vgame.m */; };
 		DA1BEC441CA7491800B464BF /* garea.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1BEC431CA7491800B464BF /* garea.m */; };
@@ -78,8 +77,8 @@
 		DAFB8E781CAB0D9100CDDAD8 /* vgamehub.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E771CAB0D9100CDDAD8 /* vgamehub.m */; };
 		DAFB8E7B1CAB25EA00CDDAD8 /* mgameareadelta.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */; };
 		DAFB8E7E1CAB272200CDDAD8 /* mgameeffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */; };
-		DAFB8E811CAB49CE00CDDAD8 /* vgamesetuplocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E801CAB49CE00CDDAD8 /* vgamesetuplocation.m */; };
 		DAFB8E831CAB4FAD00CDDAD8 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB8E821CAB4FAD00CDDAD8 /* generic.xcassets */; };
+		DAFB8E861CAB5AAA00CDDAD8 /* vgamesetuplocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,8 +93,6 @@
 		DA1BEC1D1CA66B8300B464BF /* nsnotification+nsnotificationmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "nsnotification+nsnotificationmain.m"; sourceTree = "<group>"; };
 		DA1BEC231CA670A300B464BF /* vgamesetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetup.h; sourceTree = "<group>"; };
 		DA1BEC241CA670A300B464BF /* vgamesetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetup.m; sourceTree = "<group>"; };
-		DA1BEC361CA6776C00B464BF /* vgamesetuplocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocator.h; sourceTree = "<group>"; };
-		DA1BEC371CA6776C00B464BF /* vgamesetuplocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocator.m; sourceTree = "<group>"; };
 		DA1BEC391CA679D800B464BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA1BEC3C1CA7425E00B464BF /* vgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgame.h; sourceTree = "<group>"; };
 		DA1BEC3D1CA7425E00B464BF /* vgame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgame.m; sourceTree = "<group>"; };
@@ -225,9 +222,9 @@
 		DAFB8E7A1CAB25EA00CDDAD8 /* mgameareadelta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgameareadelta.m; sourceTree = "<group>"; };
 		DAFB8E7C1CAB272200CDDAD8 /* mgameeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgameeffect.h; sourceTree = "<group>"; };
 		DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgameeffect.m; sourceTree = "<group>"; };
-		DAFB8E7F1CAB49CE00CDDAD8 /* vgamesetuplocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocation.h; sourceTree = "<group>"; };
-		DAFB8E801CAB49CE00CDDAD8 /* vgamesetuplocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocation.m; sourceTree = "<group>"; };
 		DAFB8E821CAB4FAD00CDDAD8 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
+		DAFB8E841CAB5AAA00CDDAD8 /* vgamesetuplocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocation.h; sourceTree = "<group>"; };
+		DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocation.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,10 +296,8 @@
 			children = (
 				DA1BEC231CA670A300B464BF /* vgamesetup.h */,
 				DA1BEC241CA670A300B464BF /* vgamesetup.m */,
-				DA1BEC361CA6776C00B464BF /* vgamesetuplocator.h */,
-				DA1BEC371CA6776C00B464BF /* vgamesetuplocator.m */,
-				DAFB8E7F1CAB49CE00CDDAD8 /* vgamesetuplocation.h */,
-				DAFB8E801CAB49CE00CDDAD8 /* vgamesetuplocation.m */,
+				DAFB8E841CAB5AAA00CDDAD8 /* vgamesetuplocation.h */,
+				DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */,
 			);
 			path = gamesetup;
 			sourceTree = "<group>";
@@ -863,7 +858,6 @@
 				DAB3950E1CA86E0500D69DDA /* mfoe.m in Sources */,
 				DAFB8E751CAAF17900CDDAD8 /* mgame.m in Sources */,
 				DAE45A551CA61B6E00610E75 /* cmain.m in Sources */,
-				DA1BEC381CA6776C00B464BF /* vgamesetuplocator.m in Sources */,
 				DAB395141CA86E5C00D69DDA /* mfoeitem.m in Sources */,
 				DA87FAE11CAA033200E46A0A /* gfoeiteminvader.m in Sources */,
 				DAE45A741CA61B6E00610E75 /* vstore.m in Sources */,
@@ -875,9 +869,9 @@
 				DA1BEC1E1CA66B8300B464BF /* nsnotification+nsnotificationmain.m in Sources */,
 				DAFB8E681CAACC7E00CDDAD8 /* mfoeitemocto.m in Sources */,
 				DAFB8E651CAACC0800CDDAD8 /* gfoeitemocto.m in Sources */,
+				DAFB8E861CAB5AAA00CDDAD8 /* vgamesetuplocation.m in Sources */,
 				DAE45A711CA61B6E00610E75 /* viewbase.m in Sources */,
 				DAE45A661CA61B6E00610E75 /* mstorestatuspurchased.m in Sources */,
-				DAFB8E811CAB49CE00CDDAD8 /* vgamesetuplocation.m in Sources */,
 				DA1BEC481CA7496100B464BF /* gbase.m in Sources */,
 				DAE45A5D1CA61B6E00610E75 /* mdbcreate.m in Sources */,
 				DAE45A5E1CA61B6E00610E75 /* mdirs.m in Sources */,
