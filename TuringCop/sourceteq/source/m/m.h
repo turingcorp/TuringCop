@@ -18,3 +18,4 @@
 #import "mfoeiteminvader.h"
 #import "mfoeitemocto.h"
 #import "mbuilding.h"
+#import "mbuildingitem.h"

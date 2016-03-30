@@ -33,6 +33,7 @@
 		DAB7A0411CAC23020047A49E /* building.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0401CAC23020047A49E /* building.xcassets */; };
 		DAB7A0431CAC23A00047A49E /* buildings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB7A0421CAC23A00047A49E /* buildings.plist */; };
 		DAB7A0471CAC240B0047A49E /* mbuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A0461CAC240A0047A49E /* mbuilding.m */; };
+		DAB7A04A1CAC248F0047A49E /* mbuildingitem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7A0491CAC248F0047A49E /* mbuildingitem.m */; };
 		DABDF43E1CA6210100B240B4 /* vhome.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF43D1CA6210100B240B4 /* vhome.m */; };
 		DABDF4421CA625C900B240B4 /* cgame.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4411CA625C900B240B4 /* cgame.m */; };
 		DABDF4451CA626B900B240B4 /* cgamesetup.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDF4441CA626B900B240B4 /* cgamesetup.m */; };
@@ -134,6 +135,8 @@
 		DAB7A0421CAC23A00047A49E /* buildings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = buildings.plist; sourceTree = "<group>"; };
 		DAB7A0451CAC240A0047A49E /* mbuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbuilding.h; sourceTree = "<group>"; };
 		DAB7A0461CAC240A0047A49E /* mbuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbuilding.m; sourceTree = "<group>"; };
+		DAB7A0481CAC248F0047A49E /* mbuildingitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbuildingitem.h; sourceTree = "<group>"; };
+		DAB7A0491CAC248F0047A49E /* mbuildingitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mbuildingitem.m; sourceTree = "<group>"; };
 		DABDF43C1CA6210100B240B4 /* vhome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vhome.h; sourceTree = "<group>"; };
 		DABDF43D1CA6210100B240B4 /* vhome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vhome.m; sourceTree = "<group>"; };
 		DABDF4401CA625C900B240B4 /* cgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgame.h; sourceTree = "<group>"; };
@@ -427,6 +430,8 @@
 			children = (
 				DAB7A0451CAC240A0047A49E /* mbuilding.h */,
 				DAB7A0461CAC240A0047A49E /* mbuilding.m */,
+				DAB7A0481CAC248F0047A49E /* mbuildingitem.h */,
+				DAB7A0491CAC248F0047A49E /* mbuildingitem.m */,
 			);
 			path = building;
 			sourceTree = "<group>";
@@ -592,8 +597,8 @@
 			isa = PBXGroup;
 			children = (
 				DAE45A121CA61B6E00610E75 /* m.h */,
-				DAB7A0441CAC23EF0047A49E /* building */,
 				DAFB8E721CAAF15E00CDDAD8 /* game */,
+				DAB7A0441CAC23EF0047A49E /* building */,
 				DAB3950B1CA86DF700D69DDA /* foe */,
 				DA1BEC4F1CA7596200B464BF /* gamearea */,
 				DAE45A061CA61B6E00610E75 /* db */,
@@ -920,6 +925,7 @@
 				DAE45A631CA61B6E00610E75 /* mstorestatus.m in Sources */,
 				DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */,
 				DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */,
+				DAB7A04A1CAC248F0047A49E /* mbuildingitem.m in Sources */,
 				DAFB8E891CAB655100CDDAD8 /* vgamesetuplocationgradient.m in Sources */,
 				DAE45A511CA61B6E00610E75 /* tools.m in Sources */,
 				DABDF43E1CA6210100B240B4 /* vhome.m in Sources */,
