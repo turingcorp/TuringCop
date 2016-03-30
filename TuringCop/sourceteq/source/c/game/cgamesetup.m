@@ -2,7 +2,7 @@
 
 static NSString* const searchquery = @"";
 static CGFloat const mapspanradius = 0.001;
-static CGFloat const searchspanradius = 0.005;
+static CGFloat const searchspanradius = 0.003;
 static NSUInteger const mapwidth = 1600;
 static NSUInteger const mapheight = 1200;
 
@@ -131,11 +131,12 @@ static NSUInteger const mapheight = 1200;
          {
              UIImage *rawimage = snapshot.image;
              weakself.model = [[mgamearea alloc] init:rawimage];
+             weakself.model.venue = venue;
              
              dispatch_async(dispatch_get_main_queue(),
                             ^
                             {
-                                
+                                [weakself.view locationready];
                             });
          }
      }];
@@ -166,13 +167,13 @@ static NSUInteger const mapheight = 1200;
              
              if(count)
              {
-#warning "no venue found"
-             }
-             else
-             {
                  NSUInteger venueindex = arc4random_uniform((CGFloat)count);
                  MKMapItem *venue = venues[venueindex];
                  [weakself maponvenue:venue];
+             }
+             else
+             {
+                 #warning "no venue found"
              }
          }
      }];

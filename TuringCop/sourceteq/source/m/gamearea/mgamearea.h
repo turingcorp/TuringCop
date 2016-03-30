@@ -8,6 +8,7 @@
 -(void)loadarea;
 
 @property(strong, nonatomic)garea *glkarea;
+@property(strong, nonatomic)MKMapItem *venue;
 @property(strong, nonatomic)UIImage *image;
 @property(nonatomic)CGFloat x;
 @property(nonatomic)CGFloat y;

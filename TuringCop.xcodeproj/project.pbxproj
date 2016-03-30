@@ -79,6 +79,7 @@
 		DAFB8E7E1CAB272200CDDAD8 /* mgameeffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E7D1CAB272200CDDAD8 /* mgameeffect.m */; };
 		DAFB8E831CAB4FAD00CDDAD8 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB8E821CAB4FAD00CDDAD8 /* generic.xcassets */; };
 		DAFB8E861CAB5AAA00CDDAD8 /* vgamesetuplocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */; };
+		DAFB8E891CAB655100CDDAD8 /* vgamesetuplocationgradient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB8E881CAB655100CDDAD8 /* vgamesetuplocationgradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +226,8 @@
 		DAFB8E821CAB4FAD00CDDAD8 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DAFB8E841CAB5AAA00CDDAD8 /* vgamesetuplocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocation.h; sourceTree = "<group>"; };
 		DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocation.m; sourceTree = "<group>"; };
+		DAFB8E871CAB655100CDDAD8 /* vgamesetuplocationgradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgamesetuplocationgradient.h; sourceTree = "<group>"; };
+		DAFB8E881CAB655100CDDAD8 /* vgamesetuplocationgradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vgamesetuplocationgradient.m; sourceTree = "<group>"; };
 		E79309400496C5F107A745D3 /* Pods-TuringCop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuringCop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuringCop/Pods-TuringCop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +301,8 @@
 				DA1BEC241CA670A300B464BF /* vgamesetup.m */,
 				DAFB8E841CAB5AAA00CDDAD8 /* vgamesetuplocation.h */,
 				DAFB8E851CAB5AAA00CDDAD8 /* vgamesetuplocation.m */,
+				DAFB8E871CAB655100CDDAD8 /* vgamesetuplocationgradient.h */,
+				DAFB8E881CAB655100CDDAD8 /* vgamesetuplocationgradient.m */,
 			);
 			path = gamesetup;
 			sourceTree = "<group>";
@@ -894,6 +899,7 @@
 				DAE45A631CA61B6E00610E75 /* mstorestatus.m in Sources */,
 				DA1BEC551CA75D3B00B464BF /* gareaspatial.m in Sources */,
 				DAFB8E6F1CAADE8700CDDAD8 /* vgameloader.m in Sources */,
+				DAFB8E891CAB655100CDDAD8 /* vgamesetuplocationgradient.m in Sources */,
 				DAE45A511CA61B6E00610E75 /* tools.m in Sources */,
 				DABDF43E1CA6210100B240B4 /* vhome.m in Sources */,
 				DAE45A671CA61B6E00610E75 /* mstorestatuspurchasing.m in Sources */,

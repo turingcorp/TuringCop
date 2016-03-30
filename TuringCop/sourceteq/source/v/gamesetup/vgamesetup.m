@@ -1,5 +1,7 @@
 #import "vgamesetup.h"
 
+static NSUInteger const buttonbackheight = 90;
+
 @interface vgamesetup ()
 
 @property(weak, nonatomic)cgamesetup *controller;
@@ -48,13 +50,13 @@
     [self addSubview:buttonback];
     
     NSDictionary *views = @{@"spinner":spinner, @"loadingtitle":loadingtitle, @"buttonback":buttonback};
-    NSDictionary *metrics = @{};
+    NSDictionary *metrics = @{@"buttonbackheight":@(buttonbackheight)};
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[spinner]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[spinner(50)]-10-[loadingtitle]" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[loadingtitle]-0-|" options:0 metrics:metrics views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[buttonback(160)]" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonback(90)]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[buttonback(buttonbackheight)]-0-|" options:0 metrics:metrics views:views]];
     
     return self;
 }
@@ -73,6 +75,15 @@
     [self.spinner stopAnimating];
     [self.spinner removeFromSuperview];
     [self.loadingtitle removeFromSuperview];
+    
+    vgamesetuplocation *location = [[vgamesetuplocation alloc] init:self.controller];
+    [self addSubview:location];
+    
+    NSDictionary *views = @{@"location":location};
+    NSDictionary *metrics = @{@"buttonbackheight":@(buttonbackheight)};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[location]-0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[location]-(buttonbackheight)-|" options:0 metrics:metrics views:views]];
 }
 
 @end

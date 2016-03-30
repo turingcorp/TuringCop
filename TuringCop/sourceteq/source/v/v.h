@@ -7,7 +7,7 @@
 #import "vhome.h"
 #import "vgamesetup.h"
 #import "vgamesetuplocation.h"
-#import "vgamesetuplocator.h"
+#import "vgamesetuplocationgradient.h"
 #import "vgameloader.h"
 #import "vgame.h"
 #import "vgamehub.h"
